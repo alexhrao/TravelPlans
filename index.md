@@ -2,7 +2,7 @@
 Here you'll find all my plans for traveling abroad during my semester abroad in Metz, France. The trips are listed below, with details.
 
 ## Trips
-[### 25/08-27/08](https://alexhrao.github.io/TravelPlans/trips/01Weekend/details.md "Metz, France")
+[25/08-27/08](https://alexhrao.github.io/TravelPlans/trips/01Weekend/details.md "Metz, France")
 - Metz, France
 
 ### 31/08-03/09
