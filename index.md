@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+# Welcome to Study Abroad Planning!
+Here you'll find all my plans for traveling abroad during my semester abroad in Metz, France. The trips are listed below, with details.
 
-You can use the [editor on GitHub](https://github.com/alexhrao/TravelPlans/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Trips
+### 25/08-27/08
+- Metz, France
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 31/08-03/09
+- Vianden, Luxembourg
+- Luxembourg City, Luxembourg
 
-### Markdown
+### 07/09-10/09
+- Brussels, Belgium
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 14/09-17/09
+- Zurich, Switzerland
+- Interlakem, Switzerland
 
-```markdown
-Syntax highlighted code block
+### 21/09-24/09
+- Amsterdam, Netherlands
 
-# Header 1
-## Header 2
-### Header 3
+### 28/09-01/10
+- Strassburg, Germany
+- Munich, Germany
 
-- Bulleted
-- List
+### 05/10-08/10
+- Athens, Greece
 
-1. Numbered
-2. List
+### 12/10-15/10
+- Vienna, Austria
 
-**Bold** and _Italic_ and `Code` text
+### 19/10-22/10
+- Berlin, Germany
+- Auschwitz, Poland
 
-[Link](url) and ![Image](src)
-```
+### 26/10-05/11
+- Copenhagen, Denmark
+- Stockholm, Sweden
+- Oslo, Norway
+- Helsinki, Finland
+  
+### 09/11-12/11
+- Barcelona, Spain
+- Normandy, France
+  
+### 16/11-19/11
+- Rome, Italy
+    
+### 23/11-26/11
+- Nothing here yet...
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alexhrao/TravelPlans/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 30/11-03/12
+- Nothing here yet...
