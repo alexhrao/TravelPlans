@@ -35,25 +35,26 @@
     }
 }
 
+html {
+    font-size: 16px;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #49659B;
     color: white;
 }
 h1 {
-    font-size: 160px;
+    font-size: 3.75rem;
     font-weight: 100;
     margin-bottom: 25px;
 }
 .item img {
-    min-width: 512px;
     max-height: 512px;
     margin: 0 auto;
 }
 #mainImage {
     margin: 25px 0px 100px 0px;
 }
-
 
 .detail-block {
     padding-top: 40px;
@@ -65,16 +66,12 @@ h1 {
 .day-header {
     font-size: 50px;
 }
-.event-header {
-    text-indent: 2.5%;
-}
-.event-content p {
+.event-block p {
     font-size: 30px;
-    text-indent: 5%;
     font-weight: 300;
 }
 .detail-block img {
-    height: 512px;
+    max-height: 512px;
 }
 .day-block {
     padding-top: 35px;
