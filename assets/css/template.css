@@ -9,8 +9,8 @@ h1 {
     margin-bottom: 25px;
 }
 .item img {
-    width: 512px;
-    height: 512px;
+    min-width: 512px;
+    max-height: 512px;
     margin: 0 auto;
 }
 #mainImage {
