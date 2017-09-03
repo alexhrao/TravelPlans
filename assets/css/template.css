@@ -58,6 +58,24 @@ h1 {
 .detail-block {
     padding-top: 40px;
 }
+.day-block > * {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.day-header {
+    font-size: 50px;
+}
+.event-header {
+    text-indent: 2.5%;
+}
+.event-content p {
+    font-size: 30px;
+    text-indent: 5%;
+    font-weight: 300;
+}
+.detail-block img {
+    height: 512px;
+}
 .day-block {
     padding-top: 35px;
     padding-bottom: 35px;
