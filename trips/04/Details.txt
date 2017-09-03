@@ -1,40 +1,68 @@
 Itinerary:
-    I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
-        2. [LUXEMBOURG - ARLON] (20:09-20:32)
-        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
-    II. Brussels, Belgium
-        1. 07/09-10/09
-            MEININGER Brussels City Center
-            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
-            Price: €22.00
-            Room: Standard 10 Bed Mixed Dorm
-    III. Brussels, Belgium - Metz, France
-        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
-        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
+    I. Metz, France - Interlaken, Switzerland
+        1. [METZ VILLE - STRASBOURG] (16:43-18:11)
+        2. [STRASBOURG - BASEL SBB] (18:21-19:39)
+        3. [BASEL SBB - INTERLAKEN OST] (19:59-21:57)
+    II. Interlaken, Switzerland - Zurich, Switzerland
+        1. [INTERLAKEN OST - BERN] (15:00-15:52)
+        2. [BERN - ZUERICH HB] (16:02-16:58)
+    III. Interlaken, Switzerland
+        1. 14/09-16/09
+            Backpackers Villa Sonnenhof
+            Alpenstrasse 16, Interlaken, Switzerland
+            Price: €28.00
+            Room: Basic 16 Bed Mixed Dorm
+    IV. Ice Climbing
+        1. Ice climbing is an all day event we are doing on Friday. You hike to a hole in the ice, and then climb out!
+        2. Cost: €170
+    V. Paragliding
+        1. Glide for 15-20 minutes over the Interlaken Landscape with Sensational paragliding!
+        2. Cost: €190
+    VI. Interlaken, Switzerland - Zurich, Switzerland
+        1. [INTERLAKEN OST - BERN] (15:00-15:52)
+        2. [BERN - ZUERICH HB] (16:02-16:58)
+    VII. Zurich, Switzerland
+        1. 16/09-17/09
+            City Backpacker - Hostel Biber
+            Niederdorfstrasse 5, Zurich, Switzerland
+            Price: €34.00
+            Room: 6 Bed Dorm
+    VIII. Zurich, Switzerland - Metz, France
+        1. [ZUERICH HB - BASEL SBB] (19:08-20:12)
+        2. [BASEL SBB - MULHOUSE VILLE] (20:21-20:44)
+        3. [MULHOUSE VILLE - METZ VILLE] (21:09-22:56) RESERVATION
 
 Transportation:
-    I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
-        2. [LUXEMBOURG - ARLON] (20:09-20:32)
-        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
-    II. Brussels, Belgium - Metz, France
-        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
-        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
-
+    I. Metz, France - Interlaken, Switzerland
+        1. [METZ VILLE - STRASBOURG] (16:43-18:11)
+        2. [STRASBOURG - BASEL SBB] (18:21-19:39)
+        3. [BASEL SBB - INTERLAKEN OST] (19:59-21:57)
+    II. Interlaken, Switzerland - Zurich, Switzerland
+        1. [INTERLAKEN OST - BERN] (15:00-15:52)
+        2. [BERN - ZUERICH HB] (16:02-16:58)
+    III. Zurich, Switzerland - Metz, France
+        1. [ZUERICH HB - BASEL SBB] (19:08-20:12)
+        2. [BASEL SBB - MULHOUSE VILLE] (20:21-20:44)
+        3. [MULHOUSE VILLE - METZ VILLE] (21:09-22:56) RESERVATION
+    
 Lodging:
-    I. Brussels, Belgium
-        1. 07/09-10/09
-            MEININGER Brussels City Center
-            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
-            Price: €22.00
-            Room: Standard 10 Bed Mixed Dorm
+    I. Interlaken, Switzerland
+        1. 14/09-16/09
+            Backpackers Villa Sonnenhof
+            Alpenstrasse 16, Interlaken, Switzerland
+            Price: €28.00
+            Room: Basic 16 Bed Mixed Dorm
+    II. Zurich, Switzerland
+        1. 16/09-17/09
+            City Backpacker - Hostel Biber
+            Niederdorfstrasse 5, Zurich, Switzerland
+            Price: €34.00
+            Room: 6 Bed Dorm
 
 Entertainment:
-    I. Grand Place
-        1. A really beautiful place in Belgium - considered the most beautiful square in existence
-    II. European Union Government
-        1. The EU Government is here
-
-
-
+    I. Ice Climbing
+        1. Ice climbing is an all day event we are doing on Friday. You hike to a hole in the ice, and then climb out!
+        2. Cost: €170
+    II. Paragliding
+        1. Glide for 15-20 minutes over the Interlaken Landscape with Sensational paragliding!
+        2. Cost: €190
