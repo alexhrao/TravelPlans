@@ -2,10 +2,10 @@
 Here you'll find all my plans for traveling abroad during my semester abroad in Metz, France. The trips are listed below. Click on one to see the raw data about the trip.
 
 ## Trips
-### [25/08-27/08](https://alexhrao.github.io/TravelPlans/trips/01/Details.txt "Metz, France")
+### [25/08-27/08](https://alexhrao.github.io/TravelPlans/trips/01/Details.txt "France")
 - Metz, France
 
-### [31/08-03/09](https://alexhrao.github.io/TravelPlans/trips/02/Details.txt "Luxembourg")
+### [31/08-03/09](https://alexhrao.github.io/TravelPlans/trips/02/Details.html "Luxembourg")
 - Vianden, Luxembourg
 - Luxembourg City, Luxembourg
 
@@ -16,22 +16,22 @@ Here you'll find all my plans for traveling abroad during my semester abroad in 
 - Zurich, Switzerland
 - Interlaken, Switzerland
 
-### [21/09-24/09](https://alexhrao.github.io/TravelPlans/trips/05/Details.txt "Amsterdam")
-- Amsterdam, Netherlands
-
-### [28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.txt "Germany")
+### [21/09-24/09](https://alexhrao.github.io/TravelPlans/trips/05/Details.txt "Germany")
 - Strassburg, Germany
 - Munich, Germany
+
+### [28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.txt "Netherlands")
+- Amsterdam, Netherlands
 
 ### [05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Greece")
 - Athens, Greece
 
-### [12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Vienna")
+### [12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Austria & Italy")
 - Vienna, Austria
+- Florence, Italy
 
-### [19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Poland")
-- Berlin, Germany
-- Auschwitz, Poland
+### [19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "France - Part II")
+- Paris, France
 
 ### [26/10-05/11](https://alexhrao.github.io/TravelPlans/trips/10/Details.txt "Nordic Countries")
 - Copenhagen, Denmark
@@ -41,13 +41,13 @@ Here you'll find all my plans for traveling abroad during my semester abroad in 
   
 ### [09/11-12/11](https://alexhrao.github.io/TravelPlans/trips/11/Details.txt "Spain")
 - Barcelona, Spain
-- Normandy, France
   
-### [16/11-19/11](https://alexhrao.github.io/TravelPlans/trips/12/Details.txt "Italy")
-- Rome, Italy
+### [16/11-19/11](https://alexhrao.github.io/TravelPlans/trips/12/Details.txt "France - Part III")
+- Normandy, France
     
-### [23/11-26/11](https://alexhrao.github.io/TravelPlans/trips/13/Details.txt "Free")
-- Nothing here yet...
+### [23/11-26/11](https://alexhrao.github.io/TravelPlans/trips/13/Details.txt "Poland")
+- Berlin, Germany
+- Auschwitz, Poland
 
 ### [30/11-03/12](https://alexhrao.github.io/TravelPlans/trips/14/Details.txt "Free")
 - Nothing here yet...

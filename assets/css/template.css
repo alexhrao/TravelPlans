@@ -1,18 +1,22 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #49659B;
     color: white;
 }
-
 h1 {
-    font-size: 65px;
+    font-size: 160px;
+    font-weight: 300;
+    margin-bottom: 25px;
 }
-
 .item img {
     width: 512px;
     height: 512px;
     margin: 0 auto;
 }
+#mainImage {
+    margin: 25px 0px 100px 0px;
+}
+
 
 .detail-block {
     padding-top: 40px;
