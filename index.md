@@ -11,6 +11,8 @@ Here you'll find all my plans for traveling abroad during my semester abroad in 
 
 ### [Belgium - 07/09-10/09](https://alexhrao.github.io/TravelPlans/trips/03/Details.txt "Belgium")
 - Brussels, Belgium
+- Dinant, Belgium
+- Gent, Belgium
 
 ### [Switzerland - 14/09-17/09](https://alexhrao.github.io/TravelPlans/trips/04/Details.txt "Switzerland")
 - Zurich, Switzerland
