@@ -1,12 +1,32 @@
 body {
     font-family: sans-serif;
-    background-color: blue;
+    background-color: #49659B;
+    color: white;
 }
 
 h1 {
     font-size: 65px;
 }
 
-.title-block {
-    
+.item img {
+    width: 512px;
+    height: 512px;
+    margin: 0 auto;
+}
+
+.detail-block {
+    padding-top: 40px;
+}
+.day-block {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.day-block:nth-child(3n + 1) {
+    background-color: #E8A45F;
+}
+.day-block:nth-child(3n + 2) {
+    background-color: #59BE4E;
+}
+.day-block:nth-child(3n) {
+    background-color: #A5291C;
 }
