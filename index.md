@@ -1,6 +1,8 @@
 # Welcome to Study Abroad Planning!
 Here you'll find all my plans for traveling abroad during my semester abroad in Metz, France. The trips are listed below.
+
 If the trip has already happened, click on it to see a synopsis of my travels!
+
 Otherwise, click on the trip to see booking details.
 
 Enjoy!
