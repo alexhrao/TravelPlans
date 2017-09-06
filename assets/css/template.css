@@ -44,8 +44,8 @@ body {
     color: white;
 }
 #logo {
-    width: 32px;
-    height: 32px;
+    width: 32px !important;
+    height: 32px !important;
 }
 h1 {
     font-size: 3.75rem;
