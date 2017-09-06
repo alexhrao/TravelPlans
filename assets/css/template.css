@@ -35,6 +35,7 @@
     }
 }
 
+/* Header */
 html {
     font-size: 16px;
 }
@@ -43,49 +44,54 @@ body {
     background-color: #49659B;
     color: white;
 }
-#logo {
-    width: 32px !important;
-    height: 32px !important;
-}
 h1 {
     font-size: 3.75rem;
     font-weight: 100;
     margin-bottom: 25px;
 }
-.title-block img {
-    display: inline;
+#logo {
+    width: 32px !important;
+    height: 32px !important;
 }
-.item img {
-    max-height: 512px;
-    margin: 0 auto;
+.navbar-nav li a {
+    line-height: 32px;
 }
 #mainImage {
     margin: 25px auto 100px auto;
     display: block;
 }
-.navbar-nav li a {
-    line-height: 32px;
-}
-.detail-block {
-    padding-top: 40px;
-}
-.day-block > * {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.day-header {
-    font-size: 50px;
-}
+
+/* Event Block */
 .event-block p {
     font-size: 30px;
     font-weight: 300;
 }
+
+/* Item Block */
+.item img {
+    max-height: 512px;
+    margin: 0 auto;
+}
+
+/* Detail Block */
+.detail-block {
+    padding-top: 40px;
+}
 .detail-block img {
     max-height: 512px;
+}
+
+/* Day Blocks */
+.day-header {
+    font-size: 50px;
 }
 .day-block {
     padding-top: 35px;
     padding-bottom: 35px;
+}
+.day-block > * {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .day-block:nth-child(3n + 1) {
     background-color: #E8A45F;
