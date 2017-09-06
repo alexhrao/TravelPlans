@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1450px) {
+@media (min-width: 768px) and (max-width: 1505px) {
     .navbar-header {
         float: none;
     }
@@ -43,6 +43,10 @@ body {
     background-color: #49659B;
     color: white;
 }
+#logo {
+    width: 32px;
+    height: 32px;
+}
 h1 {
     font-size: 3.75rem;
     font-weight: 100;
@@ -59,7 +63,9 @@ h1 {
     margin: 25px auto 100px auto;
     display: block;
 }
-
+.navbar-nav li a {
+    line-height: 32px;
+}
 .detail-block {
     padding-top: 40px;
 }
