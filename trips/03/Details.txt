@@ -1,6 +1,6 @@
 Itinerary:
     I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
+        1. [METZ VILLE - LUXEMBOURG] (18:46-19:46)
         2. [LUXEMBOURG - ARLON] (20:09-20:32)
         3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
     II. Brussels, Belgium
@@ -15,7 +15,7 @@ Itinerary:
 
 Transportation:
     I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
+        1. [METZ VILLE - LUXEMBOURG] (18:46-19:46)
         2. [LUXEMBOURG - ARLON] (20:09-20:32)
         3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
     II. Brussels, Belgium - Metz, France
