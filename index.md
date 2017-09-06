@@ -6,6 +6,7 @@ If the trip has already happened, click on it to see a synopsis of my travels!
 Otherwise, click on the trip to see booking details.
 
 Enjoy!
+
 ~Alex
 
 ## Trips
