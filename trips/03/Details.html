@@ -3,13 +3,25 @@
 	<head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>CountryName</title>
+        <title>Belgium</title>
         
         <!-- Get Bootstrap: -->
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link type="text/css" rel="stylesheet" href="../../assets/css/template.css" />
+        <script>
+            $(document).ready(function() {
+                $(".carousel").swipe({
+                    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+                        if (direction == 'left') $(this).carousel('next');
+                        if (direction == 'right') $(this).carousel('prev');
+                        },
+                        allowPageScroll:"vertical"
+                });
+            })
+        </script>
+        <!-- <link type="text/css" rel="stylesheet" href="../../assets/css/template.css" /> -->
+        <link type="text/css" rel="stylesheet" href="./template.css">
         <link rel="shortcut icon" type="image/png" href="../../assets/images/branding/favicon.ico" />
 	</head>
     <body>
@@ -29,7 +41,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="../01/Details.html">Metz</a></li>
                         <li><a href="../02/Details.html">Luxembourg</a></li>
-                        <li><a href="../03/Details.html">Belgium</a></li>
+                        <li class="active"><a href="../03/Details.html">Belgium</a></li>
                         <li><a href="../04/Details.html">Switzerland</a></li>
                         <li><a href="../05/Details.html">Germany</a></li>
                         <li><a href="../06/Details.html">Netherlands</a></li>
@@ -47,11 +59,10 @@
         </nav>
         <div class="container-fluid">
             <div class="title-block">
-                <h1 class="text-center">LocationName</h1>
+                <h1 class="text-center">Belgium</h1>
                 <img id="mainImage" src="imgMain.png" class="img-responsive img-rounded" />
             </div>
             <div class="row">
-
                 <div id="headerCarousel" class="carousel slide text-center" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
@@ -111,36 +122,69 @@
             <div class="row">
                 <div class="detail-block">
                     <div id="day1" class="day-block text-center">
-                    <h2 class="day-header"></h2>
-                        <div id="event1" class="event-block">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h3 class="event-header">Image Name</h3>
-                                    <img src="" class="img-thumbnail text-center" />
-                                    <p>Caption</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="event-header">Image Name</h3>
-                                    <img src="" class="img-thumbnail text-center" />
-                                    <p>Caption</p>
-                                </div>
+                        <h2 class="day-header">Day 1: Brussels</h2>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Manican Boy</h3>
+                                <img src="" class="img-thumbnail text-center" />
+                                <p>The Manican Boy (Dressed as a British Soldier)</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Grand Place Gardens</h3>
+                                <img src="" class="img-thumbnail text-center" />
+                                <p>Gardens in front of the Main seat of Brussels Government</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">WAFFLES</h3>
+                                <img src="" class="img-thumbnail text-center" />
+                                <p>Authentic, Delicious Belgian Waffles!</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">European Parliament</h3>
+                                <img src="" class="img-thumbnail text-center" />
+                                <p>One of the three seats of EU Parliament</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">VR Shot of Brussels Centre</h3>
+                                <img src="" class="img-thumbnail text-center" />
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">VR Shot of Brussels</h3>
                             </div>
                         </div>
                     </div>
                     <div id="day2" class="day-block text-center">
-                        <h2 class="day-header"></h2>
-                        <div id="event2" class="event-block">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h3 class="event-header">Image Name</h3>
-                                    <img src="" class="img-thumbnail text-center" />
-                                    <p>Caption</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="event-header">Image Name</h3>
-                                    <img src="" class="img-thumbnail text-center" />
-                                    <p>Caption</p>
-                                </div>
+                        <h2 class="day-header">Day 2: Dinant</h2>
+                        <div class="row">
+                            <div class="col-md-12 event-block">
+                                <h3 class="event-header">Kayaking!</h3>
+                                <img src="" class="img-thumbnail text-center" />
+                                <p>Right below the castle... We kayaked along the beautiful coastline for 12 km!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="day3" class="day-block text-center">
+                        <h2 class="day-header">Day 3: Ghent</h2>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">The Cathedral</h3>
+                                <img src="" class="img-thumbnail text-center" />
+                                <p>A beautiful cathedral - really gives the one in Metz a run for its money!</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">The Castle of Ghent!</h3>
+                                <img src="" class="img-thumbnail text-center" />
+                                <p>A beautiful castle that is the prize fortune of Ghent</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 event-block">
+                                <h3 class="event-header">VR Shot Atop the Castle</h3>
+                                <img src="" class="img-thumbnail text-center" />
                             </div>
                         </div>
                     </div>
