@@ -60,5 +60,6 @@ Enjoy!
 - Prague, Czech Republic
 - Auschwitz, Poland
 
-### [Italy - 30/11-03/12](https://alexhrao.github.io/TravelPlans/trips/14/Details.txt "Italy")
+### [Italy & Monaco - 30/11-03/12](https://alexhrao.github.io/TravelPlans/trips/14/Details.txt "Italy")
 - Florence, Italy
+- Monaco, Monaco
