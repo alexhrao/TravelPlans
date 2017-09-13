@@ -17,7 +17,7 @@ Enjoy!
 - Vianden, Luxembourg
 - Luxembourg City, Luxembourg
 
-### [Belgium - 07/09-10/09](https://alexhrao.github.io/TravelPlans/trips/03/Details.txt "Belgium")
+### [Belgium - 07/09-10/09](https://alexhrao.github.io/TravelPlans/trips/03/Details.html "Belgium")
 - Brussels, Belgium
 - Dinant, Belgium
 - Gent, Belgium
@@ -26,9 +26,9 @@ Enjoy!
 - Zurich, Switzerland
 - Interlaken, Switzerland
 
-### [Germany - 21/09-24/09](https://alexhrao.github.io/TravelPlans/trips/05/Details.txt "Germany")
-- Stuttgart, Germany
-- Munich, Germany
+### [The UK - 21/09-24/09](https://alexhrao.github.io/TravelPlans/trips/05/Details.txt "The United Kingdom")
+- Paris, France
+- London, United Kingdom
 
 ### [The Netherlands - 28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.txt "The Netherlands")
 - Amsterdam, Netherlands
@@ -40,9 +40,9 @@ Enjoy!
 - Vienna, Austria
 - Budapest, Hungary
 
-### [The UK - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "The United Kingdom")
-- Paris, France
-- London, United Kingdom
+### [Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Germany")
+- Munich, Germany
+- Stuttgart, Germany
 
 ### [The Nordic Countries - 26/10-05/11](https://alexhrao.github.io/TravelPlans/trips/10/Details.txt "Nordic Countries")
 - Copenhagen, Denmark
