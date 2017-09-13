@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1505px) {
+@media (min-width: 768px) and (max-width: 1450px) {
     .navbar-header {
         float: none;
     }
@@ -54,11 +54,21 @@ h1 {
     height: 32px !important;
 }
 .navbar-nav li a {
-    line-height: 32px;
+    font-size: 12px;
+}
+.navbar {
+    position: relative;
+}
+.navbar-brand {
+    margin-top: -6px;
+    display: block;
 }
 #mainImage {
     margin: 25px auto 100px auto;
     display: block;
+}
+#togglePlay {
+    margin: 10px auto 10px auto;
 }
 
 /* Event Block */

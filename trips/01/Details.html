@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>France</title>
 
     <!-- Get Bootstrap: -->
-    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://hammerjs.github.io/dist/hammer.js"></script>
+    <script>
+        $(document).ready(function() {
+            var viewer = document.getElementById('headerCarousel');
+            var swiper = new Hammer(viewer);
+            swiper.on("swipeleft swiperight", function(event) {
+                if (event.type === "swipeleft") {
+                    $('.carousel').carousel("next");
+                    stopCarousel();
+                } else if (event.type === "swiperight") {
+                    $('.carousel').carousel("prev");
+                    stopCarousel();
+                }
+            });
+            $('#togglePlay').click(function(event) {
+                if ($('#playStatus').hasClass('glyphicon-pause')) {
+                    stopCarousel();
+                } else {
+                    startCarousel();
+                }
+            })
+        });
+        
+        function stopCarousel() {
+            $('.carousel').carousel('pause');
+            $('#playStatus').removeClass('glyphicon-pause');
+            $('#playStatus').removeClass('glyphicon-play');
+            $('#playStatus').addClass('glyphicon-play');
+        }
+
+        function startCarousel() {
+            $('.carousel').carousel('cycle');
+            $('#playStatus').removeClass('glyphicon-pause');
+            $('#playStatus').removeClass('glyphicon-play');
+            $('#playStatus').addClass('glyphicon-pause');
+        }
+    </script>
     <link type="text/css" rel="stylesheet" href="../../assets/css/template.css" />
     <link rel="shortcut icon" type="image/png" href="../../assets/images/branding/favicon.ico" />
 </head>
@@ -19,8 +56,8 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="https://alexhrao.github.io/TravelPlans">
-                    <img id="logo" src="../../favicon.ico" class="img-circle" />
-                </a>
+                        <img id="logo" src="../../favicon.ico" class="img-circle" />
+                    </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -50,10 +87,9 @@
     <div class="container-fluid">
         <div class="title-block">
             <h1 class="text-center">Metz, France</h1>
-            <img id="mainImage" src="imgMain.png" class="img-responsive img-rounded text-center" />
+            <img id="mainImage" src="imgMain.png" class="img-responsive img-rounded" />
         </div>
         <div class="row">
-
             <div id="headerCarousel" class="carousel slide text-center" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
@@ -103,41 +139,44 @@
                 <a class="left carousel-control" href="#headerCarousel" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                         <span class="sr-only">Previous</span>
-                    </a>
+                </a>
                 <a class="right carousel-control" href="#headerCarousel" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                         <span class="sr-only">Next</span>
-                    </a>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4 text-center">
+                <button id="togglePlay" class="btn btn-block btn-success btn-lg">
+                    <span id="playStatus" class="glyphicon glyphicon-pause"></span>
+                </button>
             </div>
         </div>
         <div class="row">
             <div class="detail-block">
-                <div id="day1" class="day-block text-center">
+                <div id="day1" class="day-block text-center container-fluid">
                     <h2 class="day-header">Day 1: Metz Center</h2>
-                    <div id="event1" class="event-block">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="event-header">City Center</h3>
-                                <img src="img02.png" class="img-thumbnail text-center" />
-                                <p>The very center of Metz, France</p>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="event-header">The Light Show</h3>
-                                <img src="img04.png" class="img-thumbnail text-center" />
-                                <p>The light show on the Cathedral of Metz</p>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-6 event-block">
+                            <h3 class="event-header">City Center</h3>
+                            <img src="img02.png" class="img-thumbnail text-center" />
+                            <p>The very center of Metz, France</p>
+                        </div>
+                        <div class="col-md-6 event-block">
+                            <h3 class="event-header">The Light Show</h3>
+                            <img src="img04.png" class="img-thumbnail text-center" />
+                            <p>The light show on the Cathedral of Metz</p>
                         </div>
                     </div>
                 </div>
-                <div id="day2" class="day-block text-center">
+                <div id="day2" class="day-block text-center container-fluid">
                     <h2 class="day-header">Day 2: The Parade</h2>
-                    <div id="event2" class="event-block">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3 class="event-header">Star Wars</h3>
-                                <img src="img06.png" class="img-thumbnail text-center" />
-                                <p>A Star Wars float at the Parade in Downtown Metz</p>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-12 event-block">
+                            <h3 class="event-header">Star Wars</h3>
+                            <img src="img06.png" class="img-thumbnail text-center" />
+                            <p>A Star Wars float at the Parade in Downtown Metz</p>
                         </div>
                     </div>
                 </div>
@@ -145,5 +184,4 @@
         </div>
     </div>
 </body>
-
 </html>
