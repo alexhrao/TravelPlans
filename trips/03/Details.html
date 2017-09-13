@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Belgium</title>
         
-        <!-- Get Bootstrap: -->
+        <!-- Get Bootstrap: -->        
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+        <script src="https://360player.io/static/dist/scripts/embed.js" async></script>
         <script>
             $(document).ready(function () {
                 var viewer = document.getElementById('headerCarousel');
@@ -177,7 +178,7 @@
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">Grand Place</h3>
                                 <img src="grandPlace.png" class="img-thumbnail text-center" />
-                                <p>A beautiful garden in teh center of the city</p>
+                                <p>A beautiful garden in the center of the city</p>
                             </div>
                         </div>
                         <div class="row">
@@ -189,8 +190,10 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 event-block">
-                                <h3 class="event-header">VR Shot of Brussels Centre</h3>
-                                <img src="" class="img-thumbnail text-center" />
+                                <h3 class="event-header">VR Shot of Brussels Center</h3>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="col-md-12" src="https://360player.io/p/DA4Xn8/" width=560 height=315 frameborder="0" allowfullscreen data-token="DA4Xn8"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -221,13 +224,17 @@
                         <div class="row">
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">VR Shot Atop the Castle</h3>
-                                <img src="" class="img-thumbnail text-center" />
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="col-md-12" src="https://360player.io/p/DA4Xn8/" width=560 height=315 frameborder="0" allowfullscreen data-token="DA4Xn8"></iframe>
+                                </div>
+                                <p>Picture taken over Ghent from the castle</p>
                             </div>
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">Piano Man</h3>
                                 <video width="100%" height="100%" controls>
                                     <source src="piano.mp4" type="video/mp4" /> Your browser does not support the video tag.
                                 </video>
+                                <p>Travelling piano man!</p>
                             </div>
                         </div>
                     </div>
