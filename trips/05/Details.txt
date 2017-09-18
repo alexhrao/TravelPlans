@@ -1,40 +1,71 @@
 Itinerary:
-    I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
-        2. [LUXEMBOURG - ARLON] (20:09-20:32)
-        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
-    II. Brussels, Belgium
-        1. 07/09-10/09
-            MEININGER Brussels City Center
-            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
-            Price: €22.00
-            Room: Standard 10 Bed Mixed Dorm
-    III. Brussels, Belgium - Metz, France
-        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
-        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
+    I. Metz, France - London, England {R}
+        1. [METZ VILLE - PARIS EST] (17:55-19:20) RESERVATION
+        2. [PARIS NORD - LONDON ST. PANCRAS] (21:12-22:39) RESERVATION
+    II. London, England
+        1. 21/09-23/09
+            Keystone House Kings Cross
+            272-276 Pentonville Road Kings Cross, London, London
+            Price: €23.00
+            Room: 8 Bed Mixed Dorm
+    III. London, England - Bletchley Park, England {F}
+        1. [Victoria - Euston] (09:05-9:06) @ King's Cross Underground 
+        2. [Euston - Bletchley] (09:13-09:49) @ London Midland
+    IV. Bletchley Park -> England
+        1. Witness the invention of modern computing at Bletchley park. Once a secret park to crack the German Enigma machine, now it's open to the public
+    V. Bletchley Park, England - London, England {F}
+        1. [Bletchley - Euston] (13:46-14:27)
+    VI. London Eye -> England
+        1. Go around the world's largest ferris wheel!
+    VII. Buckingham Palace -> England
+        1. Look at the most beautiful palace in the world!
+    VIII. London Stock Exchange -> England
+        1. One of the great International Stock Exchanges!
+    IX. Trafalgar Square
+        1. Bustling Governmental Center
+    X. London, England - Paris, France {S}
+        1. [LONDON ST. PANCRAS - PARIS NORD] (07:52-11:17)
+    XI. Eiffel Tower -> Paris
+        1. Go up (via elevator) - allocate two hours for this!
+    XII. Arc de Triomphe -> Paris
+        1. Visit the arch of triumph, known the world over
+    XIII. Paris, France - Metz, France {S}
+        1. [PARIS EST - METZ VILLE] (20:30-22:05)
 
 Transportation:
-    I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
-        2. [LUXEMBOURG - ARLON] (20:09-20:32)
-        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
-    II. Brussels, Belgium - Metz, France
-        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
-        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
+    I. Metz, France - London, England {R}
+        1. [METZ VILLE - PARIS EST] (17:55-19:20) RESERVATION
+        2. [PARIS NORD - LONDON ST. PANCRAS] (21:12-22:39) RESERVATION
+    II. London, England - Bletchley Park, England {F}
+        1. [Victoria - Euston] (09:05-9:06) @ King's Cross Underground 
+        2. [Euston - Bletchley] (09:13-09:49) @ London Midland
+    III. Bletchley Park, England - London, England {F}
+        1. [Bletchley - Euston] (13:46-14:27)
+    IV. London, England - Paris, France {S}
+        1. [LONDON ST. PANCRAS - PARIS NORD] (07:52-11:17)
+    V. Paris, France - Metz, France {S}
+        1. [PARIS EST - METZ VILLE] (20:30-22:05)
 
 Lodging:
-    I. Brussels, Belgium
-        1. 07/09-10/09
-            MEININGER Brussels City Center
-            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
-            Price: €22.00
-            Room: Standard 10 Bed Mixed Dorm
+    I. London, England
+        1. 21/09-23/09
+            Keystone House Kings Cross
+            272-276 Pentonville Road Kings Cross, London, London
+            Price: €23.00
+            Room: 8 Bed Mixed Dorm
 
 Entertainment:
-    I. Grand Place
-        1. A really beautiful place in Belgium - considered the most beautiful square in existence
-    II. European Union Government
-        1. The EU Government is here
-
-
-
+    I. Bletchley Park -> England
+        1. Witness the invention of modern computing at Bletchley park. Once a secret park to crack the German Enigma machine, now it's open to the public
+    II. London Eye -> England
+        1. Go around the world's largest ferris wheel!
+    III. Buckingham Palace -> England
+        1. Look at the most beautiful palace in the world!
+    IV. London Stock Exchange -> England
+        1. One of the great International Stock Exchanges!
+    V. Trafalgar Square -> England
+        1. Bustling Governmental Center
+    VI. Eiffel Tower -> Paris
+        1. Go up (via elevator) - allocate two hours for this!
+    VII. Arc de Triomphe -> Paris
+        1. Visit the arch of triumph, known the world over
