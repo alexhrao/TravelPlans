@@ -30,7 +30,18 @@
                     } else {
                         startCarousel();
                     }
-                })
+                });
+                $('img:not(#logo)').wrap(function() {
+                    return "<a href='./source/" + $(this).attr("src") + "'></a>";
+                });
+                $('img:not(#logo)').attr("src", function(idx, attr) {
+                    var src = attr;
+                    var last = attr.lastIndexOf(".");
+                    var ext = attr.substring(last + 1);
+                    src = src.substring(0, last);
+                    src = src + "_web." + ext;
+                    return src;
+                });
             });
 
             function stopCarousel() {
@@ -86,7 +97,7 @@
         <div class="container-fluid">
             <div class="title-block">
                 <h1 class="text-center">Belgium</h1>
-                <img id="mainImage" src="imgMain.png" class="img-responsive img-rounded" />
+                <img id="mainImage" src="imgMain.jpg" class="img-responsive img-rounded" />
             </div>
             <div class="row">
                 <div id="headerCarousel" class="carousel slide text-center" data-ride="carousel">
@@ -105,34 +116,34 @@
 
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="img00.png" alt="" class="img-thumbnail" />
+                            <img src="img00.jpg" alt="" class="img-thumbnail" />
                         </div>
                         <div class="item">
-                            <img src="img01.png" alt="" class="img-thumbnail" />
+                            <img src="img01.jpg" alt="" class="img-thumbnail" />
                         </div>
                         <div class="item">
-                            <img src="img02.png" alt="" class="img-thumbnail"/>
+                            <img src="img02.jpg" alt="" class="img-thumbnail"/>
                         </div>
                         <div class="item">
-                            <img src="img03.png" alt="" class="img-thumbnail"/>
+                            <img src="img03.jpg" alt="" class="img-thumbnail"/>
                         </div>
                         <div class="item">
-                            <img src="img04.png" alt="" class="img-thumbnail"/>
+                            <img src="img04.jpg" alt="" class="img-thumbnail"/>
                         </div>
                         <div class="item">
-                            <img src="img05.png" alt="" class="img-thumbnail"/>
+                            <img src="img05.jpg" alt="" class="img-thumbnail"/>
                         </div>
                         <div class="item">
-                            <img src="img06.png" alt="" class="img-thumbnail"/>
+                            <img src="img06.jpg" alt="" class="img-thumbnail"/>
                         </div>
                         <div class="item">
-                            <img src="img07.png" alt="" class="img-thumbnail"/>
+                            <img src="img07.jpg" alt="" class="img-thumbnail"/>
                         </div>
                         <div class="item">
-                            <img src="img08.png" alt="" class="img-thumbnail"/>
+                            <img src="img08.jpg" alt="" class="img-thumbnail"/>
                         </div>
                         <div class="item">
-                            <img src="img09.png" alt="" class="img-thumbnail"/>
+                            <img src="img09.jpg" alt="" class="img-thumbnail"/>
                         </div>
                     </div>
                     <a class="left carousel-control" href="#headerCarousel" data-slide="prev">
@@ -159,31 +170,31 @@
                         <div class="row">
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">Manican Boy</h3>
-                                <img src="img00.png" class="img-thumbnail text-center" />
+                                <img src="img00.jpg" class="img-thumbnail text-center" />
                                 <p>The Manican Boy (Dressed as a British Soldier)</p>
                             </div>
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">Grand Place Gardens</h3>
-                                <img src="img05.png" class="img-thumbnail text-center" />
+                                <img src="img05.jpg" class="img-thumbnail text-center" />
                                 <p>Gardens in front of the Main seat of Brussels Government</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">WAFFLES</h3>
-                                <img src="img05.png" class="img-thumbnail text-center" />
+                                <img src="img05.jpg" class="img-thumbnail text-center" />
                                 <p>Authentic, Delicious Belgian Waffles!</p>
                             </div>
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">Grand Place</h3>
-                                <img src="grandPlace.png" class="img-thumbnail text-center" />
+                                <img src="grandPlace.jpg" class="img-thumbnail text-center" />
                                 <p>A beautiful garden in the center of the city</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 event-block">
                                 <h3 class="event-header">European Parliament</h3>
-                                <img src="euParliament.png" class="img-thumbnail text-center" />
+                                <img src="euParliament.jpg" class="img-thumbnail text-center" />
                                 <p>One of the three seats of EU Parliament</p>
                             </div>
                         </div>
@@ -201,7 +212,7 @@
                         <div class="row">
                             <div class="col-md-12 event-block">
                                 <h3 class="event-header">Kayaking!</h3>
-                                <img src="kayaking.png" class="img-thumbnail text-center" />
+                                <img src="kayaking.jpg" class="img-thumbnail text-center" />
                                 <p>Two happy kayakers...We kayaked along the beautiful Dinant coastline for 12 km!</p>
                             </div>
                         </div>
@@ -211,12 +222,12 @@
                         <div class="row">
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">The Cathedral</h3>
-                                <img src="img08.png" class="img-thumbnail text-center" />
+                                <img src="img08.jpg" class="img-thumbnail text-center" />
                                 <p>A beautiful cathedral - really gives the one in Metz a run for its money!</p>
                             </div>
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">The Castle of Ghent!</h3>
-                                <img src="castle.png" class="img-thumbnail text-center" />
+                                <img src="castle.jpg" class="img-thumbnail text-center" />
                                 <p>A beautiful castle that is the prize fortune of Ghent</p>
                             </div>
                         </div>

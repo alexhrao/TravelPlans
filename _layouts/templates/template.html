@@ -30,7 +30,18 @@
                     } else {
                         startCarousel();
                     }
-                })
+                });
+                $('img').wrap(function() {
+                    return "<a href='" + $(this).attr("src") + "'></a>";
+                });
+                $('img').attr("src", function(idx, attr) {
+                    var src = attr;
+                    var last = attr.lastIndexOf(".");
+                    var ext = attr.substring(last + 1);
+                    src = src.substring(0, last);
+                    src = src + "_web." + ext;
+                    return src;
+                });
             });
 
             function stopCarousel() {
@@ -55,8 +66,8 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="https://alexhrao.github.io/TravelPlans">
-                            <img id="logo" src="../../favicon.ico" class="img-circle" />
-                        </a>
+                        <img id="logo" src="../../favicon.ico" class="img-circle" />
+                    </a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
