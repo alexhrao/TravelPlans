@@ -31,16 +31,19 @@
                         startCarousel();
                     }
                 });
-                $('img:not(#logo)').wrap(function() {
+                $('img:not(.no-link)').wrap(function() {
                     return "<a href='./source/" + $(this).attr("src") + "'></a>";
                 });
-                $('img:not(#logo)').attr("src", function(idx, attr) {
+                $('img:not(.no-web)').attr("src", function(idx, attr) {
                     var src = attr;
                     var last = attr.lastIndexOf(".");
                     var ext = attr.substring(last + 1);
                     src = src.substring(0, last);
                     src = src + "_web." + ext;
                     return src;
+                });
+                $('img.vr').wrap(function() {
+                    return "<a href='https://360player.io/p/" + $(this).attr("id") + "/'></a>";
                 });
             });
 
@@ -66,7 +69,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="https://alexhrao.github.io/TravelPlans">
-                        <img id="logo" src="../../favicon.ico" class="img-circle" />
+                        <img id="logo" src="../../favicon.ico" class="img-circle no-link no-web" />
                     </a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -201,9 +204,13 @@
                         <div class="row">
                             <div class="col-md-6 event-block col-md-offset-3">
                                 <h3 class="event-header">VR Shot of Brussels Center</h3>
+                                <img src="img02.jpg" class="img-thumbnail text-center vr no-link" id="DA4Xn8" />
+                                <!--
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <!-- <iframe class="col-md-12" src="https://360player.io/p/DA4Xn8/" width=560 height=315 frameborder="0" allowfullscreen data-token="DA4Xn8"></iframe> -->
+                                    <iframe class="col-md-12" src="https://360player.io/p/DA4Xn8/" width=560 height=315 frameborder="0" allowfullscreen data-token="DA4Xn8"></iframe>
                                 </div>
+                                -->
+                                <p>Click to view the city center in VR</p>
                             </div>
                         </div>
                     </div>
@@ -234,17 +241,20 @@
                         <div class="row">
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">VR Shot Atop the Castle</h3>
+                                <img src="img02.jpg" class="img-thumbnail text-center vr no-link" id="DA4Xn8" />
+                                <!--
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <!-- <iframe class="col-md-12" src="https://360player.io/p/DA4Xn8/" width=560 height=315 frameborder="0" allowfullscreen data-token="DA4Xn8"></iframe> -->
+                                    <iframe class="col-md-12" src="https://360player.io/p/DA4Xn8/" width=560 height=315 frameborder="0" allowfullscreen data-token="DA4Xn8"></iframe> 
                                 </div>
-                                <p>Picture taken over Ghent from the castle</p>
+                                -->
+                                <p>Picture taken over Ghent from the castle - click to view in 3D</p>
                             </div>
                             <div class="col-md-6 event-block">
                                 <h3 class="event-header">Piano Man</h3>
                                 <video width="100%" height="100%" controls>
                                     <source src="piano.mp4" type="video/mp4" /> Your browser does not support the video tag.
                                 </video>
-                                <p>Travelling piano man!</p>
+                                <p>Traveling piano man!</p>
                             </div>
                         </div>
                     </div>
