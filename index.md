@@ -33,12 +33,12 @@ Enjoy!
 ### [The Netherlands - 28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.txt "The Netherlands")
 - Amsterdam, Netherlands
 
-### [Greece - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Greece")
-- Athens, Greece
-
-### [Austria & Hungary - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Austria & Hungary")
+### [Austria & Hungary - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Austria & Hungary")
 - Vienna, Austria
 - Budapest, Hungary
+
+### [Greece - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Greece")
+- Athens, Greece
 
 ### [Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Germany")
 - Munich, Germany
@@ -48,7 +48,7 @@ Enjoy!
 - Copenhagen, Denmark
 - Stockholm, Sweden
 - Oslo, Norway
-- Helsinki, Finland
+- Reykjavik, Iceland
   
 ### [Spain - 09/11-12/11](https://alexhrao.github.io/TravelPlans/trips/11/Details.txt "Spain")
 - Barcelona, Spain
