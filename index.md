@@ -22,7 +22,7 @@ Enjoy!
 - Dinant, Belgium
 - Gent, Belgium
 
-### [Switzerland - 14/09-17/09](https://alexhrao.github.io/TravelPlans/trips/04/Details.txt "Switzerland")
+### [Switzerland - 14/09-17/09](https://alexhrao.github.io/TravelPlans/trips/04/Details.html "Switzerland")
 - Zurich, Switzerland
 - Interlaken, Switzerland
 
