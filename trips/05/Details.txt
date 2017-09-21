@@ -1,7 +1,7 @@
 Itinerary:
-    I. Metz, France - London, England {R}
-        1. [METZ VILLE - PARIS EST] (17:55-19:20) RESERVATION
-        2. [PARIS NORD - LONDON ST. PANCRAS] (21:12-22:39) RESERVATION
+    I. Metz, France - Paris, France - London, England {R-F}
+        1. [METZ VILLE - PARIS EST] (18:50-20:20) RESERVATION
+        2. [PARIS NORD - LONDON ST. PANCRAS] (07:13-08:32)
     II. London, England
         1. 21/09-23/09
             Keystone House Kings Cross
@@ -24,27 +24,27 @@ Itinerary:
     IX. Trafalgar Square
         1. Bustling Governmental Center
     X. London, England - Paris, France {S}
-        1. [LONDON ST. PANCRAS - PARIS NORD] (07:52-11:17)
+        1. [LONDON ST. PANCRAS - PARIS NORD] (06:18-09:47) RESERVATION
     XI. Eiffel Tower -> Paris
         1. Go up (via elevator) - allocate two hours for this!
     XII. Arc de Triomphe -> Paris
         1. Visit the arch of triumph, known the world over
     XIII. Paris, France - Metz, France {S}
-        1. [PARIS EST - METZ VILLE] (20:30-22:05)
+        1. [PARIS EST - METZ VILLE] (19:40-21:05) RESERVATION
 
 Transportation:
-    I. Metz, France - London, England {R}
-        1. [METZ VILLE - PARIS EST] (17:55-19:20) RESERVATION
-        2. [PARIS NORD - LONDON ST. PANCRAS] (21:12-22:39) RESERVATION
+    I. Metz, France - Paris, France - London, England {R-F}
+        1. [METZ VILLE - PARIS EST] (18:50-20:20) RESERVATION
+        2. [PARIS NORD - LONDON ST. PANCRAS] (07:13-08:32)
     II. London, England - Bletchley Park, England {F}
         1. [Victoria - Euston] (09:05-9:06) @ King's Cross Underground 
         2. [Euston - Bletchley] (09:13-09:49) @ London Midland
     III. Bletchley Park, England - London, England {F}
         1. [Bletchley - Euston] (13:46-14:27)
     IV. London, England - Paris, France {S}
-        1. [LONDON ST. PANCRAS - PARIS NORD] (07:52-11:17)
+        1. [LONDON ST. PANCRAS - PARIS NORD] (06:18-09:47) RESERVATION
     V. Paris, France - Metz, France {S}
-        1. [PARIS EST - METZ VILLE] (20:30-22:05)
+        1. [PARIS EST - METZ VILLE] (19:40-21:05) RESERVATION
 
 Lodging:
     I. London, England
