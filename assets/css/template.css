@@ -1,3 +1,4 @@
+/* Base */
 @media (min-width: 768px) and (max-width: 1450px) {
     .navbar-header {
         float: none;
@@ -10,16 +11,16 @@
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin: 7.5px -15px;
     }
-    .navbar-nav>li {
+    .navbar-nav > li {
         float: none;
     }
-    .navbar-nav>li>a {
+    .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -34,8 +35,6 @@
         overflow: hidden !important;
     }
 }
-
-/* Header */
 html {
     font-size: 16px;
 }
@@ -49,6 +48,8 @@ h1 {
     font-weight: 100;
     margin-bottom: 25px;
 }
+
+/* Header */
 #logo {
     width: 32px !important;
     height: 32px !important;
@@ -67,23 +68,17 @@ h1 {
     margin: 25px auto 100px auto;
     display: block;
 }
+
+/* Carousel */
 #togglePlay {
     margin: 10px auto 10px auto;
 }
-
-/* Event Block */
-.event-block p {
-    font-size: 30px;
-    font-weight: 300;
-}
-
-/* Item Block */
 .item img {
     max-height: 512px;
     margin: 0 auto;
 }
 
-/* Detail Block */
+/* Details */
 .detail-block {
     padding-top: 40px;
 }
@@ -91,7 +86,7 @@ h1 {
     max-height: 512px;
 }
 
-/* Day Blocks */
+/* Days */
 .day-header {
     font-size: 50px;
 }
@@ -111,4 +106,21 @@ h1 {
 }
 .day-block:nth-child(3n) {
     background-color: #A5291C;
+}
+
+/* Events */
+.event-block p {
+    font-size: 30px;
+    font-weight: 300;
+}
+.event-block > .youtube {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+ .youtube > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
 }
