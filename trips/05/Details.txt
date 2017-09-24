@@ -1,7 +1,7 @@
 Itinerary:
     I. Metz, France - Paris, France - London, England {R-F}
         1. [METZ VILLE - PARIS EST] (18:50-20:20) RESERVATION
-        2. [PARIS NORD - LONDON ST. PANCRAS] (07:13-08:32)
+        2. [PARIS NORD - LONDON ST. PANCRAS] (07:13-08:32) RESERVATION
     II. London, England
         1. 21/09-23/09
             Keystone House Kings Cross
@@ -35,7 +35,7 @@ Itinerary:
 Transportation:
     I. Metz, France - Paris, France - London, England {R-F}
         1. [METZ VILLE - PARIS EST] (18:50-20:20) RESERVATION
-        2. [PARIS NORD - LONDON ST. PANCRAS] (07:13-08:32)
+        2. [PARIS NORD - LONDON ST. PANCRAS] (07:13-08:32) RESERVATION
     II. London, England - Bletchley Park, England {F}
         1. [Victoria - Euston] (09:05-9:06) @ King's Cross Underground 
         2. [Euston - Bletchley] (09:13-09:49) @ London Midland

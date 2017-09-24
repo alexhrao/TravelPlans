@@ -26,21 +26,22 @@ Enjoy!
 - Zurich, Switzerland
 - Interlaken, Switzerland
 
-### [The UK - 21/09-24/09](https://alexhrao.github.io/TravelPlans/trips/05/Details.txt "The United Kingdom")
+### [The UK - 21/09-24/09](https://alexhrao.github.io/TravelPlans/trips/05/Details.html "The United Kingdom")
 - Paris, France
 - London, United Kingdom
 
 ### [The Netherlands - 28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.txt "The Netherlands")
 - Amsterdam, Netherlands
 
-### [Austria & Hungary - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Austria & Hungary")
+### [Central Germany - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Central Germany")
+- Frankfurt, Germany
+- Berlin, Germany
+
+### [Austria & Hungary - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Austria & Hungary")
 - Vienna, Austria
 - Budapest, Hungary
 
-### [Greece - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Greece")
-- Athens, Greece
-
-### [Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Germany")
+### [West Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "West Germany")
 - Munich, Germany
 - Stuttgart, Germany
 
@@ -60,6 +61,7 @@ Enjoy!
 - Prague, Czech Republic
 - Auschwitz, Poland
 
-### [Italy & Monaco - 30/11-03/12](https://alexhrao.github.io/TravelPlans/trips/14/Details.txt "Italy")
+### [Italy & Greece - 30/11-03/12](https://alexhrao.github.io/TravelPlans/trips/14/Details.txt "Italy")
 - Florence, Italy
+- Athens, Greece
 - Monaco, Monaco
