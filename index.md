@@ -26,14 +26,14 @@ Enjoy!
 - Zurich, Switzerland
 - Interlaken, Switzerland
 
-### [The UK & Paris - 21/09-24/09](https://alexhrao.github.io/TravelPlans/trips/05/Details.html "The United Kingdom")
+### [The UK - 21/09-24/09](https://alexhrao.github.io/TravelPlans/trips/05/Details.html "The United Kingdom")
 - Paris, France
 - London, United Kingdom
 
 ### [The Netherlands - 28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.txt "The Netherlands")
 - Amsterdam, Netherlands
 
-### [Germany - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Central Germany")
+### [Central Germany - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Central Germany")
 - Frankfurt, Germany
 - Berlin, Germany
 
@@ -41,7 +41,7 @@ Enjoy!
 - Vienna, Austria
 - Budapest, Hungary
 
-### [Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "West Germany")
+### [West Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "West Germany")
 - Munich, Germany
 - Stuttgart, Germany
 
