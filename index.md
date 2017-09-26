@@ -33,13 +33,13 @@ Enjoy!
 ### [The Netherlands - 28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.txt "The Netherlands")
 - Amsterdam, Netherlands
 
-### [Central Germany - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Central Germany")
-- Frankfurt, Germany
-- Berlin, Germany
-
-### [Austria & Hungary - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Austria & Hungary")
+### [Austria & Hungary - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Austria & Hungary")
 - Vienna, Austria
 - Budapest, Hungary
+
+### [Central Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Central Germany")
+- Frankfurt, Germany
+- Berlin, Germany
 
 ### [West Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "West Germany")
 - Munich, Germany
