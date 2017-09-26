@@ -29,9 +29,16 @@ Itinerary:
     X. Canals
         1. Amsterdam owns a very extensive network of canals.
     XI. Amsterdam, Netherlands - Metz, France {N}
-        1. [AMSTERDAM CENTRAAL - BRUXELLES-NORD] (13:52-16:55)
-        2. [BRUXELLES-NORD - LUXEMBOURG] (17:43-20:51)
-        3. [LUXEMBOURG - METZ VILLE] (21:38-22:27)
+        1. GET TO TRAIN STATION (08:21-09:26) {N} https://goo.gl/maps/Cwy5Z2GFU4A2
+        2. [AMSTERDAM CENTRAAL - BREDA] (10:07-11:15) {N}
+        3. [BREDA - BRUXELLES-NORD] (11:27-12:55) {N}
+        4. [BRUXELLES-NORD - ARLON] (13:43-16:28) {N}
+        ** PRIMARY **
+        5. [ARLON - LUXEMBOURG] (16:33-16:51) {N}
+        6. [LUXEMBOURG - METZ VILLE] (17:13-18:14) {N}
+        ** ALTERNATE **
+        5. [ARLON - LUXEMBOURG] (18:33-18:51) {N}
+        6. [LUXEMBOURG - METZ VILLE] (19:38-20:31) {N}
 
 Transportation:
     I. Metz, France - Amsterdam, Netherlands {F}
@@ -41,9 +48,16 @@ Transportation:
         4. [ROTTERDAM CENTRAL - AMSTERDAM CENTRAAL] (11:56-12:37)
         4. *[ROTTERDAM CENTRAL - AMSTERDAM CENTRAAL] (12:11-12:51)
     II. Amsterdam, Netherlands - Metz, France {N}
-        1. [AMSTERDAM CENTRAAL - BRUXELLES-NORD] (13:52-16:55)
-        2. [BRUXELLES-NORD - LUXEMBOURG] (17:43-20:51)
-        3. [LUXEMBOURG - METZ VILLE] (21:38-22:27)
+        1. GET TO TRAIN STATION (08:21-09:26) {N} https://goo.gl/maps/Cwy5Z2GFU4A2
+        2. [AMSTERDAM CENTRAAL - BREDA] (10:07-11:15) {N}
+        3. [BREDA - BRUXELLES-NORD] (11:27-12:55) {N}
+        4. [BRUXELLES-NORD - ARLON] (13:43-16:28) {N}
+        ** PRIMARY **
+        5. [ARLON - LUXEMBOURG] (16:33-16:51) {N}
+        6. [LUXEMBOURG - METZ VILLE] (17:13-18:14) {N}
+        ** ALTERNATE **
+        5. [ARLON - LUXEMBOURG] (18:33-18:51) {N}
+        6. [LUXEMBOURG - METZ VILLE] (19:38-20:31) {N}
 
 Lodging:
     I. Amsterdam
