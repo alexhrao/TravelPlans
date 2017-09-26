@@ -15,7 +15,7 @@ Enjoy!
 
 ### [Luxembourg - 31/08-03/09](https://alexhrao.github.io/TravelPlans/trips/02/Details.html "Luxembourg")
 - Vianden, Luxembourg
-- Luxembourg City, Luxembourg
+- Luxembourg, Luxembourg
 
 ### [Belgium - 07/09-10/09](https://alexhrao.github.io/TravelPlans/trips/03/Details.html "Belgium")
 - Brussels, Belgium
@@ -38,12 +38,12 @@ Enjoy!
 - Budapest, Hungary
 
 ### [West Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "West Germany")
-- Frankfurt, Germany
-- Berlin, Germany
-
-### [Central Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Central Germany")
 - Munich, Germany
 - Stuttgart, Germany
+
+### [Central Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Central Germany")
+- Frankfurt, Germany
+- Berlin, Germany
 
 ### [The Nordic Countries - 26/10-05/11](https://alexhrao.github.io/TravelPlans/trips/10/Details.txt "Nordic Countries")
 - Copenhagen, Denmark
