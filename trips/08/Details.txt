@@ -1,51 +1,40 @@
 Itinerary:
-    I. Metz, France - Vienna, Austria {R-F}
-        1. [METZ VILLE - LUXEMBOURG] (18:33-19:22)
-        2. [LUXEMBOURG - KOBLENZ HBF] (19:31-21:56)
-        3. [KOBLENZ HBF - WIEN MEIDLNIG] (22:17-08:11) RESERVATION
-    II. Vienna, Austria
-        1. 13/10-14/10
-            MEININGER Vienna Downtown Franz
-            Remembrandtstrasse 21, Vienna, Austria
-    III. Vienna, Austria - Budapest, Hungary {S}
-        1. [WIEN HBF - BUDAPEST-KELENFOELD] (08:39-11:02)
-    IV. Schonbrunn Palace -> Vienna
-        1. One of the most important architectural, cultural, and historical monuments in Vienna
-    V. Belvedere -> Vienna
-        1. 18th Century Palace with beautiful artwork
-    VI. Vienna, Austria - Budapest, Hungary {S}
-        1. [WIEN HBF - BUDAPEST-KELENFOELD] (08:39-11:02)
-    VII. Hungarian Parliament -> Budapest
-        1. The governing body of Hungary
-    VIII. Budapest, Hungary - Metz, France {S}
-        1. [BUDAPEST-KELENFOELD - LINZ HBF] (20:55-00:50)
-        2. [LINZ HBF - MUENCHEN HBF] (01:05-06:10)
-        3. [MUENCHEN HBF - STRASBOURG] (06:28-10:12)
-        4. [STRASBOURG - METZ VILLE] (12:49-14:15)
-        
+    I. Metz, France - Brussels, Belgium
+        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
+        2. [LUXEMBOURG - ARLON] (20:09-20:32)
+        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
+    II. Brussels, Belgium
+        1. 07/09-10/09
+            MEININGER Brussels City Center
+            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
+            Price: €22.00
+            Room: Standard 10 Bed Mixed Dorm
+    III. Brussels, Belgium - Metz, France
+        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
+        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
+
 Transportation:
-    I. Metz, France - Vienna, Austria {R-F}
-        1. [METZ VILLE - LUXEMBOURG] (18:33-19:22)
-        2. [LUXEMBOURG - KOBLENZ HBF] (19:31-21:56)
-        3. [KOBLENZ HBF - WIEN MEIDLNIG] (22:17-08:11) RESERVATION
-    II. Vienna, Austria - Budapest, Hungary {S}
-        1. [WIEN HBF - BUDAPEST-KELENFOELD] (08:39-11:02)
-    III. Budapest, Hungary - Metz, France {S}
-        1. [BUDAPEST-KELENFOELD - LINZ HBF] (20:55-00:50)
-        2. [LINZ HBF - MUENCHEN HBF] (01:05-06:10)
-        3. [MUENCHEN HBF - STRASBOURG] (06:28-10:12)
-        4. [STRASBOURG - METZ VILLE] (12:49-14:15)
+    I. Metz, France - Brussels, Belgium
+        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
+        2. [LUXEMBOURG - ARLON] (20:09-20:32)
+        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
+    II. Brussels, Belgium - Metz, France
+        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
+        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
 
 Lodging:
-    I. Vienna, Austria
-        1. 13/10-14/10
-            MEININGER Vienna Downtown Franz
-            Remembrandtstrasse 21, Vienna, Austria
+    I. Brussels, Belgium
+        1. 07/09-10/09
+            MEININGER Brussels City Center
+            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
+            Price: €22.00
+            Room: Standard 10 Bed Mixed Dorm
 
 Entertainment:
-    I. Schonbrunn Palace -> Vienna
-        1. One of the most important architectural, cultural, and historical monuments in Vienna
-    II. Belvedere -> Vienna
-        1. 18th Century Palace with beautiful artwork
-    III. Hungarian Parliament -> Budapest
-        1. The governing body of Hungary
+    I. Grand Place
+        1. A really beautiful place in Belgium - considered the most beautiful square in existence
+    II. European Union Government
+        1. The EU Government is here
+
+
+
