@@ -49,7 +49,6 @@ Enjoy!
 - Copenhagen, Denmark
 - Stockholm, Sweden
 - Oslo, Norway
-- Reykjavik, Iceland
   
 ### [Spain - 09/11-12/11](https://alexhrao.github.io/TravelPlans/trips/11/Details.txt "Spain")
 - Barcelona, Spain
