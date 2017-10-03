@@ -30,7 +30,7 @@ Enjoy!
 - Paris, France
 - London, United Kingdom
 
-### [The Netherlands - 28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.txt "The Netherlands")
+### [The Netherlands - 28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.html "The Netherlands")
 - Amsterdam, Netherlands
 
 ### [Austria & Hungary - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Austria & Hungary")
