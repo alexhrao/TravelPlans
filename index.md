@@ -37,12 +37,12 @@ Enjoy!
 - Vienna, Austria
 - Budapest, Hungary
 
-### [West Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "West Germany")
-- Munich, Germany
-
-### [Central Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Central Germany")
+### [Central Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Central Germany")
 - Frankfurt, Germany
 - Berlin, Germany
+
+### [West Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "West Germany")
+- Munich, Germany
 
 ### [The Nordic Countries - 26/10-05/11](https://alexhrao.github.io/TravelPlans/trips/10/Details.txt "Nordic Countries")
 - Copenhagen, Denmark
