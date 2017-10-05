@@ -1,47 +1,59 @@
 Itinerary:
     I. Metz, France - Vienna, Austria {R-F}
-        1. [METZ VILLE - LUXEMBOURG] (18:33-19:22)
+        1. [METZ VILLE - LUXEMBOURG] (18:16-19:16)
         2. [LUXEMBOURG - KOBLENZ HBF] (19:31-21:56)
         3. [KOBLENZ HBF - WIEN MEIDLNIG] (22:17-08:11) RESERVATION
     II. Vienna, Austria
         1. 06/10-07/10
-            MEININGER Vienna Downtown Franz
-            Remembrandtstrasse 21, Vienna, Austria
-    III. Vienna, Austria - Budapest, Hungary {S}
-        1. [WIEN HBF - BUDAPEST-KELENFOELD] (08:39-11:02)
-    IV. Schonbrunn Palace -> Vienna
+            Hostel Hartl
+            Schonbrunnerstrasse 203
+            Vienna, Austria
+            Room: Standard 6 Bed Mixed dorm Ensuite ($20.00)
+    III. Schonbrunn Palace -> Vienna
         1. One of the most important architectural, cultural, and historical monuments in Vienna
-    V. Belvedere -> Vienna
+    IV. Belvedere -> Vienna
         1. 18th Century Palace with beautiful artwork
-    VI. Vienna, Austria - Budapest, Hungary {S}
+    V. Vienna, Austria - Budapest, Hungary {S}
         1. [WIEN HBF - BUDAPEST-KELENFOELD] (08:39-11:02)
+    VI. Budapest, Hungary
+        1. 07/10-08/10
+            Wombats City Hostel
+            Kiraly utca 20
+            Budapest, Hungary
+            Room: 8 Bed Mixed dorm Ensuite ($15.00)
     VII. Hungarian Parliament -> Budapest
         1. The governing body of Hungary
-    VIII. Budapest, Hungary - Metz, France {S}
-        1. [BUDAPEST-KELENFOELD - LINZ HBF] (20:55-00:50)
-        2. [LINZ HBF - MUENCHEN HBF] (01:05-06:10)
-        3. [MUENCHEN HBF - STRASBOURG] (06:28-10:12)
-        4. [STRASBOURG - METZ VILLE] (12:49-14:15)
-        
+    VIII. Budapest, Hungary - Metz, France {N}
+        1. [BUDAPEST-KELENFOELD - MUENCHEN HBF] (09:36-16:31)
+        2. [MUENCHEN HBF - OFFENBURG] (16:47-20:31)
+        3. [OFFENBURG - STRASBOURG] (21:05-21:34)
+        4. [STRASBOURG - METZ VILLE] (22:08-22:56) RESERVATION
+
 Transportation:
     I. Metz, France - Vienna, Austria {R-F}
-        1. [METZ VILLE - LUXEMBOURG] (18:33-19:22)
+        1. [METZ VILLE - LUXEMBOURG] (18:16-19:16)
         2. [LUXEMBOURG - KOBLENZ HBF] (19:31-21:56)
         3. [KOBLENZ HBF - WIEN MEIDLNIG] (22:17-08:11) RESERVATION
     II. Vienna, Austria - Budapest, Hungary {S}
         1. [WIEN HBF - BUDAPEST-KELENFOELD] (08:39-11:02)
-    III. Budapest, Hungary - Metz, France {S}
-        1. [BUDAPEST-KELENFOELD - LINZ HBF] (20:55-00:50)
-        2. [LINZ HBF - MUENCHEN HBF] (01:05-06:10)
-        3. [MUENCHEN HBF - STRASBOURG] (06:28-10:12)
-        4. [STRASBOURG - METZ VILLE] (12:49-14:15)
+    III. Budapest, Hungary - Metz, France {N}
+        1. [BUDAPEST-KELENFOELD - MUENCHEN HBF] (09:36-16:31)
+        2. [MUENCHEN HBF - OFFENBURG] (16:47-20:31)
+        3. [OFFENBURG - STRASBOURG] (21:05-21:34)
+        4. [STRASBOURG - METZ VILLE] (22:08-22:56) RESERVATION
 
 Lodging:
     I. Vienna, Austria
         1. 13/10-14/10
             MEININGER Vienna Downtown Franz
             Remembrandtstrasse 21, Vienna, Austria
-
+    II. Budapest, Hungary
+        1. 07/10-08/10
+            Wombats City Hostel
+            Kiraly utca 20
+            Budapest, Hungary
+            Room: 8 Bed Mixed dorm Ensuite ($15.00)
+            
 Entertainment:
     I. Schonbrunn Palace -> Vienna
         1. One of the most important architectural, cultural, and historical monuments in Vienna
