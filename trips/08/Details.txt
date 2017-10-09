@@ -1,40 +1,47 @@
 Itinerary:
-    I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
-        2. [LUXEMBOURG - ARLON] (20:09-20:32)
-        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
-    II. Brussels, Belgium
-        1. 07/09-10/09
-            MEININGER Brussels City Center
-            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
-            Price: €22.00
-            Room: Standard 10 Bed Mixed Dorm
-    III. Brussels, Belgium - Metz, France
-        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
-        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
+    I. Metz, France - Cologne, Germany {R}
+        1. [METZ VILLE - LUXEMBOURG] (18:33-19:22) {R}
+        2. [LUXEMBOURG - KOBLENZ HBF] (19:31-21:56) {R}
+        3. [KOBLENZ HBF - KOELN HBF] (22:13-23:05) {R}
+    II. Cologne, Germany
+        1. 12/10-13/10
+            Cologne Downtown Hostel
+            Hohe Straße 30a, 50667 Köln, Cologne
+            Room: Standard 8 Bed Mixed Dorm (€26.00)
+    III. Cologne, German - Berlin, Germany {F}
+        1. [KOELN HBF - BERLIN HBF] (18:48-23:06) {F}
+    IV. Berlin, Germany
+        1. 13/10-15/10
+            Citystay Mitte
+            Rosenstrasse 16, Berlin, Germany
+            Room: 10 Bed Mixed Dorm (€23.10)
+    V. Berlin, Germany - Baden-Baden, Germany {N}
+        1. [BERLIN HBF - MANNHEIM HBF] (12:30-17:23) {N}
+        2. [MANNHEIM HBF - SAARBRUECKEN HBF] (17:39-19:12) {N}
+        3. [SAARBRUECKEN HBF - FORBACH] (19:16-19:26) {N}
+        4. [FORBACH - METZ VILLE] (19:33-20:20) {N}
 
 Transportation:
-    I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
-        2. [LUXEMBOURG - ARLON] (20:09-20:32)
-        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
-    II. Brussels, Belgium - Metz, France
-        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
-        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
+    I. Metz, France - Cologne, Germany {R}
+        1. [METZ VILLE - LUXEMBOURG] (18:33-19:22) {R}
+        2. [LUXEMBOURG - KOBLENZ HBF] (19:31-21:56) {R}
+        3. [KOBLENZ HBF - KOELN HBF] (22:13-23:05) {R}
+    II. Cologne, German - Berlin, Germany {F}
+        1. [KOELN HBF - BERLIN HBF] (18:48-23:06) {F}
+    III. Berlin, Germany - Baden-Baden, Germany {N}
+        1. [BERLIN HBF - MANNHEIM HBF] (12:30-17:23) {N}
+        2. [MANNHEIM HBF - SAARBRUECKEN HBF] (17:39-19:12) {N}
+        3. [SAARBRUECKEN HBF - FORBACH] (19:16-19:26) {N}
+        4. [FORBACH - METZ VILLE] (19:33-20:20) {N}
 
 Lodging:
-    I. Brussels, Belgium
-        1. 07/09-10/09
-            MEININGER Brussels City Center
-            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
-            Price: €22.00
-            Room: Standard 10 Bed Mixed Dorm
-
-Entertainment:
-    I. Grand Place
-        1. A really beautiful place in Belgium - considered the most beautiful square in existence
-    II. European Union Government
-        1. The EU Government is here
-
-
-
+    I. Cologne, Germany
+        1. 12/10-13/10
+            Cologne Downtown Hostel
+            Hohe Straße 30a, 50667 Köln, Cologne
+            Room: Standard 8 Bed Mixed Dorm (€26.00)
+    II. Berlin, Germany
+        1. 13/10-15/10
+            Citystay Mitte
+            Rosenstrasse 16, Berlin, Germany
+            Room: 10 Bed Mixed Dorm (€23.10)

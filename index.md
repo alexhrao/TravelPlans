@@ -41,8 +41,8 @@ Enjoy!
 - Frankfurt, Germany
 - Berlin, Germany
 
-### [West Germany - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "West Germany")
-- Munich, Germany
+### [Champagne - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Champagne")
+- Champagne, France
 
 ### [The Nordic Countries - 26/10-05/11](https://alexhrao.github.io/TravelPlans/trips/10/Details.txt "Nordic Countries")
 - Copenhagen, Denmark
