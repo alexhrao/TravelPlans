@@ -1,1 +1,4 @@
 *.mov
+assets/programs/Converter/Converter/bin/*
+assets/programs/Converter/Converter/obj/*
+assets/programs/Converter/.vs/*

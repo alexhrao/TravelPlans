@@ -4,12 +4,13 @@ namespace Converter
 {
     namespace Utility
     {
-        public interface ITransport
+        public class Transport
         {
             public DateTime DepartTime;
             public DateTime ArriveTime;
-            public string DepartStation;
-            public string ArriveStation;
+            public string DepartStation = "";
+            public string ArriveStation = "";
+            public bool IsReservation = false;
         }
     }
 }

@@ -1,14 +1,14 @@
-using System;
+﻿using System;
 
 namespace Converter
 {
-    namespace Data
+    namespace Utility
     {
-        public class Hostel: ILodging
+        public class Lodging
         {
             public DateTime ArriveTime;
             public DateTime DepartTime;
-            
+
             public String Name;
             public String Address;
             public String Phone;

@@ -16,7 +16,7 @@ namespace Converter
             public Reader(string path)
             {
                 this.FilePath = new Path(path);
-                foreach (string Line: File.ReadToEnd(path))
+                foreach (string Line in File.ReadToEnd(path))
                 {
                     Lines.Add(Line);
                 }
