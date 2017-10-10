@@ -37,8 +37,8 @@ Enjoy!
 - Vienna, Austria
 - Budapest, Hungary
 
-### [Central Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Central Germany")
-- Frankfurt, Germany
+### [Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Germany")
+- Cologne, Germany
 - Berlin, Germany
 
 ### [Champagne - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Champagne")
