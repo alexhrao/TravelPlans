@@ -13,23 +13,13 @@ namespace Converter
             // Arguments will be file paths.
             foreach (string path in args)
             {
+                Console.WriteLine("Processing File " + path + ":");
+                Console.WriteLine("\tParsing...");
                 Parser parser = new Parser(path);
+                Console.WriteLine("\tWriting...");
                 Writer writer = new Writer(path, parser);
-                int tripInd = 1;
-                foreach (Trip trip in parser.Transportation)
-                {
-                    Console.WriteLine(tripInd + ". " + trip.Name);
-                    int transInd = 1;
-                    foreach (Transport trans in trip.Transports)
-                    {
-                        Console.WriteLine("\t" + transInd + ". " + trans.DepartStation + " (" + trans.DepartTime.ToShortTimeString() + ")" +
-                            " -> " + trans.ArriveStation + " (" + trans.ArriveTime.ToShortTimeString() + ")" + 
-                            (trans.IsReservation ? " RESERVATION" : ""));
-                        transInd++;
-                    }
-                    tripInd++;
-                }
             }
+            Console.WriteLine("Finished. Press any key to exit...");
             Console.ReadKey();
         }
     }
