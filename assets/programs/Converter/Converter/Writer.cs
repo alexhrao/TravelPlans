@@ -1,5 +1,5 @@
 ﻿using System;
-
+using HtmlAgilityPack;
 namespace Converter
 {
     namespace Utility
@@ -8,7 +8,8 @@ namespace Converter
         {
             public Writer(string filePath, Parser parser)
             {
-
+                HtmlDocument document = new HtmlDocument();
+                // Write the parser information 
             }
         }
     }
