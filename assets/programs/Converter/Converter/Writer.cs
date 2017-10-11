@@ -1,5 +1,7 @@
 ﻿using System;
 using HtmlAgilityPack;
+using Converter.Properties;
+using System.IO;
 namespace Converter
 {
     namespace Utility
@@ -9,7 +11,12 @@ namespace Converter
             public Writer(string filePath, Parser parser)
             {
                 HtmlDocument document = new HtmlDocument();
-                // Write the parser information 
+                document.LoadHtml(Resources.template);
+                // Write trains first:
+                
+
+                string newPath = Path.GetDirectoryName(filePath) + Path.DirectorySeparatorChar + "Summary.html";
+                File.WriteAllText(newPath, document.DocumentNode.OuterHtml);
             }
         }
     }
