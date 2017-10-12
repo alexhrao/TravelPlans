@@ -6,14 +6,15 @@ namespace Converter
     {
         public class Lodging
         {
-            public DateTime ArriveTime;
-            public DateTime DepartTime;
+            public DateTime ArriveDate;
+            public DateTime DepartDate;
 
-            public String Name;
-            public String Address;
-            public String Phone;
-            public long Price;
-            public String RoomType;
+            public string Location;
+            public string Name;
+            public string Address;
+            public string Phone;
+            public double Price;
+            public string RoomType;
         }
     }
 }

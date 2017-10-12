@@ -12,10 +12,15 @@ namespace Converter
             private Reader Input;
             public readonly List<Trip> Transportation = new List<Trip>();
             public readonly List<Lodging> Lodgings = new List<Lodging>();
-            public Parser(String filePath)
+            public Parser(string filePath)
             {
                 Input = new Reader(filePath);
+                ParseTransportation();
+                ParseLodging();
+            }
 
+            private void ParseTransportation()
+            {
                 // Look for Transportation
                 int transInd = Input.Lines.FindIndex(ln => ln.Trim().Equals("Transportation:"));
                 int lodgeInd = Input.Lines.FindIndex(ln => ln.Trim().Equals("Lodging:"));
@@ -24,6 +29,10 @@ namespace Converter
                 {
                     // Find first trip part, then move on to next
                     string line = Input.Lines[i].Trim();
+                    if (line.Length == 0)
+                    {
+                        return;
+                    }
                     Regex regex = new Regex("^[^0-9]", RegexOptions.None);
                     MatchCollection matches = regex.Matches(line);
                     if (matches.Count > 0)
@@ -41,7 +50,7 @@ namespace Converter
                             {
                                 // Add a new train (will add more later)
                                 string departStation = line.Substring(
-                                    line.IndexOf('[') + 1, 
+                                    line.IndexOf('[') + 1,
                                     line.IndexOf(" - ") - line.IndexOf('[') - 1);
                                 string arriveStation = line.Substring(
                                     line.IndexOf(" - ") + 3,
@@ -74,6 +83,54 @@ namespace Converter
                     else
                     {
                         i++;
+                    }
+                }
+            }
+            private void ParseLodging()
+            {
+                // Look for Lodging
+                int lodgeInd = Input.Lines.FindIndex(ln => ln.Trim().Equals("Lodging:"));
+                // Look for Entertainment. If not found, then nothing after
+                int enterInd = Input.Lines.FindIndex(ln => ln.Trim().Equals("Entertainment:"));
+                if (enterInd < 0)
+                {
+                    enterInd = Input.Lines.Count - 1;
+                }
+                else
+                {
+                    for (int i = lodgeInd + 1; i < enterInd; i++)
+                    {
+                        string line = Input.Lines[i].Trim();
+                        // Line of form <#>. <LocationName> has this form:
+                        // NO space before ., 
+                        Regex regex = new Regex("^\\S?[^0-9]+[.]\\s+", RegexOptions.None);
+                        MatchCollection matches = regex.Matches(line);
+                        if (matches.Count > 0)
+                        {
+                            // line is name of location
+                            // For now, only add the name of the hostel (format is uneven) and dates
+                            // Dates will be next line (after ##)
+                            // This will be next line;
+                            // add the new lodging
+                            i++;
+                            string dates = Input.Lines[i].Trim();
+                            dates = dates.Substring(dates.IndexOf('.') + 1).Trim();
+                            string startDate = dates.Substring(0, dates.IndexOf('-'));
+                            string endDate = dates.Substring(dates.IndexOf('-') + 1);
+                            DateTime start = new DateTime(2017, Convert.ToInt32(startDate.Substring(3)), Convert.ToInt32(startDate.Substring(0, 2)));
+                            DateTime end = new DateTime(2017, Convert.ToInt32(endDate.Substring(3)), Convert.ToInt32(endDate.Substring(0, 2)));
+
+                            i++;
+                            string name = Input.Lines[i].Trim();
+                            Hostel hostel = new Hostel
+                            {
+                                Location = line.Substring(line.IndexOf('.') + 2),
+                                Name = name,
+                                ArriveDate = start,
+                                DepartDate = end
+                            };
+                            Lodgings.Add(hostel);
+                        }
                     }
                 }
             }

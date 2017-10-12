@@ -1,6 +1,7 @@
 ﻿using System;
 using Converter.Data;
 using Converter.Utility;
+using System.IO;
 
 namespace Converter
 {
@@ -8,11 +9,17 @@ namespace Converter
     {
         static void Main(string[] args)
         {
-            args = new string[1];
-            args[0] = "C:/Users/alexhrao/Documents/TravelPlans/trips/07/Details.txt";
             // Arguments will be file paths.
+            // if directory, search for ALL Details.txt
             foreach (string path in args)
             {
+                FileAttributes attributes = File.GetAttributes(path);
+                if (attributes.HasFlag(FileAttributes.Directory))
+                {
+                    // Search directory for all files, call ourself with these.
+                    args = Directory.GetFiles(path, "Details.txt", SearchOption.AllDirectories);
+                    Main(args);
+                }
                 Console.WriteLine("Processing File " + path + ":");
                 Console.WriteLine("\tParsing...");
                 Parser parser = new Parser(path);

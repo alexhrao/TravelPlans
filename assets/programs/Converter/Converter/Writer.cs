@@ -33,6 +33,18 @@ namespace Converter
                     trips.AppendChild(tripNode);
                 }
 
+                HtmlNode lodgings = document.GetElementbyId("lodging");
+                foreach (Lodging lodging in parser.Lodgings)
+                {
+                    HtmlNode lodgeNode = HtmlNode.CreateNode("<div class=\"lodging\"></div>");
+                    lodgeNode.AppendChild(HtmlNode.CreateNode("<h2>" + HttpUtility.HtmlEncode(lodging.Location) + "</h2>"));
+                    lodgeNode.AppendChild(HtmlNode.CreateNode("<p>" + HttpUtility.HtmlEncode(lodging.Name) + " (" + 
+                        HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) +
+                        " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
+                        HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) + ")</p>"));
+                    lodgings.AppendChild(lodgeNode);
+                }
+
                 string newPath = Path.GetDirectoryName(filePath) + Path.DirectorySeparatorChar + "Summary.html";
                 File.WriteAllText(newPath, document.DocumentNode.OuterHtml);
             }
