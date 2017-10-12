@@ -33,33 +33,33 @@ Enjoy!
 ### [The Netherlands - 28/09-01/10](https://alexhrao.github.io/TravelPlans/trips/06/Details.html "The Netherlands")
 - Amsterdam, Netherlands
 
-### [Austria & Hungary - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.txt "Austria & Hungary")
+### [Austria & Hungary - 05/10-08/10](https://alexhrao.github.io/TravelPlans/trips/07/Details.html "Austria & Hungary")
 - Vienna, Austria
 - Budapest, Hungary
 
-### [Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.txt "Germany")
+### [Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Summary.html "Germany")
 - Cologne, Germany
 - Berlin, Germany
 
-### [Champagne - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.txt "Champagne")
+### [Champagne - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Summary.html "Champagne")
 - Champagne, France
 
-### [The Nordic Countries - 26/10-05/11](https://alexhrao.github.io/TravelPlans/trips/10/Details.txt "Nordic Countries")
+### [The Nordic Countries - 26/10-05/11](https://alexhrao.github.io/TravelPlans/trips/10/Summary.html "Nordic Countries")
 - Copenhagen, Denmark
 - Stockholm, Sweden
 - Oslo, Norway
   
-### [Spain - 09/11-12/11](https://alexhrao.github.io/TravelPlans/trips/11/Details.txt "Spain")
+### [Spain - 09/11-12/11](https://alexhrao.github.io/TravelPlans/trips/11/Summary.html "Spain")
 - Barcelona, Spain
   
-### [France - 16/11-19/11](https://alexhrao.github.io/TravelPlans/trips/12/Details.txt "France - Part II")
+### [France - 16/11-19/11](https://alexhrao.github.io/TravelPlans/trips/12/Summary.html "France - Part II")
 - Normandy, France
     
-### [Poland & Czech Republic - 23/11-26/11](https://alexhrao.github.io/TravelPlans/trips/13/Details.txt "Poland & Czech Republic")
+### [Poland & Czech Republic - 23/11-26/11](https://alexhrao.github.io/TravelPlans/trips/13/Summary.html "Poland & Czech Republic")
 - Prague, Czech Republic
 - Auschwitz, Poland
 
-### [Italy & Greece - 30/11-03/12](https://alexhrao.github.io/TravelPlans/trips/14/Details.txt "Italy")
+### [Italy & Greece - 30/11-03/12](https://alexhrao.github.io/TravelPlans/trips/14/Summary.html "Italy")
 - Florence, Italy
 - Athens, Greece
 - Monaco, Monaco
