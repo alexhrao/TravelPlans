@@ -9,8 +9,13 @@ namespace Converter
     {
         static void Main(string[] args)
         {
-            // Arguments will be file paths.
-            // if directory, search for ALL Details.txt
+            Process(args);
+            Console.WriteLine("Finished. Press any key to exit...");
+            Console.ReadKey();
+        }
+
+        static void Process(string[] args)
+        {
             foreach (string path in args)
             {
                 FileAttributes attributes = File.GetAttributes(path);
@@ -18,16 +23,17 @@ namespace Converter
                 {
                     // Search directory for all files, call ourself with these.
                     args = Directory.GetFiles(path, "Details.txt", SearchOption.AllDirectories);
-                    Main(args);
+                    Process(args);
                 }
-                Console.WriteLine("Processing File " + path + ":");
-                Console.WriteLine("\tParsing...");
-                Parser parser = new Parser(path);
-                Console.WriteLine("\tWriting...");
-                Writer writer = new Writer(path, parser);
+                else
+                {
+                    Console.WriteLine("Processing File " + path + ":");
+                    Console.WriteLine("\tParsing...");
+                    Parser parser = new Parser(path);
+                    Console.WriteLine("\tWriting...");
+                    Writer writer = new Writer(path, parser);
+                }
             }
-            Console.WriteLine("Finished. Press any key to exit...");
-            Console.ReadKey();
         }
     }
 }

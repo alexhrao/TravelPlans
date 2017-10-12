@@ -65,13 +65,30 @@ namespace Converter
                                 DateTime depart = new DateTime(2017, 01, 01, Convert.ToInt32(startTime.Substring(0, 2)), Convert.ToInt32(startTime.Substring(3, 2)), 0);
                                 DateTime arrive = new DateTime(2017, 01, 01, Convert.ToInt32(endTime.Substring(0, 2)), Convert.ToInt32(endTime.Substring(3, 2)), 0);
                                 Boolean isReservation = line.ToUpper().Contains("RESERVATION");
+                                line = line.Replace("RESERVATION", "");
+                                string notes = "";
+                                int noteInd = line.IndexOf('}');
+                                if (noteInd <= 0)
+                                {
+                                    noteInd = line.IndexOf(')');
+                                }
+                                if (noteInd <= 0)
+                                {
+                                    notes = "";
+                                }
+                                else
+                                {
+                                    notes = line.Substring(noteInd + 1);
+                                }
+                                
                                 Train train = new Train
                                 {
                                     DepartStation = departStation,
                                     ArriveStation = arriveStation,
                                     DepartTime = depart,
                                     ArriveTime = arrive,
-                                    IsReservation = isReservation
+                                    IsReservation = isReservation,
+                                    Notes = notes
                                 };
                                 i++;
                                 line = Input.Lines[i].Trim();

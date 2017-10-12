@@ -12,6 +12,7 @@ namespace Converter
             public string DepartStation = "";
             public string ArriveStation = "";
             public bool IsReservation = false;
+            public string Notes = "";
         }
     }
 }

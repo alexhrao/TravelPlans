@@ -23,10 +23,12 @@ namespace Converter
                     HtmlNode tripList = HtmlNode.CreateNode("<ol></ol>");
                     foreach (Transport transport in trip.Transports)
                     {
-                        HtmlNode transportNode = HtmlNode.CreateNode("<li>" +
+                        HtmlNode transportNode = HtmlNode.CreateNode("<li><h3>" +
                             HttpUtility.HtmlEncode(transport.DepartStation) + " (" + transport.DepartTime.ToShortTimeString() + ") " +
                             " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
-                            HttpUtility.HtmlEncode(transport.ArriveStation) + " (" + transport.ArriveTime.ToShortTimeString() + ")</li>");
+                            HttpUtility.HtmlEncode(transport.ArriveStation) + " (" + transport.ArriveTime.ToShortTimeString() + ")</h3></li>");
+                        HtmlNode noteNode = HtmlNode.CreateNode("<p class=\"notes\">" + HttpUtility.HtmlEncode(transport.Notes) + "</p>");
+                        transportNode.AppendChild(noteNode);
                         tripList.AppendChild(transportNode);
                     }
                     tripNode.AppendChild(tripList);

@@ -30,19 +30,14 @@ Itinerary:
             A vast network of underground tunnels
 Transportation:
     I. Metz, France - Vianden, Luxembourg
-        1. Metz, France - Ettelbruck, Luxembourg
-            a. [METZ VILLE - LUXEMBOURG] (09:07-09:52) RESERVATION
-            b. [LUXEMBOURG - ETTELBRUCK] (10:18-10:43)
-        2. Ettlebruck, Luxembourg - Vianden, Luxembourg
-            a. Line 570 [ETTELBRUCK, GARE ROUTIERE 2 - VIANDEN, BRECK] (11:18-11:43)
+        1. [METZ VILLE - LUXEMBOURG] (09:07-09:52) RESERVATION
+        2. [LUXEMBOURG - ETTELBRUCK] (10:18-10:43)
+        3. [ETTELBRUCK, GARE ROUTIERE 2 - VIANDEN, BRECK] (11:18-11:43)
     II. Vianden, Luxembourg - Luxembourg City, Luxembourg
-        1. Vianden, Luxembourg - Ettlebruck, Luxembourg
-            a. Line 570 [VIANDEN, BRECK - ETTELBRUCK, GARE ROUTIERE 2] (18:44-19:12)
-        2. Ettlebruck, Luxembourg - Luxembourg City, Luxembourg
-            a. [ETTLEBRUCK - LUXEMBOURG] (19:57-20:36)
+        1. [VIANDEN, BRECK - ETTELBRUCK, GARE ROUTIERE 2] (18:44-19:12)
+        2. [ETTLEBRUCK - LUXEMBOURG] (19:57-20:36)
     III. Luxembourg City, Luxembourg - Metz, France
-        1. Luxembourg City, Luxembourg - Metz, France
-            a. [LUXEMBOURG - METZ VILLE] (10:13-11:17)
+        1. [LUXEMBOURG - METZ VILLE] (10:13-11:17)
 Lodging:
     I. Luxembourg City, Luxembourg
         1. 01/09-03/09

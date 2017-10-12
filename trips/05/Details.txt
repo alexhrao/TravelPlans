@@ -37,7 +37,7 @@ Transportation:
         1. [METZ VILLE - PARIS EST] (18:50-20:20) RESERVATION
         2. [PARIS NORD - LONDON ST. PANCRAS] (07:13-08:32) RESERVATION
     II. London, England - Bletchley Park, England {F}
-        1. [Victoria - Euston] (09:05-9:06) @ King's Cross Underground 
+        1. [Victoria - Euston] (09:05-09:06) @ King's Cross Underground 
         2. [Euston - Bletchley] (09:13-09:49) @ London Midland
     III. Bletchley Park, England - London, England {F}
         1. [Bletchley - Euston] (13:46-14:27)
