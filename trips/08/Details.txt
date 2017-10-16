@@ -28,7 +28,7 @@ Transportation:
         3. [KOBLENZ HBF - KOELN HBF] (22:13-23:05) {R}
     II. Cologne, German - Berlin, Germany {F}
         1. [KOELN HBF - BERLIN HBF] (18:48-23:06) {F}
-    III. Berlin, Germany - Baden-Baden, Germany {N}
+    III. Berlin, Germany - Metz, France {N}
         1. [BERLIN HBF - MANNHEIM HBF] (12:30-17:23) {N}
         2. [MANNHEIM HBF - SAARBRUECKEN HBF] (17:39-19:12) {N}
         3. [SAARBRUECKEN HBF - FORBACH] (19:16-19:26) {N}

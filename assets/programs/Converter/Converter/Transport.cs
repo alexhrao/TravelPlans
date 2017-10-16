@@ -9,7 +9,7 @@ namespace Converter
         {
             public DateTime DepartTime;
             public DateTime ArriveTime;
-            public string DepartStation = "";
+            public string DepartStation;
             public string ArriveStation = "";
             public bool IsReservation = false;
             public string Notes = "";

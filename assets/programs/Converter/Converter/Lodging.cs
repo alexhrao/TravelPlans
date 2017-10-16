@@ -1,5 +1,5 @@
-﻿using System;
-
+using System;
+using System.Collections.Generic;
 namespace Converter
 {
     namespace Utility
@@ -15,6 +15,7 @@ namespace Converter
             public string Phone;
             public double Price;
             public string RoomType;
+            public List<string> Notes;
         }
     }
 }

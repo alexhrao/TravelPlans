@@ -1,40 +1,24 @@
 Itinerary:
-    I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
-        2. [LUXEMBOURG - ARLON] (20:09-20:32)
-        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
-    II. Brussels, Belgium
-        1. 07/09-10/09
-            MEININGER Brussels City Center
-            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
-            Price: €22.00
-            Room: Standard 10 Bed Mixed Dorm
-    III. Brussels, Belgium - Metz, France
-        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
-        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
 
 Transportation:
-    I. Metz, France - Brussels, Belgium
-        1. [METZ VILLE - LUXEMBOURG] (19:09-19:51) RESERVATION
-        2. [LUXEMBOURG - ARLON] (20:09-20:32)
-        3. [ARLON - BRUXELLES-CENTRAL] (20:32-23:22)
-    II. Brussels, Belgium - Metz, France
-        1. [BRUXELLES-CENTRAL - LUXEMBOURG] (16:37-19:51)
-        2. [LUXEMBOURG - METZ VILLE] (20:03-20:48)
+    I. Metz, France - Prague, Czech Republic {R-F}
+        1. [METZ VILLE - FORBACH] (19:38-20:26) {R}
+        2. [FORBACH - MANNHEIM HBF] (20:49-22:17) {R} RESERVATION
+        3. [MANNHEIM HBF - NAUMBURG HBF] (23:59-04:14) {R-F} RESERVATION
+        4. [NAUMBURG HBF - LEIPZIG HBF] (04:44-05:39) {F}
+        5. [LEIPZIG HBF - PRAGUE HLAVNI NADRAZI] (05:55-09:27) {F}
+    II. Prague, Czech Republic - Auschwitz, Poland {S}
+        1. [PRAGUE HLAVNI NADRAZI - KATOWICE] (06:22-11:31) {S} RESERVATION
+        2. [KATOWICE - OSWIECIM] (12:46-13:35) {S} RESERVATION
+    III. Auschwitz, Poland - Metz, France {S-N}
+        1. [OSWIECIM - WIEN HBF] (23:42-06:55) {S-N} RESERVATION
+        2. [WIEN HBF - SALZBURG HBF] (07:30-09:52) {N}
+        3. [SALZBURG HBF - STUTTGART HBF] (10:00-13:59) {N}
+        4. [STUTTGART HBF - STRASBOURG] (14:54-16:13) {N} RESERVATION
+        5. [STRASBOURG - METZ VILLE] (17:49-19:24) {N}
 
 Lodging:
-    I. Brussels, Belgium
-        1. 07/09-10/09
-            MEININGER Brussels City Center
-            Quai du Hainut / Henegouwenkaai 33, 1080 Brussels, Brussels
-            Price: €22.00
-            Room: Standard 10 Bed Mixed Dorm
-
+    I. Prague, Czech Republic
+        1. 24/11-25/11
+        
 Entertainment:
-    I. Grand Place
-        1. A really beautiful place in Belgium - considered the most beautiful square in existence
-    II. European Union Government
-        1. The EU Government is here
-
-
-

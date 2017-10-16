@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Converter.Data;
@@ -48,6 +48,17 @@ namespace Converter
                             Regex num = new Regex("^[0-9]", RegexOptions.None);
                             while (num.Matches(line).Count > 0)
                             {
+                                bool isPlane = false;
+                                bool isBus = false;
+                                if (line.Contains(" AIRPLANE [")) {
+                                    isPlane = true;
+                                    line = line.Replace(" AIRPLANE ", " ");
+                                }
+                                else if (line.Contains(" BUS ["))
+                                {
+                                    isBus = true;
+                                    line = line.Replace(" BUS ", " ");
+                                }
                                 // Add a new train (will add more later)
                                 string departStation = line.Substring(
                                     line.IndexOf('[') + 1,
@@ -55,7 +66,6 @@ namespace Converter
                                 string arriveStation = line.Substring(
                                     line.IndexOf(" - ") + 3,
                                     line.IndexOf(']') - line.IndexOf(" - ") - 3);
-                                // TODO: Get actual date (not just time??)
                                 string startTime = line.Substring(
                                     line.LastIndexOf('(') + 1,
                                     line.LastIndexOf('-') - line.LastIndexOf('(') - 1);
@@ -80,19 +90,46 @@ namespace Converter
                                 {
                                     notes = line.Substring(noteInd + 1);
                                 }
-                                
-                                Train train = new Train
+                                Transportation transport;
+                                if (isPlane)
                                 {
-                                    DepartStation = departStation,
-                                    ArriveStation = arriveStation,
-                                    DepartTime = depart,
-                                    ArriveTime = arrive,
-                                    IsReservation = isReservation,
-                                    Notes = notes
-                                };
+                                    transport = new Plane
+                                    {
+                                        DepartStation = departStation,
+                                        ArriveStation = arriveStation,
+                                        DepartTime = depart,
+                                        ArriveTime = arrive,
+                                        IsReservation = isReservation,
+                                        Notes = notes
+                                    };
+                                }
+                                else if (isBus)
+                                {
+                                    transport = new Bus
+                                    {
+                                        DepartStation = departStation,
+                                        ArriveStation = arriveStation,
+                                        DepartTime = depart,
+                                        ArriveTime = arrive,
+                                        IsReservation = isReservation,
+                                        Notes = notes
+                                    };
+                                }
+                                else
+                                {
+                                    transport = new Train
+                                    {
+                                        DepartStation = departStation,
+                                        ArriveStation = arriveStation,
+                                        DepartTime = depart,
+                                        ArriveTime = arrive,
+                                        IsReservation = isReservation,
+                                        Notes = notes
+                                    };   
+                                }
                                 i++;
                                 line = Input.Lines[i].Trim();
-                                trip.Transports.Add(train);
+                                trip.Transports.Add(transport);
                             }
                             Transportation.Add(trip);
                         }
@@ -111,7 +148,8 @@ namespace Converter
                 int enterInd = Input.Lines.FindIndex(ln => ln.Trim().Equals("Entertainment:"));
                 if (enterInd < 0)
                 {
-                    enterInd = Input.Lines.Count - 1;
+                    enterInd = Input.Lines.Count;
+                    Input.Lines.Add("Entertainment:");
                 }
                 else
                 {
@@ -136,17 +174,47 @@ namespace Converter
                             string endDate = dates.Substring(dates.IndexOf('-') + 1);
                             DateTime start = new DateTime(2017, Convert.ToInt32(startDate.Substring(3)), Convert.ToInt32(startDate.Substring(0, 2)));
                             DateTime end = new DateTime(2017, Convert.ToInt32(endDate.Substring(3)), Convert.ToInt32(endDate.Substring(0, 2)));
-
                             i++;
                             string name = Input.Lines[i].Trim();
-                            Hostel hostel = new Hostel
+                            boolean isAir = false;
+                            if (name.Equals("AIRBNB"))
                             {
-                                Location = line.Substring(line.IndexOf('.') + 2),
-                                Name = name,
-                                ArriveDate = start,
-                                DepartDate = end
-                            };
-                            Lodgings.Add(hostel);
+                                isAir = true;
+                                i++;
+                                name = Input.Lines[i].Trim();
+                            }
+                            // Notes will be every line after that has SAME indentation.
+                            int numIndent = Input.Lines[i].Length - Input.Lines[i].TrimStart().Length;
+                            List<string> notes = new List<string>();
+                            while ((Input.Lines[i].Length - Input.Lines[i].TrimStart().Length) == numIndent)
+                            {
+                                notes.Add(Input.Lines[i].Trim());
+                                i++;
+                            }
+                            Lodging lodging;
+                            if (isAir)
+                            {
+                                lodging = new AirBnb
+                                {
+                                    Location = line.Substring(line.IndexOf('.') + 2),
+                                    Name = "AirBNB",
+                                    ArriveDate = start,
+                                    DepartDate = end,
+                                    Notes = notes
+                                };
+                            }
+                            else
+                            {
+                                lodging = new Hostel
+                                {
+                                    Location = line.Substring(line.IndexOf('.') + 2),
+                                    Name = name,
+                                    ArriveDate = start,
+                                    DepartDate = end,
+                                    Notes = notes
+                                };
+                            }
+                            Lodgings.Add(lodging);
                         }
                     }
                 }
