@@ -20,5 +20,3 @@ Transportation:
 Lodging:
     I. Prague, Czech Republic
         1. 24/11-25/11
-        
-Entertainment:
