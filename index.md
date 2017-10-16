@@ -37,7 +37,7 @@ Enjoy!
 - Vienna, Austria
 - Budapest, Hungary
 
-### [Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Summary.html "Germany")
+### [Germany - 12/10-15/10](https://alexhrao.github.io/TravelPlans/trips/08/Details.html "Germany")
 - Cologne, Germany
 - Berlin, Germany
 
