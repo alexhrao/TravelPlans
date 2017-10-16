@@ -3,6 +3,8 @@ using HtmlAgilityPack;
 using Converter.Properties;
 using System.IO;
 using System.Web;
+using Converter.Data;
+using System.Text.RegularExpressions;
 
 namespace Converter
 {
@@ -10,8 +12,10 @@ namespace Converter
     {
         public class Writer
         {
+            Parser Parser;
             public Writer(string filePath, Parser parser)
             {
+                Parser = parser;
                 HtmlDocument document = new HtmlDocument();
                 document.LoadHtml(Resources.template);
                 // Write trains first:
@@ -52,7 +56,7 @@ namespace Converter
                                 " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
                                 HttpUtility.HtmlEncode(transport.ArriveStation) + " (" + transport.ArriveTime.ToShortTimeString() + ")</h3></li>");
                         }
-                        HtmlNode noteNode = HtmlNode.CreateNode("<p class=\"notes\">" + HttpUtility.HtmlEncode(transport.Notes) + "</p>");
+                        HtmlNode noteNode = HtmlNode.CreateNode("<p class=\"notes\">" + Encode(HttpUtility.HtmlEncode(transport.Notes)) + "</p>");
                         transportNode.AppendChild(noteNode);
                         tripList.AppendChild(transportNode);
                     }
@@ -64,29 +68,39 @@ namespace Converter
                 foreach (Lodging lodging in parser.Lodgings)
                 {
                     HtmlNode lodgeNode = HtmlNode.CreateNode("<div class=\"lodging\"></div>");
+                    lodgeNode.AppendChild(HtmlNode.CreateNode("<h2>" + HttpUtility.HtmlEncode(lodging.Location) + "</h2>"));
                     if (lodging is AirBnb)
                     {
-                        lodgeNode.AppendChild(HtmlNode.CreateNode("<h2>AirBnB</h2>"));   
+                        lodgeNode.AppendChild(HtmlNode.CreateNode(@"<h3><i class=""fa fa-home""></i> " + HttpUtility.HtmlEncode(lodging.Name) + " (" +
+                            HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) +
+                            " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
+                            HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) + ")</h3>"));
                     }
                     else
                     {
-                        lodgeNode.AppendChild(HtmlNode.CreateNode("<h2>Hostel</h2>"));
+                        lodgeNode.AppendChild(HtmlNode.CreateNode(@"<h3><i class=""fa fa-hotel""></i> " + HttpUtility.HtmlEncode(lodging.Name) + " (" +
+                            HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) +
+                            " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
+                            HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) + ")</h3>"));
                     }
-                    lodgeNode.AppendChild(HtmlNode.CreateNode("<h2>" + HttpUtility.HtmlEncode(lodging.Location) + "</h2>"));
-                    lodgeNode.AppendChild(HtmlNode.CreateNode("<h3>" + HttpUtility.HtmlEncode(lodging.Name) + " (" + 
-                        HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) +
-                        " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
-                        HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) + ")</h3>"));
                     for (int i = 0; i < lodging.Notes.Count; i++)
                     {
-                        lodging.Notes[i] = HttpUtility.HtmlEncode(lodging.Notes[i]);
+                        lodging.Notes[i] = Encode(HttpUtility.HtmlEncode(lodging.Notes[i]));
                     }
                     string Notes = String.Join("<br />", lodging.Notes.ToArray());
-                    lodgeNode.AppendChild("<p>" + Notes + "</p>");
+                    lodgeNode.AppendChild(HtmlNode.CreateNode("<p>" + Notes + "</p>"));
                     lodgings.AppendChild(lodgeNode);
                 }
                 string newPath = Path.GetDirectoryName(filePath) + Path.DirectorySeparatorChar + "Summary.html";
                 File.WriteAllText(newPath, document.DocumentNode.OuterHtml);
+            }
+
+            private string Encode(string line)
+            {
+                // Look through line, if there exists any links, wrap in <a>
+                // Find URL:
+                Regex regex = new Regex(@"^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$", RegexOptions.IgnoreCase);
+                return regex.Replace(line.Trim(), (match) => @"<a href=""" + match.Value + @""">" + match.Value + "</a>");
             }
         }
     }

@@ -1,8 +1,8 @@
 using System;
-using Converter.Data;
+using Converter.Utility;
 namespace Converter
 {
-    namespace Utility
+    namespace Data
     {
         public class Bus: Transport
         {

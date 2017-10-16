@@ -67,11 +67,11 @@ namespace Converter
                                     line.IndexOf(" - ") + 3,
                                     line.IndexOf(']') - line.IndexOf(" - ") - 3);
                                 string startTime = line.Substring(
-                                    line.LastIndexOf('(') + 1,
-                                    line.LastIndexOf('-') - line.LastIndexOf('(') - 1);
+                                    line.IndexOf('(') + 1,
+                                    line.IndexOf('-', line.IndexOf('(')) - line.IndexOf('(') - 1);
                                 string endTime = line.Substring(
-                                    line.LastIndexOf('-') + 1,
-                                    line.LastIndexOf(')') - line.LastIndexOf('-') - 1);
+                                    line.IndexOf('-', line.IndexOf('(')) + 1,
+                                    line.IndexOf(')') - line.IndexOf('-', line.IndexOf('(')) - 1);
                                 DateTime depart = new DateTime(2017, 01, 01, Convert.ToInt32(startTime.Substring(0, 2)), Convert.ToInt32(startTime.Substring(3, 2)), 0);
                                 DateTime arrive = new DateTime(2017, 01, 01, Convert.ToInt32(endTime.Substring(0, 2)), Convert.ToInt32(endTime.Substring(3, 2)), 0);
                                 Boolean isReservation = line.ToUpper().Contains("RESERVATION");
@@ -90,7 +90,7 @@ namespace Converter
                                 {
                                     notes = line.Substring(noteInd + 1);
                                 }
-                                Transportation transport;
+                                Transport transport;
                                 if (isPlane)
                                 {
                                     transport = new Plane
@@ -176,7 +176,7 @@ namespace Converter
                             DateTime end = new DateTime(2017, Convert.ToInt32(endDate.Substring(3)), Convert.ToInt32(endDate.Substring(0, 2)));
                             i++;
                             string name = Input.Lines[i].Trim();
-                            boolean isAir = false;
+                            bool isAir = false;
                             if (name.Equals("AIRBNB"))
                             {
                                 isAir = true;
@@ -191,6 +191,7 @@ namespace Converter
                                 notes.Add(Input.Lines[i].Trim());
                                 i++;
                             }
+                            i--;
                             Lodging lodging;
                             if (isAir)
                             {
