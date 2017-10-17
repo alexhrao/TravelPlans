@@ -1,13 +1,15 @@
 Transportation:
-    I. Metz, France - Reins, France {S}
-        1. BUS [METZ VILLE - LORRAINE TGV] (09:55-10:25) {S}
-        2. [LORRAINE TGV - CHAMPAGNE-ARDENNE] (10:37-11:22) {S} RESERVATION
-    II. Reins, France - Metz, France {S}
-        1. [CHAMPAGNE-ARDENNE - LORRAINE TGV] (21:21-22:06) {S} RESERVATION
-        2. BUS [LORRAINE TGV - METZ VILLE] (22:33 - 23:03) {S}
+    I. Metz, France - Monte Carlo, Monaco {R}
+        1. [METZ VILLE - PARIS EST] (10:57-12:20) {R} RESERVATION
+        2. [PARIS GARE DE LYON - MONACO-MONTE-CARLO] (14:17-20:20) {R} RESERVATION
+    II. Monte Carlo, Monaco - Reims, France {S}
+        1. [MONACO-MONTE-CARLO - NICE VILLE] (06:04-06:27) {S}
+        2. [NICE VILLE - PARIS GARE DE LYON] (07:04-12:41) {S} RESERVATION
+        3. [PARIS EST - CHAMPAGNE-ARDENNE] (14:26-15:08) {S} RESERVATION
+        4. [CHAMPAGNE-ARDENNE - REIMS] (15:16-15:28) {S}
+    III. Reims, France - Metz, France {S}
+        1. [REIMS - CHAMPAGNE-ARDENNE] (19:56-20:08) {S}
+        2. [CHAMPAGNE-ARDENNE - LORRAINE] (21:21-22:06) {S} RESERVATION
+        3. BUS [LORRAINE - METZ VILLE] (22:33-23:03) {S}
 
 Lodging:
-
-
-
-
