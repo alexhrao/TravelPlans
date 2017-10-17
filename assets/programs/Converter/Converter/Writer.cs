@@ -83,9 +83,9 @@ namespace Converter
                     else
                     {
                         lodgeNode.AppendChild(HtmlNode.CreateNode(@"<h3><i class=""fa fa-hotel""></i> " + HttpUtility.HtmlEncode(lodging.Name) + " (" +
-                            HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) +
+                            HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) +
                             " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
-                            HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) + ")</h3>"));
+                            HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) + ")</h3>"));
                     }
                     for (int i = 0; i < lodging.Notes.Count; i++)
                     {

@@ -151,72 +151,69 @@ namespace Converter
                     enterInd = Input.Lines.Count;
                     Input.Lines.Add("Entertainment:");
                 }
-                else
+                for (int i = lodgeInd + 1; i < enterInd; i++)
                 {
-                    for (int i = lodgeInd + 1; i < enterInd; i++)
+                    string line = Input.Lines[i].Trim();
+                    // Line of form <#>. <LocationName> has this form:
+                    // NO space before ., 
+                    Regex regex = new Regex("^\\S?[^0-9]+[.]\\s+", RegexOptions.None);
+                    MatchCollection matches = regex.Matches(line);
+                    if (matches.Count > 0)
                     {
-                        string line = Input.Lines[i].Trim();
-                        // Line of form <#>. <LocationName> has this form:
-                        // NO space before ., 
-                        Regex regex = new Regex("^\\S?[^0-9]+[.]\\s+", RegexOptions.None);
-                        MatchCollection matches = regex.Matches(line);
-                        if (matches.Count > 0)
+                        // line is name of location
+                        // For now, only add the name of the hostel (format is uneven) and dates
+                        // Dates will be next line (after ##)
+                        // This will be next line;
+                        // add the new lodging
+                        i++;
+                        string dates = Input.Lines[i].Trim();
+                        dates = dates.Substring(dates.IndexOf('.') + 1).Trim();
+                        string startDate = dates.Substring(0, dates.IndexOf('-')).Replace(" ", "");
+                        string endDate = dates.Substring(dates.IndexOf('-') + 1).Replace(" ", "");
+                        DateTime start = new DateTime(2017, Convert.ToInt32(startDate.Substring(3)), Convert.ToInt32(startDate.Substring(0, 2)));
+                        DateTime end = new DateTime(2017, Convert.ToInt32(endDate.Substring(3)), Convert.ToInt32(endDate.Substring(0, 2)));
+                        i++;
+                        string name = Input.Lines[i].Trim();
+                        bool isAir = false;
+                        if (name.Equals("AIRBNB"))
                         {
-                            // line is name of location
-                            // For now, only add the name of the hostel (format is uneven) and dates
-                            // Dates will be next line (after ##)
-                            // This will be next line;
-                            // add the new lodging
+                            isAir = true;
                             i++;
-                            string dates = Input.Lines[i].Trim();
-                            dates = dates.Substring(dates.IndexOf('.') + 1).Trim();
-                            string startDate = dates.Substring(0, dates.IndexOf('-')).Replace(" ", "");
-                            string endDate = dates.Substring(dates.IndexOf('-') + 1).Replace(" ", "");
-                            DateTime start = new DateTime(2017, Convert.ToInt32(startDate.Substring(3)), Convert.ToInt32(startDate.Substring(0, 2)));
-                            DateTime end = new DateTime(2017, Convert.ToInt32(endDate.Substring(3)), Convert.ToInt32(endDate.Substring(0, 2)));
-                            i++;
-                            string name = Input.Lines[i].Trim();
-                            bool isAir = false;
-                            if (name.Equals("AIRBNB"))
-                            {
-                                isAir = true;
-                                i++;
-                                name = Input.Lines[i].Trim();
-                            }
-                            // Notes will be every line after that has SAME indentation.
-                            int numIndent = Input.Lines[i].Length - Input.Lines[i].TrimStart().Length;
-                            List<string> notes = new List<string>();
-                            while ((Input.Lines[i].Length - Input.Lines[i].TrimStart().Length) == numIndent)
-                            {
-                                notes.Add(Input.Lines[i].Trim());
-                                i++;
-                            }
-                            i--;
-                            Lodging lodging;
-                            if (isAir)
-                            {
-                                lodging = new AirBnb
-                                {
-                                    Location = line.Substring(line.IndexOf('.') + 2),
-                                    Name = "AirBNB",
-                                    ArriveDate = start,
-                                    DepartDate = end,
-                                    Notes = notes
-                                };
-                            }
-                            else
-                            {
-                                lodging = new Hostel
-                                {
-                                    Location = line.Substring(line.IndexOf('.') + 2),
-                                    Name = name,
-                                    ArriveDate = start,
-                                    DepartDate = end,
-                                    Notes = notes
-                                };
-                            }
-                            Lodgings.Add(lodging);
+                            name = Input.Lines[i].Trim();
                         }
+                        // Notes will be every line after that has SAME indentation.
+                        int numIndent = Input.Lines[i].Length - Input.Lines[i].TrimStart().Length;
+                        List<string> notes = new List<string>();
+                        while (i < Input.Lines.Count && (Input.Lines[i].Length - Input.Lines[i].TrimStart().Length) == numIndent)
+                        {
+                            notes.Add(Input.Lines[i].Trim());
+                            i++;
+                        }
+                        i--;
+                        Lodging lodging;
+                        if (isAir)
+                        {
+                            lodging = new AirBnb
+                            {
+                                Location = line.Substring(line.IndexOf('.') + 2),
+                                Name = "AirBNB",
+                                ArriveDate = start,
+                                DepartDate = end,
+                                Notes = notes
+                            };
+                        }
+                        else
+                        {
+                            lodging = new Hostel
+                            {
+                                Location = line.Substring(line.IndexOf('.') + 2),
+                                Name = name,
+                                ArriveDate = start,
+                                DepartDate = end,
+                                Notes = notes
+                            };
+                        }
+                        Lodgings.Add(lodging);
                     }
                 }
             }
