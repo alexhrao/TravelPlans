@@ -68,10 +68,10 @@ namespace Converter
                                     line.IndexOf(']') - line.IndexOf(" - ") - 3);
                                 string startTime = line.Substring(
                                     line.IndexOf('(') + 1,
-                                    line.IndexOf('-', line.IndexOf('(')) - line.IndexOf('(') - 1);
+                                    line.IndexOf('-', line.IndexOf('(')) - line.IndexOf('(') - 1).Replace(" ", "");
                                 string endTime = line.Substring(
                                     line.IndexOf('-', line.IndexOf('(')) + 1,
-                                    line.IndexOf(')') - line.IndexOf('-', line.IndexOf('(')) - 1);
+                                    line.IndexOf(')') - line.IndexOf('-', line.IndexOf('(')) - 1).Replace(" ", "");
                                 DateTime depart = new DateTime(2017, 01, 01, Convert.ToInt32(startTime.Substring(0, 2)), Convert.ToInt32(startTime.Substring(3, 2)), 0);
                                 DateTime arrive = new DateTime(2017, 01, 01, Convert.ToInt32(endTime.Substring(0, 2)), Convert.ToInt32(endTime.Substring(3, 2)), 0);
                                 Boolean isReservation = line.ToUpper().Contains("RESERVATION");
@@ -170,8 +170,8 @@ namespace Converter
                             i++;
                             string dates = Input.Lines[i].Trim();
                             dates = dates.Substring(dates.IndexOf('.') + 1).Trim();
-                            string startDate = dates.Substring(0, dates.IndexOf('-'));
-                            string endDate = dates.Substring(dates.IndexOf('-') + 1);
+                            string startDate = dates.Substring(0, dates.IndexOf('-')).Replace(" ", "");
+                            string endDate = dates.Substring(dates.IndexOf('-') + 1).Replace(" ", "");
                             DateTime start = new DateTime(2017, Convert.ToInt32(startDate.Substring(3)), Convert.ToInt32(startDate.Substring(0, 2)));
                             DateTime end = new DateTime(2017, Convert.ToInt32(endDate.Substring(3)), Convert.ToInt32(endDate.Substring(0, 2)));
                             i++;

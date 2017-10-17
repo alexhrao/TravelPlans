@@ -27,7 +27,7 @@ namespace Converter
                 }
                 else
                 {
-                    Console.WriteLine("Processing File " + path + ":");
+                    Console.WriteLine("Processing File " + Path.GetFullPath(path) + ":");
                     Console.WriteLine("\tParsing...");
                     Parser parser = new Parser(path);
                     Console.WriteLine("\tWriting...");

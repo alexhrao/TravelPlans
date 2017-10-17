@@ -4,7 +4,7 @@ Transportation:
         2. [LORRAINE TGV - CHAMPAGNE-ARDENNE] (10:37-11:22) {S} RESERVATION
     II. Reins, France - Metz, France {S}
         1. [CHAMPAGNE-ARDENNE - LORRAINE TGV] (21:21-22:06) {S} RESERVATION
-        2. BUS [LORRAINE TGV - METZ VILLE] (22:33-23:03) {S}
+        2. BUS [LORRAINE TGV - METZ VILLE] (22:33 - 23:03) {S}
 
 Lodging:
 
