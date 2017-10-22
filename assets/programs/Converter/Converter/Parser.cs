@@ -194,32 +194,32 @@ namespace Converter
                         // Find cost and room type if exists
                         double costPerNight = 0.00;
                         // Loop through lines. If you see Room Type, look for currency symbol, read to next space
-                        foreach (string ln in notes)
+                        foreach (string lin in notes)
                         {
-                            ln = ln.Trim();
+                            string ln = lin.Trim().Replace('(', ' ').Replace(')', ' ');
                             // See if Room:
-                            if (ln.Contains("Room: "))
+                            if (ln.Contains("Room: ") || ln.Contains("Price: "))
                             {
                                 // Look for currency? Look for something like ###.##
-                                Regex findCost = new Regex(@"(\S+)(\d+[.]{1}\d{2})", RegexOptions.None);
+                                // (\d+[.]{1}\d{2})
+                                Regex findCost = new Regex(@"([^\d\s]+)([\d,.]+[.,]{1}\d{2})", RegexOptions.None);
                                 MatchCollection costs = findCost.Matches(ln);
                                 if (costs.Count == 1)
                                 {
                                     Match cost = costs[0];
                                     // extract cost?
                                     // Extract cost - second group
-                                    
-                                    costPerNight = Convert.ToDouble(costs.Groups[1].Value);
+                                    costPerNight = Convert.ToDouble(cost.Groups[2].Value);
                                     if (isAir)
                                     {
                                         costPerNight = costPerNight / (end - start).Days;
                                     }
                                     // Extract currency - first group
-                                    string usedCurrency = costs.Groups[0].Value;
+                                    string usedCurrency = cost.Groups[1].Value;
                                     // Use predicate to find currency with same LOWERCASE symbol
                                     int ind = Finance.Currencies.FindIndex(curr => 
                                     {
-                                       return usedCurrency.CompareTo(curr.Symbol); 
+                                       return usedCurrency.Equals(curr.Symbol); 
                                     });
                                     // TODO: See if there is way to just get actual currency out?
                                     costPerNight = Finance.Exchange(costPerNight, Finance.Currencies[ind]);

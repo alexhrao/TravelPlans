@@ -10,9 +10,11 @@ namespace Converter
             public readonly string Symbol;
             public readonly double ExchangeRate;
             
-            public Currency()
+            public Currency(string abb, string symb, double exchange)
             {
-                
+                Abbreviation = abb;
+                Symbol = symb;
+                ExchangeRate = exchange;
             }
         }
     }

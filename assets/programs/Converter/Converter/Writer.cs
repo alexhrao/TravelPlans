@@ -89,6 +89,9 @@ namespace Converter
                             HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) + ")</h3>"));
                     }
                     CultureInfo culture = new CultureInfo("fr-FR");
+
+                    culture.NumberFormat.CurrencyDecimalSeparator = ".";
+                    culture.NumberFormat.CurrencyGroupSeparator = ",";
                     for (int i = 0; i < lodging.Notes.Count; i++)
                     {
                         lodging.Notes[i] = Encode(HttpUtility.HtmlEncode(lodging.Notes[i]));
@@ -96,9 +99,9 @@ namespace Converter
                     string Notes = String.Join("<br />", lodging.Notes.ToArray());
                     Notes = Notes + "<br /><em>" + 
                         HttpUtility.HtmlEncode("Cost: " + lodging.CostPerNight.ToString("C", culture) +
-                        " (Total: " + _
-                        (lodging.CostPerNight * (lodging.ArriveDate - lodging.DepartDate).Days).ToString("C", culture) + 
-                        ")</em>");
+                        " (Total: " + 
+                        (lodging.CostPerNight * (lodging.DepartDate - lodging.ArriveDate).Days).ToString("C", culture) + 
+                        ")") + "</em>";
                     lodgeNode.AppendChild(HtmlNode.CreateNode("<p>" + Notes + "</p>"));
                     lodgings.AppendChild(lodgeNode);
                 }

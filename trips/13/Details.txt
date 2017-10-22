@@ -10,7 +10,7 @@ Transportation:
         2. [KRAKOW PLASZOW - KRAKOW LOTNISKO] (06:55-07:01) {S}
     III. Krakow, Poland - Metz, France {N}
         1. AIRPLANE [KRAKOW - PARIS BVA] (06:50-08:45) {N} RESERVATION
-        2. [PARIS EST - METZ VILLE] (13:40–15:04) {N} RESERVATION
+        2. [PARIS EST - METZ VILLE] (13:40-15:04) {N} RESERVATION
 
 Lodging:
     I. Krakow, Poland

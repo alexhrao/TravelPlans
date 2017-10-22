@@ -43,7 +43,7 @@ Lodging:
         1. 01/09-03/09
             Luxembourg City Hostel
             2, rue du Fort Olisy, Luxembourg City
-            Price: €25
+            Price: €25.00
             Room: 6 Bed Mixed Dorm
 
 Entertainment:

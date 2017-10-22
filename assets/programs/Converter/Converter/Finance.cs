@@ -1,10 +1,11 @@
 using System;
+using System.Collections.Generic;
 
 namespace Converter
 {
     namespace Financial
     {
-        public static sealed class Finance
+        public sealed class Finance
         {
             private static List<Currency> currencies = new List<Currency>();
             public static List<Currency> Currencies
@@ -31,23 +32,18 @@ namespace Converter
             }
             public static double Exchange(double amount, Currency FromCurrency)
             {
-                return Exchange(amount, FromCurrency, Currency.EUR);
+                return Exchange(amount, FromCurrency, Currencies[1]);
             }
             
             public static void Initialize()
             {
                 string[] abbreviations = {"USD", "EUR", "CHF", "CZK", "DKK", "GBP", "HRK", "HUF", "IEP", "MAD", "PLN", "RON", "RSD"};
-                string[] symbols = {"$", "€", "", "", "", "£", "", "", "", "", "łz", "", ""};
+                string[] symbols = {"$", "€", "", "", "", "£", "", "", "", "", "zł", "", ""};
                 double[] rates = {1, 0.95, 0.82, 1.01, 25.57, 7.03, 7.01, 293.24, 0.70, 10.10, 4.07, 4.29, 116.00};
                 
-                for (int i = 0; i < abbreviations.Count; i++)
+                for (int i = 0; i < abbreviations.Length; i++)
                 {
-                    currencies.Add(new Currency
-                    {
-                        Abbreviation = abbreviations[i],
-                        Symbol = symbols[i],
-                        ExchangeRate = rates[i]
-                    });
+                    currencies.Add(new Currency(abbreviations[i], symbols[i], rates[i]));
                 }
             }
         }

@@ -13,7 +13,7 @@ namespace Converter
             public string Name;
             public string Address;
             public string Phone;
-            public double Price;
+            public double CostPerNight;
             public string RoomType;
             public List<string> Notes;
         }
