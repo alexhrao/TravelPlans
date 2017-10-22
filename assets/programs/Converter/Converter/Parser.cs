@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Converter.Data;
+using Converter.Financial;
 
 namespace Converter
 {
@@ -190,16 +191,53 @@ namespace Converter
                             i++;
                         }
                         i--;
+                        // Find cost and room type if exists
+                        double costPerNight = 0.00;
+                        // Loop through lines. If you see Room Type, look for currency symbol, read to next space
+                        foreach (string ln in notes)
+                        {
+                            ln = ln.Trim();
+                            // See if Room:
+                            if (ln.Contains("Room: "))
+                            {
+                                // Look for currency? Look for something like ###.##
+                                Regex findCost = new Regex(@"(\S+)(\d+[.]{1}\d{2})", RegexOptions.None);
+                                MatchCollection costs = findCost.Matches(ln);
+                                if (costs.Count == 1)
+                                {
+                                    Match cost = costs[0];
+                                    // extract cost?
+                                    // Extract cost - second group
+                                    
+                                    costPerNight = Convert.ToDouble(costs.Groups[1].Value);
+                                    if (isAir)
+                                    {
+                                        costPerNight = costPerNight / (end - start).Days;
+                                    }
+                                    // Extract currency - first group
+                                    string usedCurrency = costs.Groups[0].Value;
+                                    // Use predicate to find currency with same LOWERCASE symbol
+                                    int ind = Finance.Currencies.FindIndex(curr => 
+                                    {
+                                       return usedCurrency.CompareTo(curr.Symbol); 
+                                    });
+                                    // TODO: See if there is way to just get actual currency out?
+                                    costPerNight = Finance.Exchange(costPerNight, Finance.Currencies[ind]);
+                                    break;
+                                }
+                            }
+                        }
                         Lodging lodging;
                         if (isAir)
                         {
                             lodging = new AirBnb
                             {
                                 Location = line.Substring(line.IndexOf('.') + 2),
-                                Name = "AirBNB",
+                                Name = "AirBnB",
                                 ArriveDate = start,
                                 DepartDate = end,
-                                Notes = notes
+                                Notes = notes,
+                                CostPerNight = costPerNight /* / (end - start).Days */
                             };
                         }
                         else
@@ -210,7 +248,8 @@ namespace Converter
                                 Name = name,
                                 ArriveDate = start,
                                 DepartDate = end,
-                                Notes = notes
+                                Notes = notes,
+                                CostPerNight = costPerNight
                             };
                         }
                         Lodgings.Add(lodging);

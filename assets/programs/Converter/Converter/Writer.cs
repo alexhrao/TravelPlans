@@ -5,6 +5,7 @@ using System.IO;
 using System.Web;
 using Converter.Data;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace Converter
 {
@@ -22,7 +23,7 @@ namespace Converter
                 HtmlNode trips = document.GetElementbyId("transportation");
                 foreach (Trip trip in parser.Transportation)
                 {
-                    HtmlNode tripNode = HtmlNode.CreateNode("<div class=\"trip\"></div>");
+                    HtmlNode tripNode = HtmlNode.CreateNode(@"<div class=""trip""></div>");
                     tripNode.AppendChild(HtmlNode.CreateNode("<h2>" + HttpUtility.HtmlEncode(trip.Name) + "</h2>"));
                     HtmlNode tripList = HtmlNode.CreateNode("<ol></ol>");
                     foreach (Transport transport in trip.Transports)
@@ -30,25 +31,25 @@ namespace Converter
                         HtmlNode transportNode;
                         if (transport is Train)
                         {
-                            transportNode = HtmlNode.CreateNode("<li><h3><i class=\"fa fa-train\"></i> " +
+                            transportNode = HtmlNode.CreateNode(@"<li><h3><i class=""fa fa-train""></i> " +
                                 HttpUtility.HtmlEncode(transport.DepartStation) + " (" + transport.DepartTime.ToShortTimeString() + ") " +
-                                " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
+                                @" <span class=""glyphicon glyphicon-arrow-right""></span> " +
                                 HttpUtility.HtmlEncode(transport.ArriveStation) + " (" + transport.ArriveTime.ToShortTimeString() + ")" + (transport.IsReservation ? "*": "") + 
                                 "</h3></li>");   
                         }
                         else if (transport is Plane)
                         {
-                            transportNode = HtmlNode.CreateNode("<li><h3><i class=\"fa fa-plane\"></i> " +
+                            transportNode = HtmlNode.CreateNode(@"<li><h3><i class=""fa fa-plane""></i> " +
                                 HttpUtility.HtmlEncode(transport.DepartStation) + " (" + transport.DepartTime.ToShortTimeString() + ") " +
-                                " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
+                                @" <span class=""glyphicon glyphicon-arrow-right""></span> " +
                                 HttpUtility.HtmlEncode(transport.ArriveStation) + " (" + transport.ArriveTime.ToShortTimeString() + ")" + (transport.IsReservation ? "*" : "") +
                                 "</h3></li>");
                         }
                         else if (transport is Bus)
                         {
-                            transportNode = HtmlNode.CreateNode("<li><h3><i class=\"fa fa-bus\"></i> " +
+                            transportNode = HtmlNode.CreateNode(@"<li><h3><i class=""fa fa-bus""></i> " +
                                 HttpUtility.HtmlEncode(transport.DepartStation) + " (" + transport.DepartTime.ToShortTimeString() + ") " +
-                                " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
+                                @" <span class=""glyphicon glyphicon-arrow-right""></span> " +
                                 HttpUtility.HtmlEncode(transport.ArriveStation) + " (" + transport.ArriveTime.ToShortTimeString() + ")" + (transport.IsReservation ? "*" : "") + 
                                 "</h3></li>");
                         }
@@ -56,11 +57,11 @@ namespace Converter
                         {
                             transportNode = HtmlNode.CreateNode("<li><h3>" +
                                 HttpUtility.HtmlEncode(transport.DepartStation) + " (" + transport.DepartTime.ToShortTimeString() + ") " +
-                                " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
+                                @" <span class=""glyphicon glyphicon-arrow-right""></span> " +
                                 HttpUtility.HtmlEncode(transport.ArriveStation) + " (" + transport.ArriveTime.ToShortTimeString() + ")" + (transport.IsReservation ? "*" : "") +
                                 "</h3></li>");
                         }
-                        HtmlNode noteNode = HtmlNode.CreateNode("<p class=\"notes\">" + Encode(HttpUtility.HtmlEncode(transport.Notes)) + "</p>");
+                        HtmlNode noteNode = HtmlNode.CreateNode(@"<p class=""notes"">" + Encode(HttpUtility.HtmlEncode(transport.Notes)) + "</p>");
                         transportNode.AppendChild(noteNode);
                         tripList.AppendChild(transportNode);
                     }
@@ -71,27 +72,33 @@ namespace Converter
                 HtmlNode lodgings = document.GetElementbyId("lodging");
                 foreach (Lodging lodging in parser.Lodgings)
                 {
-                    HtmlNode lodgeNode = HtmlNode.CreateNode("<div class=\"lodging\"></div>");
+                    HtmlNode lodgeNode = HtmlNode.CreateNode(@"<div class=""lodging""></div>");
                     lodgeNode.AppendChild(HtmlNode.CreateNode("<h2>" + HttpUtility.HtmlEncode(lodging.Location) + "</h2>"));
                     if (lodging is AirBnb)
                     {
                         lodgeNode.AppendChild(HtmlNode.CreateNode(@"<h3><i class=""fa fa-home""></i> " + HttpUtility.HtmlEncode(lodging.Name) + " (" +
                             HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) +
-                            " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
+                            @" <span class=""glyphicon glyphicon-arrow-right""></span> " +
                             HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) + ")</h3>"));
                     }
                     else
                     {
                         lodgeNode.AppendChild(HtmlNode.CreateNode(@"<h3><i class=""fa fa-hotel""></i> " + HttpUtility.HtmlEncode(lodging.Name) + " (" +
                             HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) +
-                            " <span class=\"glyphicon glyphicon-arrow-right\"></span> " +
+                            @" <span class=""glyphicon glyphicon-arrow-right""></span> " +
                             HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) + ")</h3>"));
                     }
+                    CultureInfo culture = new CultureInfo("fr-FR");
                     for (int i = 0; i < lodging.Notes.Count; i++)
                     {
                         lodging.Notes[i] = Encode(HttpUtility.HtmlEncode(lodging.Notes[i]));
                     }
                     string Notes = String.Join("<br />", lodging.Notes.ToArray());
+                    Notes = Notes + "<br /><em>" + 
+                        HttpUtility.HtmlEncode("Cost: " + lodging.CostPerNight.ToString("C", culture) +
+                        " (Total: " + _
+                        (lodging.CostPerNight * (lodging.ArriveDate - lodging.DepartDate).Days).ToString("C", culture) + 
+                        ")</em>");
                     lodgeNode.AppendChild(HtmlNode.CreateNode("<p>" + Notes + "</p>"));
                     lodgings.AppendChild(lodgeNode);
                 }

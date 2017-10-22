@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Converter.Data;
 using Converter.Utility;
 using System.IO;
@@ -9,6 +9,15 @@ namespace Converter
     {
         static void Main(string[] args)
         {
+            try
+            {
+                Process(args);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("An Error Occured during the last operation - details below");
+                Console.WriteLine(e.ToString());
+            }
             Process(args);
             Console.WriteLine("Finished. Press any key to exit...");
             Console.ReadKey();
@@ -18,6 +27,7 @@ namespace Converter
         {
             foreach (string path in args)
             {
+                path = path.Replace(@"\", "/");
                 FileAttributes attributes = File.GetAttributes(path);
                 if (attributes.HasFlag(FileAttributes.Directory))
                 {
@@ -27,7 +37,7 @@ namespace Converter
                 }
                 else
                 {
-                    Console.WriteLine("Processing File " + Path.GetFullPath(path) + ":");
+                    Console.WriteLine("Processing File " + Path.GetFullPath(path).eplace(@"\", "/") + ":");
                     Console.WriteLine("\tParsing...");
                     Parser parser = new Parser(path);
                     Console.WriteLine("\tWriting...");

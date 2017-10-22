@@ -1,5 +1,3 @@
-Itinerary:
-
 Transportation:
     I. Metz, France - Prague, Czech Republic {R-F}
         1. [METZ VILLE - FORBACH] (19:38-20:26) {R}
@@ -7,16 +5,16 @@ Transportation:
         3. [MANNHEIM HBF - NAUMBURG HBF] (23:59-04:14) {R-F} RESERVATION
         4. [NAUMBURG HBF - LEIPZIG HBF] (04:44-05:39) {F}
         5. [LEIPZIG HBF - PRAGUE HLAVNI NADRAZI] (05:55-09:27) {F}
-    II. Prague, Czech Republic - Auschwitz, Poland {S}
-        1. [PRAGUE HLAVNI NADRAZI - KATOWICE] (06:22-11:31) {S} RESERVATION
-        2. [KATOWICE - OSWIECIM] (12:46-13:35) {S} RESERVATION
-    III. Auschwitz, Poland - Metz, France {S-N}
-        1. [OSWIECIM - WIEN HBF] (23:42-06:55) {S-N} RESERVATION
-        2. [WIEN HBF - SALZBURG HBF] (07:30-09:52) {N}
-        3. [SALZBURG HBF - STUTTGART HBF] (10:00-13:59) {N}
-        4. [STUTTGART HBF - STRASBOURG] (14:54-16:13) {N} RESERVATION
-        5. [STRASBOURG - METZ VILLE] (17:49-19:24) {N}
+    II. Prague, Czech Republic - Auschwitz, Poland {F-S}
+        1. [PRAGUE HLAVNI NADRAZI - KRAKOW PLASZOW] (23:09-06:50) {F-S} RESERVATION
+        2. [KRAKOW PLASZOW - KRAKOW LOTNISKO] (06:55-07:01) {S}
+    III. Krakow, Poland - Metz, France {N}
+        1. AIRPLANE [KRAKOW - PARIS BVA] (06:50-08:45) {N} RESERVATION
+        2. [PARIS EST - METZ VILLE] (13:40–15:04) {N} RESERVATION
 
 Lodging:
-    I. Prague, Czech Republic
-        1. 24/11-25/11
+    I. Krakow, Poland
+        1. 25/11-26/11
+            4 Friends Hostel
+            28 Lipca 1943 r. 8A, Krakow, Poland
+            Room: Deluxe 4 Bed Private Ensuite (zł192.00)
