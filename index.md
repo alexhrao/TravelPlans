@@ -57,7 +57,7 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/08/Summary.html "Summary")_
 
-### [Monaco & Champagne - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Summary.html "Monaco & Champagne")
+### [Monaco & Champagne - 19/10-22/10](https://alexhrao.github.io/TravelPlans/trips/09/Details.html "Monaco & Champagne")
 - Monte-Carlo, Monaco
 - Champagne, France
 
