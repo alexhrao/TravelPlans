@@ -4,6 +4,7 @@ $(document).ready(function() {
     for (i = 0; i < viewers.length; i++) {
         var viewer = viewers[i];
         var id = viewer.id;
+        alert(id);
         var swiper = new Hammer(viewer);
         swiper.on("swipeleft swiperight", function (event) {
             if (event.type === "swipeleft") {
