@@ -15,11 +15,11 @@ $(document).ready(function() {
                 stopCarousel(id);
             }
         });
-        $('#togglePlay_' + id).click(function (event) {
-            if ($('#playStatus_' + id).hasClass('glyphicon-pause')) {
-                stopCarousel(id);
+        $('#togglePlay_' + id).click({elemId: id}, function (event) {
+            if ($('#playStatus_' + event.data.elemId).hasClass('glyphicon-pause')) {
+                stopCarousel(event.data.elemId);
             } else {
-                startCarousel(id);
+                startCarousel(event.data.elemId);
             }
         });
         $('#moveLeft_' + id + ", #moveRight_" + id).click(function (event) {
