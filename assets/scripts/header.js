@@ -3,27 +3,18 @@ $(document).ready(function() {
     var i;
     for (i = 0; i < viewers.length; i++) {
         var viewer = viewers[i];
-        var id = viewer.id;
-        alert(id);
+        var elementId = viewer.id;
         var swiper = new Hammer(viewer);
-        swiper.on("swipeleft swiperight", function (event) {
-            if (event.type === "swipeleft") {
-                $('#' + id).carousel("next");
-                stopCarousel(id);
-            } else if (event.type === "swiperight") {
-                $('#' + id).carousel("prev");
-                stopCarousel(id);
-            }
-        });
-        $('#togglePlay_' + id).click({elemId: id}, function (event) {
-            if ($('#playStatus_' + event.data.elemId).hasClass('glyphicon-pause')) {
-                stopCarousel(event.data.elemId);
+        attachHammer(swiper, elementId);
+        $('#togglePlay_' + elementId).click(id: elementId}, function (event) {
+            if ($('#playStatus_' + event.data.id).hasClass('glyphicon-pause')) {
+                stopCarousel(event.data.id);
             } else {
-                startCarousel(event.data.elemId);
+                startCarousel(event.data.id);
             }
         });
-        $('#moveLeft_' + id + ", #moveRight_" + id).click(function (event) {
-            stopCarousel(id);
+        $('#moveLeft_' + elementId + ", #moveRight_" + elementId).click({id: elementId}, function (event) {
+            stopCarousel(event.data.id);
         });
     }
     $('#togglePlay').click(function (event) {
@@ -58,6 +49,17 @@ $(document).ready(function() {
     }
 });
 
+function attachHammer(swiper, id) {
+    swiper.on("swipeleft swiperight", function (event) {
+        if (event.type === "swipeleft") {
+            $('#' + id).carousel("next");
+            stopCarousel(id);
+        } else if (event.type === "swiperight") {
+            $('#' + id).carousel("prev");
+            stopCarousel(id);
+        }
+    });
+}
 function stopCarousel(id) {
     alert(id);
     $('#' + id).carousel('pause');
