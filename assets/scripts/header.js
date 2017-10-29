@@ -1,11 +1,10 @@
 $(document).ready(function() {
     var viewers = document.getElementsByClassName('carousel');
-    var i;
-    for (i = 0; i < viewers.length; i++) {
+    for (var i = 0; i < viewers.length; i++) {
         var viewer = viewers[i];
         var elementId = viewer.id;
         var swiper = new Hammer(viewer);
-        // attachHammer(swiper, elementId);
+        attachHammer(swiper, elementId);
         $('#togglePlay_' + elementId).click({elemId: elementId}, function (event) {
             if ($('#playStatus_' + event.data.elemId).hasClass('glyphicon-pause')) {
                 stopCarousel(event.data.elemId);
