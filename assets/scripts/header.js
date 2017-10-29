@@ -58,6 +58,7 @@ $(document).ready(function() {
 });
 
 function stopCarousel(id) {
+    alert(id);
     $('#' + id).carousel('pause');
     if (id === "headerCarousel") {
         id = "";
@@ -70,6 +71,7 @@ function stopCarousel(id) {
 }
 
 function startCarousel(id) {
+    alert(id);
     $('#' + id).carousel('cycle');
     if (id === "headerCarousel") {
         id = "";
