@@ -6,15 +6,15 @@ $(document).ready(function() {
         var elementId = viewer.id;
         var swiper = new Hammer(viewer);
         // attachHammer(swiper, elementId);
-        $('#togglePlay_' + elementId).click({id: elementId}, function (event) {
-            if ($('#playStatus_' + event.data.id).hasClass('glyphicon-pause')) {
-                stopCarousel(event.data.id);
+        $('#togglePlay_' + elementId).click({elemId: elementId}, function (event) {
+            if ($('#playStatus_' + event.data.elemId).hasClass('glyphicon-pause')) {
+                stopCarousel(event.data.elemId);
             } else {
-                startCarousel(event.data.id);
+                startCarousel(event.data.elemId);
             }
         });
-        $('#moveLeft_' + elementId + ", #moveRight_" + elementId).click({id: elementId}, function (event) {
-            stopCarousel(event.data.id);
+        $('#moveLeft_' + elementId + ", #moveRight_" + elementId).click({elemId: elementId}, function (event) {
+            stopCarousel(event.data.elemId);
         });
     }
     $('#togglePlay').click(function (event) {
