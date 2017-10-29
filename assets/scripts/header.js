@@ -49,14 +49,11 @@ $(document).ready(function() {
 });
 
 function attachHammer(swiper, id) {
-    alert(id);
     swiper.on("swipeleft swiperight", function (event) {
         if (event.type === "swipeleft") {
-            alert("swiped " + id);
             $('#' + id).carousel("next");
             stopCarousel(id);
         } else if (event.type === "swiperight") {
-            alert("swiped " + id);
             $('#' + id).carousel("prev");
             stopCarousel(id);
         }
