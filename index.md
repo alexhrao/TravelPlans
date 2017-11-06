@@ -63,7 +63,7 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/09/Summary.html "Summary")_
 
-### [Scandinavia - 26/10-05/11](https://alexhrao.github.io/TravelPlans/trips/10/Summary.html "Nordic Countries")
+### [Scandinavia - 26/10-05/11](https://alexhrao.github.io/TravelPlans/trips/10/Details.html "Nordic Countries")
 - Copenhagen, Denmark
 - Stockholm, Sweden
 - Haugesund, Norway
