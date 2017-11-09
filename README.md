@@ -1,4 +1,4 @@
-# TravelPlans
+# Travel Plans
 The Front-Facing Portal for My Travel Plans
 
 ## Purpose
