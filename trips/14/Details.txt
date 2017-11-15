@@ -11,8 +11,6 @@ Transportation:
     II. Florence, Italy - Metz, France {03/12/2017}
         1. AIRPLANE [FLR - ORY] (19:00-20:50) (€95.00) RESERVATION
         2. BUS [PARIS BERCY SEINE - METZ VILLE] (22:50-02:55) (€18.90) RESERVATION
-            https://shop.flixbus.fr/search?departureCity=2015&departureStation=11558&arrivalCity=1965&arrivalStation=2285&rideDate=03.12.2017&adults=1&currency=EUR&uid=direct%3A55645508%3A11558%3A2285&reserve=1&utm_source=BUSRADAR&utm_campaign=FR&ircid=5610&irpid=411620&wt_mc=paid.fr.flixbus.meta.bls.busradar_fr.NS.ad&utm_medium=API&wt_cc1=shopA#Q0Sfr_deskC220
-
 Lodging:
     I. Florence, Italy
         1. 01/12-03/12
