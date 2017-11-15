@@ -3,13 +3,14 @@ Itinerary:
 
 Transportation:
     I. Metz, France - Florence, Italy {01/12/2017}
-        1. [METZ VILLE - LUXEMBOURG] 
-        2. AIRPLANE [LUX - BGY] (09:00-10:15) (€9.99) RESERVATION
-        3. [BERGAMO - MILANO CENTRALE] (12:02-12:50) (€35.40) RESERVATION
-        4. [MILANO CENTRALE - FLORENCE] (13:20-14:59) (€0.00) RESERVATION
+        1. BUS [SEULLHOTTE - METZ VILLE] (05:44-06:01)
+        2. [METZ VILLE - LUXEMBOURG] (06:07-07:06)
+        3. AIRPLANE [LUX - BGY] (09:00-10:15) (€9.99) RESERVATION
+        4. [BERGAMO - MILANO CENTRALE] (12:02-12:50) (€35.40) RESERVATION
+        5. [MILANO CENTRALE - FLORENCE] (13:20-14:59) (€0.00) RESERVATION
     II. Florence, Italy - Metz, France {03/12/2017}
         1. AIRPLANE [FLR - ORY] (19:00-20:50) (€95.00) RESERVATION
-        2. BUS [PARIS BERCY SEINE - METZ VILLE] (€18.90) RESERVATION
+        2. BUS [PARIS BERCY SEINE - METZ VILLE] (22:50-02:55) (€18.90) RESERVATION
             https://shop.flixbus.fr/search?departureCity=2015&departureStation=11558&arrivalCity=1965&arrivalStation=2285&rideDate=03.12.2017&adults=1&currency=EUR&uid=direct%3A55645508%3A11558%3A2285&reserve=1&utm_source=BUSRADAR&utm_campaign=FR&ircid=5610&irpid=411620&wt_mc=paid.fr.flixbus.meta.bls.busradar_fr.NS.ad&utm_medium=API&wt_cc1=shopA#Q0Sfr_deskC220
 
 Lodging:
