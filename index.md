@@ -71,14 +71,13 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/10/Summary.html "Summary")_
   
-### [Spain - 09/11-12/11](https://alexhrao.github.io/TravelPlans/trips/11/Summary.html "Spain")
+### [Spain - 09/11-12/11](https://alexhrao.github.io/TravelPlans/trips/11/Details.html "Spain")
 - Madrid, Spain
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/11/Summary.html "Summary")_
   
-### [France - 16/11-19/11](https://alexhrao.github.io/TravelPlans/trips/12/Summary.html "France - Part II")
+### [Normandy - 16/11-19/11](https://alexhrao.github.io/TravelPlans/trips/12/Summary.html "Normandy")
 - Bayeux, France
-- Normandy, France
 - Rouen, France
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/12/Summary.html "Summary")_
@@ -91,5 +90,7 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
 
 ### [Italy - 30/11-03/12](https://alexhrao.github.io/TravelPlans/trips/14/Summary.html "Italy")
 - Florence, Italy
+- Pisa, Italy
+- Milano, Italy
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/14/Summary.html "Summary")_
