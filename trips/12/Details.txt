@@ -2,7 +2,7 @@ Itinerary:
 
 Transportation:
     I. Metz, France - Bayeux, France {16/11}
-        1. [METZ VILE - PARIS EST] (13:56-3:20) RESERVATION
+        1. [METZ VILLE - PARIS EST] (13:56-15:20) RESERVATION
         2. [PARIS LAZARE - BAYEUX] (17:08-19:19)
     II. Bayeux, France - Metz, France {19/11}
         1. CAR [BAYEUX - ROUEN] (09:00-11:15)
