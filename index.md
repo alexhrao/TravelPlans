@@ -76,7 +76,7 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/11/Summary.html "Summary")_
   
-### [Normandy - 16/11-19/11](https://alexhrao.github.io/TravelPlans/trips/12/Summary.html "Normandy")
+### [Normandy - 16/11-19/11](https://alexhrao.github.io/TravelPlans/trips/12/Details.html "Normandy")
 - Bayeux, France
 - Rouen, France
 
