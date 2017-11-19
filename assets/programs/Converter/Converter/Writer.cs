@@ -53,6 +53,14 @@ namespace Converter
                                 HttpUtility.HtmlEncode(transport.ArriveStation) + " (" + transport.ArriveTime.ToShortTimeString() + ")" + (transport.IsReservation ? "*" : "") + 
                                 "</h3></li>");
                         }
+                        else if (transport is Car)
+                        {
+                            transportNode = HtmlNode.CreateNode(@"<li><h3><i class=""fa fa-car""></i> " +
+                                HttpUtility.HtmlEncode(transport.DepartStation) + " (" + transport.DepartTime.ToShortTimeString() + ") " +
+                                @" <span class=""glyphicon glyphicon-arrow-right""></span> " +
+                                HttpUtility.HtmlEncode(transport.ArriveStation) + " (" + transport.ArriveTime.ToShortTimeString() + ")" + (transport.IsReservation ? "*" : "") + 
+                                "</h3></li>");
+                        }
                         else
                         {
                             transportNode = HtmlNode.CreateNode("<li><h3>" +

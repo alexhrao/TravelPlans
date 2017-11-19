@@ -51,14 +51,25 @@ namespace Converter
                             {
                                 bool isPlane = false;
                                 bool isBus = false;
+                                bool isCar = false;
                                 if (line.Contains(" AIRPLANE [")) {
                                     isPlane = true;
                                     line = line.Replace(" AIRPLANE ", " ");
+                                }
+                                else if (line.Contains(" PLANE ["))
+                                {
+                                    isPlane = true;
+                                    line = line.Replace(" PLANE ", " ");
                                 }
                                 else if (line.Contains(" BUS ["))
                                 {
                                     isBus = true;
                                     line = line.Replace(" BUS ", " ");
+                                }
+                                else if (line.Contains(" CAR ["))
+                                {
+                                    isCar = true;
+                                    line = line.Replace(" CAR ", " ");
                                 }
                                 // Add a new train (will add more later)
                                 string departStation = line.Substring(
@@ -107,6 +118,18 @@ namespace Converter
                                 else if (isBus)
                                 {
                                     transport = new Bus
+                                    {
+                                        DepartStation = departStation,
+                                        ArriveStation = arriveStation,
+                                        DepartTime = depart,
+                                        ArriveTime = arrive,
+                                        IsReservation = isReservation,
+                                        Notes = notes
+                                    };
+                                }
+                                else if (isCar)
+                                {
+                                    transport = new Car
                                     {
                                         DepartStation = departStation,
                                         ArriveStation = arriveStation,
