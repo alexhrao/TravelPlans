@@ -78,6 +78,10 @@ namespace Converter
                 }
 
                 HtmlNode lodgings = document.GetElementbyId("lodging");
+                CultureInfo culture = new CultureInfo("fr-FR");
+
+                culture.NumberFormat.CurrencyDecimalSeparator = ".";
+                culture.NumberFormat.CurrencyGroupSeparator = ",";
                 foreach (Lodging lodging in parser.Lodgings)
                 {
                     HtmlNode lodgeNode = HtmlNode.CreateNode(@"<div class=""lodging""></div>");
@@ -85,21 +89,18 @@ namespace Converter
                     if (lodging is AirBnb)
                     {
                         lodgeNode.AppendChild(HtmlNode.CreateNode(@"<h3><i class=""fa fa-home""></i> " + HttpUtility.HtmlEncode(lodging.Name) + " (" +
-                            HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) +
+                            HttpUtility.HtmlEncode(lodging.ArriveDate.ToString("dd/MM/yyyy", culture)) +
                             @" <span class=""glyphicon glyphicon-arrow-right""></span> " +
-                            HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) + ")</h3>"));
+                            HttpUtility.HtmlEncode(lodging.DepartDate.ToString("dd/MM/yyyy", culture)) + ")</h3>"));
                     }
                     else
                     {
                         lodgeNode.AppendChild(HtmlNode.CreateNode(@"<h3><i class=""fa fa-hotel""></i> " + HttpUtility.HtmlEncode(lodging.Name) + " (" +
-                            HttpUtility.HtmlEncode(lodging.ArriveDate.ToShortDateString()) +
+                            HttpUtility.HtmlEncode(lodging.ArriveDate.ToString("dd/MM/yyyy", culture)) +
                             @" <span class=""glyphicon glyphicon-arrow-right""></span> " +
-                            HttpUtility.HtmlEncode(lodging.DepartDate.ToShortDateString()) + ")</h3>"));
+                            HttpUtility.HtmlEncode(lodging.DepartDate.ToString("dd/MM/yyyy", culture)) + ")</h3>"));
                     }
-                    CultureInfo culture = new CultureInfo("fr-FR");
 
-                    culture.NumberFormat.CurrencyDecimalSeparator = ".";
-                    culture.NumberFormat.CurrencyGroupSeparator = ",";
                     for (int i = 0; i < lodging.Notes.Count; i++)
                     {
                         lodging.Notes[i] = Encode(HttpUtility.HtmlEncode(lodging.Notes[i]));
