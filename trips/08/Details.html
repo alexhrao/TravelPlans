@@ -1,196 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Germany</title>
 
-        <!-- Get Bootstrap: -->
-        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script src="../../assets/scripts/header.js"></script>
-        <link type="text/css" rel="stylesheet" href="../../assets/css/template.css" />
-        <link rel="shortcut icon" type="image/png" href="../../assets/images/branding/favicon.ico" />
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="https://alexhrao.github.io/TravelPlans">
-                        <img id="logo" src="../../favicon.ico" class="img-circle no-web" />
-                    </a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> 
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="../01/Details.html">Metz</a></li>
-                        <li><a href="../02/Details.html">Luxembourg</a></li>
-                        <li><a href="../03/Details.html">Belgium</a></li>
-                        <li><a href="../04/Details.html">Switzerland</a></li>
-                        <li><a href="../05/Details.html">The UK</a></li>
-                        <li><a href="../06/Details.html">Netherlands</a></li>
-                        <li><a href="../07/Details.html">Austria &amp; Hungary</a></li>
-                        <li class="active"><a href="../08/Details.html">Germany</a></li>
-                        <li><a href="../09/Details.html">Monaco &amp; Champagne</a></li>
-                        <li><a href="../10/Details.html">Scandinavia</a></li>
-                        <li><a href="../11/Details.html">Spain</a></li>
-                        <li><a href="../12/Details.html">Normandy</a></li>
-                        <li><a href="../13/Details.html">Poland &amp; Czech</a></li>
-                        <li><a href="../14/Details.html">Italy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="title-block">
-                <h1 class="text-center">Germany</h1>
-                <img id="mainImage" src="imgMain.jpg" class="img-responsive img-rounded img-main" />
-            </div>
-            <div class="row">
-                <div id="headerCarousel" class="carousel slide text-center" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#headerCarousel" data-slide-to="1"></li>
-                        <li data-target="#headerCarousel" data-slide-to="2"></li>
-                        <li data-target="#headerCarousel" data-slide-to="3"></li>
-                        <li data-target="#headerCarousel" data-slide-to="4"></li>
-                        <li data-target="#headerCarousel" data-slide-to="5"></li>
-                        <li data-target="#headerCarousel" data-slide-to="6"></li>
-                        <li data-target="#headerCarousel" data-slide-to="7"></li>
-                        <li data-target="#headerCarousel" data-slide-to="8"></li>
-                        <li data-target="#headerCarousel" data-slide-to="9"></li>
-                    </ol>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Trip Summary</title>
+    <style>
+        body {
+            padding-left: 10px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        #transportation,
+        #lodging {
+            padding-left: 15px;
+        }
+        li {
+            font-size: 20px;
+        }
+        #lodging h3 {
+            padding-left: 20px;
+        }
+        #lodging p {
+            padding-left: 25px;
+        }
 
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="img00.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img01.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img02.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img03.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img04.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img05.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img06.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img07.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img08.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img09.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                    </div>
-                    <a id="moveLeft" class="left carousel-control" href="#headerCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a id="moveRight" class="right carousel-control" href="#headerCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 col-xs-offset-4 text-center">
-                    <button id="togglePlay" class="btn btn-block btn-success btn-lg">
-                        <span id="playStatus" class="glyphicon glyphicon-pause"></span>
-                    </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="detail-block">
-                    <div class="day-block text-center container-fluid">
-                        <h2 class="day-header">Day 1: Cologne</h2>
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 event-block">
-                                <h3 class="event-header">Cathedral of Cologne</h3>
-                                <img src="cologne.jpg" class="img-thumbnail text-center" />
-                                <p>One of the most beautiful cathedrals in all of Europe!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="day-block text-center container-fluid">
-                        <h2 class="day-header">Day 2: Berlin</h2>
-                        <div class="row">
-                            <div class="col-md-12 event-block">
-                                <h3 class="event-header">The Berlin Wall</h3>
-                                <img src="berlinWall.jpg" class="img-thumbnail text-center" />
-                                <p>Classic Grafitti on the Eastern Side of the Berlin Wall</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">The Berlin Cathedral</h3>
-                                <img src="img07.jpg" class="img-thumbnail text-center" />
-                                <p>A beautiful cathedral situated in the center of Berlin</p>
-                            </div>
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Checkpoint Charlie</h3>
-                                <img src="charlie.jpg" class="img-thumbnail text-center" />
-                                <p>While not as impressive as the wall itself, this is the point of contact between the USSR and the US</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Holocaust Memorial</h3>
-                                <img src="holocaust.jpg" class="img-thumbnail text-center" />
-                                <p>There are 2,711 columns, though this number does not mean anything in particular</p>
-                            </div>
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Brandenburg Gate</h3>
-                                <img src="img08.jpg" class="img-thumbnail text-center" />
-                                <p>Arguably the most iconic of German architecture, this gate has come to represent both freedom and oppression</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Reichstag Building</h3>
-                                <img src="reichstag.jpg" class="img-thumbnail text-center" />
-                                <p>The Seat of German Government</p>
-                            </div>
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Kaiser Wilhelm Memorial Cathedral</h3>
-                                <img src="img09.jpg" class="img-thumbnail text-center" />
-                                <p>A beautiful cathedral, though in need of repairs</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Victory Tower</h3>
-                                <img src="victoryTower.jpg" class="img-thumbnail text-center" />
-                                <p>A Tower commemorating the victory of the Germans against the French</p>
-                            </div>
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Sunset from the Victory Tower</h3>
-                                <video width="100%" height="100%" controls muted>
-                                    <source src="timeLapse.mp4" type="video/mp4" /> Your browser does not support the VIDEO tag! Please use a modern browser.
-                                </video>
-                                <p>A time lapse of the sunset from atop the Victory Tower</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+    </style>
+</head>
+<body>
+    <h1>Transportation</h1>
+    <div id="transportation">
+
+    <div class="trip"><h2>Metz, France - Cologne, Germany {R}</h2><ol><li><h3><i class="fa fa-train"></i> METZ VILLE (18:33)  <span class="glyphicon glyphicon-arrow-right"></span> LUXEMBOURG (19:22)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> LUXEMBOURG (19:31)  <span class="glyphicon glyphicon-arrow-right"></span> KOBLENZ HBF (21:56)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> KOBLENZ HBF (22:13)  <span class="glyphicon glyphicon-arrow-right"></span> KOELN HBF (23:05)</h3><p class="notes"></li></ol></div><div class="trip"><h2>Cologne, German - Berlin, Germany {F}</h2><ol><li><h3><i class="fa fa-train"></i> KOELN HBF (18:48)  <span class="glyphicon glyphicon-arrow-right"></span> BERLIN HBF (23:06)</h3><p class="notes"></li></ol></div><div class="trip"><h2>Berlin, Germany - Metz, France {N}</h2><ol><li><h3><i class="fa fa-train"></i> BERLIN HBF (12:30)  <span class="glyphicon glyphicon-arrow-right"></span> MANNHEIM HBF (17:23)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> MANNHEIM HBF (17:39)  <span class="glyphicon glyphicon-arrow-right"></span> SAARBRUECKEN HBF (19:12)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> SAARBRUECKEN HBF (19:16)  <span class="glyphicon glyphicon-arrow-right"></span> FORBACH (19:26)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> FORBACH (19:33)  <span class="glyphicon glyphicon-arrow-right"></span> METZ VILLE (20:20)</h3><p class="notes"></li></ol></div></div>
+    <h1>Lodging</h1>
+    <div id="lodging">
+
+    <div class="lodging"><h2>Cologne, Germany</h2><h3><i class="fa fa-hotel"></i> Cologne Downtown Hostel (12/10/2017 <span class="glyphicon glyphicon-arrow-right"></span> 13/10/2017)</h3><p>Cologne Downtown Hostel<br>Hohe Stra&#223;e 30a, 50667 K&#246;ln, Cologne<br>Room: Standard 8 Bed Mixed Dorm (€26.00)<br><em>Cost: 26.00 € (Total: 26.00 €)</em></p></div><div class="lodging"><h2>Berlin, Germany</h2><h3><i class="fa fa-hotel"></i> Citystay Mitte (13/10/2017 <span class="glyphicon glyphicon-arrow-right"></span> 15/10/2017)</h3><p>Citystay Mitte<br>Rosenstrasse 16, Berlin, Germany<br>Room: 10 Bed Mixed Dorm (€23.10)<br><em>Cost: 23.10 € (Total: 46.20 €)</em></p></div></div>
+
+    <footer>
+        <p><strong>*</strong> denotes the transportation requires reservation</p>
+    </footer>
+</body>
 </html>

@@ -1,51 +1,179 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Monaco &amp; Champagne</title>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Get Bootstrap: -->
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Trip Summary</title>
-    <style>
-        body {
-            padding-left: 10px;
-            font-family: 'Segoe UI', sans-serif;
-        }
-        #transportation,
-        #lodging {
-            padding-left: 15px;
-        }
-        li {
-            font-size: 20px;
-        }
-        #lodging h3 {
-            padding-left: 20px;
-        }
-        #lodging p {
-            padding-left: 25px;
-        }
+        <script src="../../assets/scripts/header.js"></script>
+        <link type="text/css" rel="stylesheet" href="../../assets/css/template.css" />
+        <link rel="shortcut icon" type="image/png" href="../../assets/images/branding/favicon.ico" />
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://alexhrao.github.io/TravelPlans">
+                        <img id="logo" src="../../favicon.ico" class="img-circle no-web" />
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../01/Summary.html">Metz</a></li>
+                        <li><a href="../02/Summary.html">Luxembourg</a></li>
+                        <li><a href="../03/Summary.html">Belgium</a></li>
+                        <li><a href="../04/Summary.html">Switzerland</a></li>
+                        <li><a href="../05/Summary.html">The UK</a></li>
+                        <li><a href="../06/Summary.html">Netherlands</a></li>
+                        <li><a href="../07/Summary.html">Austria &amp; Hungary</a></li>
+                        <li><a href="../08/Summary.html">Germany</a></li>
+                        <li class="active"><a href="../09/Summary.html">Monaco &amp; Champagne</a></li>
+                        <li><a href="../10/Summary.html">Scandinavia</a></li>
+                        <li><a href="../11/Summary.html">Spain</a></li>
+                        <li><a href="../12/Summary.html">Normandy</a></li>
+                        <li><a href="../13/Summary.html">Poland &amp; Czech</a></li>
+                        <li><a href="../14/Summary.html">Italy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="title-block">
+                <h1 class="text-center">Monaco</h1>
+                <img id="mainImage" src="imgMain.jpg" class="img-responsive img-rounded img-main" />
+            </div>
+            <div class="row">
+                <div id="headerCarousel" class="carousel slide text-center" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#headerCarousel" data-slide-to="1"></li>
+                        <li data-target="#headerCarousel" data-slide-to="2"></li>
+                        <li data-target="#headerCarousel" data-slide-to="3"></li>
+                        <li data-target="#headerCarousel" data-slide-to="4"></li>
+                        <li data-target="#headerCarousel" data-slide-to="5"></li>
+                        <li data-target="#headerCarousel" data-slide-to="6"></li>
+                        <li data-target="#headerCarousel" data-slide-to="7"></li>
+                        <li data-target="#headerCarousel" data-slide-to="8"></li>
+                        <li data-target="#headerCarousel" data-slide-to="9"></li>
+                    </ol>
 
-    </style>
-</head>
-<body>
-    <h1>Transportation</h1>
-    <div id="transportation">
-
-    <div class="trip"><h2>Metz, France - Monte Carlo, Monaco {R}</h2><ol><li><h3><i class="fa fa-train"></i> METZ VILLE (10:57)  <span class="glyphicon glyphicon-arrow-right"></span> PARIS EST (12:20)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> PARIS GARE DE LYON (14:17)  <span class="glyphicon glyphicon-arrow-right"></span> MONACO-MONTE-CARLO (20:20)*</h3><p class="notes"></li></ol></div><div class="trip"><h2>Monte Carlo, Monaco - Reims, France {S}</h2><ol><li><h3><i class="fa fa-train"></i> MONACO-MONTE-CARLO (06:04)  <span class="glyphicon glyphicon-arrow-right"></span> NICE VILLE (06:27)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> NICE VILLE (07:04)  <span class="glyphicon glyphicon-arrow-right"></span> PARIS GARE DE LYON (12:41)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> PARIS EST (14:26)  <span class="glyphicon glyphicon-arrow-right"></span> CHAMPAGNE-ARDENNE (15:08)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> CHAMPAGNE-ARDENNE (15:16)  <span class="glyphicon glyphicon-arrow-right"></span> REIMS (15:28)</h3><p class="notes"></li></ol></div><div class="trip"><h2>Reims, France - Metz, France {S}</h2><ol><li><h3><i class="fa fa-train"></i> REIMS (19:56)  <span class="glyphicon glyphicon-arrow-right"></span> CHAMPAGNE-ARDENNE (20:08)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> CHAMPAGNE-ARDENNE (21:21)  <span class="glyphicon glyphicon-arrow-right"></span> LORRAINE (22:06)*</h3><p class="notes"></li><li><h3><i class="fa fa-bus"></i> LORRAINE (22:33)  <span class="glyphicon glyphicon-arrow-right"></span> METZ VILLE (23:03)</h3><p class="notes"></li></ol></div></div>
-    <h1>Lodging</h1>
-    <div id="lodging">
-
-    <div class="lodging"><h2>Monte Carlo, Monaco</h2><h3><i class="fa fa-home"></i> AirBnB (19/10/2017 <span class="glyphicon glyphicon-arrow-right"></span> 21/10/2017)</h3><p>Apartments Monaco<br>Room: Studio with Sea View<br>Booked via Booking.com<br><em>Cost: 0.00 € (Total: 0.00 €)</em></p></div></div>
-
-    <footer>
-        <p><strong>*</strong> denotes the transportation requires reservation</p>
-    </footer>
-</body>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img00.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img01.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img02.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img03.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img04.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img05.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img06.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img07.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img08.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img09.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                    </div>
+                    <a id="moveLeft" class="left carousel-control" href="#headerCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a id="moveRight" class="right carousel-control" href="#headerCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-4 text-center">
+                    <button id="togglePlay" class="btn btn-block btn-success btn-lg">
+                        <span id="playStatus" class="glyphicon glyphicon-pause"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="detail-block">
+                    <div class="day-block text-center container-fluid">
+                        <h2 class="day-header">Day 1: Monaco</h2>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Monte-Carlo Casino (By Day)</h3>
+                                <img src="img00.jpg" class="img-thumbnail text-center" />
+                                <p>The ever-beautiful Monte-Carlo Casino</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">The Port</h3>
+                                <img src="yacht.jpg" class="img-thumbnail text-center" />
+                                <p>I've never seen so many yachts...</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">The Prince's Personal Car Collection</h3>
+                                <img src="car.jpg" class="img-thumbnail text-center" />
+                                <p>Neither have I ever seen so many cars of this quality...</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">An Italian Lunch</h3>
+                                <img src="lunch.jpg" class="img-thumbnail text-center" />
+                                <p>A train to Italy granted me the quintessential Italian Fare.</p>
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 event-block">
+                                <h3 class="event-header">Monte-Carlo Casino (By Night)</h3>
+                                <img src="monteCarloNight.jpg" class="img-thumbnail text-center" />
+                                <p>The casino really opens up at night!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="title-block">
+                        <h1 class="text-center">Champagne</h1>
+                    </div>
+                    <div class="day-block text-center container-fluid">
+                        <h2 class="day-header">Day 2: Reims</h2>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Notre Dame Cathedral of Reims</h3>
+                                <img src="img05.jpg" class="img-thumbnail text-center" />
+                                <p>A rather large cathedral at the center of the city</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Champagne!</h3>
+                                <img src="img02.jpg" class="img-thumbnail text-center" />
+                                <p>Some of the best (and only) Champagne I've ever had!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

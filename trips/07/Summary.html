@@ -1,51 +1,208 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Austria &amp; Hungary</title>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Get Bootstrap: -->
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Trip Summary</title>
-    <style>
-        body {
-            padding-left: 10px;
-            font-family: 'Segoe UI', sans-serif;
-        }
-        #transportation,
-        #lodging {
-            padding-left: 15px;
-        }
-        li {
-            font-size: 20px;
-        }
-        #lodging h3 {
-            padding-left: 20px;
-        }
-        #lodging p {
-            padding-left: 25px;
-        }
+        <script src="../../assets/scripts/header.js"></script>
+        <link type="text/css" rel="stylesheet" href="../../assets/css/template.css" />
+        <link rel="shortcut icon" type="image/png" href="../../assets/images/branding/favicon.ico" />
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://alexhrao.github.io/TravelPlans">
+                        <img id="logo" src="../../favicon.ico" class="img-circle no-web" />
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../01/Summary.html">Metz</a></li>
+                        <li><a href="../02/Summary.html">Luxembourg</a></li>
+                        <li><a href="../03/Summary.html">Belgium</a></li>
+                        <li><a href="../04/Summary.html">Switzerland</a></li>
+                        <li><a href="../05/Summary.html">The UK</a></li>
+                        <li><a href="../06/Summary.html">Netherlands</a></li>
+                        <li class="active"><a href="../07/Summary.html">Austria &amp; Hungary</a></li>
+                        <li><a href="../08/Summary.html">Germany</a></li>
+                        <li><a href="../09/Summary.html">Monaco &amp; Champagne</a></li>
+                        <li><a href="../10/Summary.html">Scandinavia</a></li>
+                        <li><a href="../11/Summary.html">Spain</a></li>
+                        <li><a href="../12/Summary.html">Normandy</a></li>
+                        <li><a href="../13/Summary.html">Poland &amp; Czech</a></li>
+                        <li><a href="../14/Summary.html">Italy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="title-block">
+                <h1 class="text-center">Vienna &amp; Budapest</h1>
+                <img id="mainImage" src="imgMain.jpg" class="img-responsive img-rounded img-main" />
+            </div>
+            <div class="row">
+                <div id="headerCarousel" class="carousel slide text-center" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#headerCarousel" data-slide-to="1"></li>
+                        <li data-target="#headerCarousel" data-slide-to="2"></li>
+                        <li data-target="#headerCarousel" data-slide-to="3"></li>
+                        <li data-target="#headerCarousel" data-slide-to="4"></li>
+                        <li data-target="#headerCarousel" data-slide-to="5"></li>
+                        <li data-target="#headerCarousel" data-slide-to="6"></li>
+                        <li data-target="#headerCarousel" data-slide-to="7"></li>
+                        <li data-target="#headerCarousel" data-slide-to="8"></li>
+                        <li data-target="#headerCarousel" data-slide-to="9"></li>
+                    </ol>
 
-    </style>
-</head>
-<body>
-    <h1>Transportation</h1>
-    <div id="transportation">
-
-    <div class="trip"><h2>Metz, France - Vienna, Austria {R-F}</h2><ol><li><h3><i class="fa fa-train"></i> METZ VILLE (18:16)  <span class="glyphicon glyphicon-arrow-right"></span> LUXEMBOURG (19:16)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> LUXEMBOURG (19:31)  <span class="glyphicon glyphicon-arrow-right"></span> KOBLENZ HBF (21:56)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> KOBLENZ HBF (22:17)  <span class="glyphicon glyphicon-arrow-right"></span> WIEN MEIDLNIG (08:11)*</h3><p class="notes"></li></ol></div><div class="trip"><h2>Vienna, Austria - Budapest, Hungary {S}</h2><ol><li><h3><i class="fa fa-train"></i> WIEN HBF (08:39)  <span class="glyphicon glyphicon-arrow-right"></span> BUDAPEST-KELENFOELD (11:02)</h3><p class="notes"></li></ol></div><div class="trip"><h2>Budapest, Hungary - Metz, France {N}</h2><ol><li><h3><i class="fa fa-train"></i> BUDAPEST-KELENFOELD (09:36)  <span class="glyphicon glyphicon-arrow-right"></span> MUENCHEN HBF (16:31)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> MUENCHEN HBF (16:47)  <span class="glyphicon glyphicon-arrow-right"></span> OFFENBURG (20:31)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> OFFENBURG (21:05)  <span class="glyphicon glyphicon-arrow-right"></span> STRASBOURG (21:34)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> STRASBOURG (22:08)  <span class="glyphicon glyphicon-arrow-right"></span> METZ VILLE (22:56)*</h3><p class="notes"></li></ol></div></div>
-    <h1>Lodging</h1>
-    <div id="lodging">
-
-    <div class="lodging"><h2>Vienna, Austria</h2><h3><i class="fa fa-hotel"></i> MEININGER Vienna Downtown Franz (13/10/2017 <span class="glyphicon glyphicon-arrow-right"></span> 14/10/2017)</h3><p>MEININGER Vienna Downtown Franz<br>Remembrandtstrasse 21, Vienna, Austria<br><em>Cost: 0.00 € (Total: 0.00 €)</em></p></div><div class="lodging"><h2>Budapest, Hungary</h2><h3><i class="fa fa-hotel"></i> Wombats City Hostel (07/10/2017 <span class="glyphicon glyphicon-arrow-right"></span> 08/10/2017)</h3><p>Wombats City Hostel<br>Kiraly utca 20<br>Budapest, Hungary<br>Room: 8 Bed Mixed dorm Ensuite ($15.00)<br><br><em>Cost: 14.25 € (Total: 14.25 €)</em></p></div></div>
-
-    <footer>
-        <p><strong>*</strong> denotes the transportation requires reservation</p>
-    </footer>
-</body>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img00.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img01.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img02.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img03.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img04.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img05.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img06.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img07.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img08.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                        <div class="item">
+                            <img src="img09.jpg" alt="" class="img-thumbnail" />
+                        </div>
+                    </div>
+                    <a id="moveLeft" class="left carousel-control" href="#headerCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a id="moveRight" class="right carousel-control" href="#headerCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-4 text-center">
+                    <button id="togglePlay" class="btn btn-block btn-success btn-lg">
+                        <span id="playStatus" class="glyphicon glyphicon-pause"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="detail-block">
+                    <div class="day-block text-center container-fluid">
+                        <h2 class="day-header">Day 1: Vienna, Austria</h2>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Schonbrunn Palace</h3>
+                                <img src="schonbrunn.jpg" class="img-thumbnail text-center" />
+                                <p>Vienna had so much beautiful architecture - this is just one of many examples of this</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Sigmund Freud Museum</h3>
+                                <img src="freud.jpg" class="img-thumbnail text-center" />
+                                <p>This was Freud's actual home for most of his life</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Museum of Natural History</h3>
+                                <img src="museum.jpg" class="img-thumbnail text-center" />
+                                <p>A cat posing in the Museum (it's not real)</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Museum of Natural History Part II</h3>
+                                <img src="museum2.jpg" class="img-thumbnail text-center" />
+                                <p>A particularly interesting crystal</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Belvedere Palace</h3>
+                                <img src="belvedere.jpg" class="img-thumbnail text-center" />
+                                <p>One of the most magnificent palaces I've ever seen. Only downside was the Fat House</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">The Fat House</h3>
+                                <video width="100%" height="100%" controls>
+                                    <source src="fatHouse.mp4" type="video/mp4" /> Your browser does not support the video tag.
+                                </video>
+                                <p>By far one of the weirdest pieces of "art" I have ever seen.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">The Quintet</h3>
+                                <img src="orchestra.jpg" class="img-thumbnail text-center" />
+                                <p>The Quintet and I posing for a perfect picture</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Orchestra in historic St. Stephen's Cathedral</h3>
+                                <div class="youtube">
+                                    <iframe src="https://www.youtube.com/embed/2hg53jNpKZI" class="img-thumbnail text-center" allowfullscreen></iframe>
+                                </div>
+                                <p>Orchestra playing Vivaldi's famous <em>Four Seasons</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day-block text-center container-fluid">
+                        <h2 class="day-header">Day 2: Budapest</h2>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">St. Stephen's Basilica</h3>
+                                <img src="basilica.jpg" class="img-thumbnail text-center" />
+                                <p>A beautiful modern Basilica - the top afforded a beautiful city-wide view!</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Holocaust Memorial</h3>
+                                <img src="holocaust.jpg" class="img-thumbnail text-center" />
+                                <p>A shoe for each man, woman, and child who was shot into the river by the Nazi Regime</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Hungarian House of Parliament</h3>
+                                <img src="parliament.jpg" class="img-thumbnail text-center" />
+                                <p>The Seat of Hungarian Government</p>
+                            </div>
+                            <div class="col-md-6 event-block">
+                                <h3 class="event-header">Hungarian Square</h3>
+                                <img src="square.jpg" class="img-thumbnail text-center" />
+                                <p>Central Square of Budapest</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

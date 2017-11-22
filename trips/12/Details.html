@@ -1,195 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Normandy</title>
 
-        <!-- Get Bootstrap: -->
-        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script src="../../assets/scripts/header.js"></script>
-        <link type="text/css" rel="stylesheet" href="../../assets/css/template.css" />
-        <link rel="shortcut icon" type="image/png" href="../../assets/images/branding/favicon.ico" />
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="https://alexhrao.github.io/TravelPlans">
-                        <img id="logo" src="../../favicon.ico" class="img-circle no-web" />
-                    </a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> 
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="../01/Details.html">Metz</a></li>
-                        <li><a href="../02/Details.html">Luxembourg</a></li>
-                        <li><a href="../03/Details.html">Belgium</a></li>
-                        <li><a href="../04/Details.html">Switzerland</a></li>
-                        <li><a href="../05/Details.html">The UK</a></li>
-                        <li><a href="../06/Details.html">Netherlands</a></li>
-                        <li><a href="../07/Details.html">Austria &amp; Hungary</a></li>
-                        <li><a href="../08/Details.html">Germany</a></li>
-                        <li><a href="../09/Details.html">Monaco &amp; Champagne</a></li>
-                        <li><a href="../10/Details.html">Scandinavia</a></li>
-                        <li><a href="../11/Details.html">Spain</a></li>
-                        <li class="active"><a href="../12/Details.html">Normandy</a></li>
-                        <li><a href="../13/Details.html">Poland &amp; Czech</a></li>
-                        <li><a href="../14/Details.html">Italy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="title-block">
-                <h1 class="text-center">Normandy, France</h1>
-                <img id="mainImage" src="imgMain.jpg" class="img-responsive img-rounded img-main" />
-            </div>
-            <div class="row">
-                <div id="headerCarousel" class="carousel slide text-center" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#headerCarousel" data-slide-to="1"></li>
-                        <li data-target="#headerCarousel" data-slide-to="2"></li>
-                        <li data-target="#headerCarousel" data-slide-to="3"></li>
-                        <li data-target="#headerCarousel" data-slide-to="4"></li>
-                        <li data-target="#headerCarousel" data-slide-to="5"></li>
-                        <li data-target="#headerCarousel" data-slide-to="6"></li>
-                        <li data-target="#headerCarousel" data-slide-to="7"></li>
-                        <li data-target="#headerCarousel" data-slide-to="8"></li>
-                        <li data-target="#headerCarousel" data-slide-to="9"></li>
-                    </ol>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Trip Summary</title>
+    <style>
+        body {
+            padding-left: 10px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        #transportation,
+        #lodging {
+            padding-left: 15px;
+        }
+        li {
+            font-size: 20px;
+        }
+        #lodging h3 {
+            padding-left: 20px;
+        }
+        #lodging p {
+            padding-left: 25px;
+        }
 
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="img00.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img01.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img02.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img03.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img04.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img05.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img06.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img07.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img08.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img09.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                    </div>
-                    <a id="moveLeft" class="left carousel-control" href="#headerCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a id="moveRight" class="right carousel-control" href="#headerCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 col-xs-offset-4 text-center">
-                    <button id="togglePlay" class="btn btn-block btn-success btn-lg">
-                        <span id="playStatus" class="glyphicon glyphicon-pause"></span>
-                    </button>
-                </div>
-            </div>
-            
-            <!--
-                Day 1
-                    Normandy Battlefield Tour
-                    Museum?
-                    Utah Beach
-                    Omaha Beach
-                    Point du Hoc
-                    American Cemetary
-                Day 2
-                    Tapestry
-                    Arromanches
-                Day 3
-                    Jean de Arc Museum
-            -->
-            <div class="row">
-                <div class="detail-block">
-                    <div class="day-block text-center container-fluid">
-                        <h2 class="day-header">Day 1: Battlefield Tour</h2>
-                        <div class="row">
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Airborne Museum</h3>
-                                <img src="airborne.jpg" class="img-thumbnail text-center" />
-                                <p>A Real C47 Plane</p>
-                            </div>
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Point du Hoc</h3>
-                                <img src="img08.jpg" class="img-thumbnail text-center" />
-                                <p>The view from atop Point du Hoc</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Utah Beach</h3>
-                                <img src="utah.jpg" class="img-thumbnail text-center" />
-                                <p>The first beach breached by the Americans</p>
-                            </div>
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">Omaha Beach</h3>
-                                <img src="omaha.jpg" class="img-thumbnail text-center" />
-                                <p>Arguably the most famous battleground of The Western Theater</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 event-block">
-                                <h3 class="event-header">The American Cemetary</h3>
-                                <img src="img04.jpg" class="img-thumbnail text-center" />
-                                <p>The American Cemetary for those that died during the liberation of Normandy</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="day-block text-center container-fluid">
-                        <h2 class="day-header">Day 2: Arromanches</h2>
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 event-block">
-                                <h3 class="event-header">View</h3>
-                                <img src="img06.jpg" class="img-thumbnail text-center" />
-                                <p>A view of the beach from atop the Arromanches Hill</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="day-block text-center container-fluid">
-                        <h2 class="day-header">Day 3: Rouen</h2>
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 event-block">
-                                <h3 class="event-header">Jean de Arc Museum</h3>
-                                <img src="jeanDeArc.jpg" class="img-thumbnail text-center" />
-                                <p>Jean herself!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+    </style>
+</head>
+<body>
+    <h1>Transportation</h1>
+    <div id="transportation">
+
+    <div class="trip"><h2>Metz, France - Bayeux, France {16/11}</h2><ol><li><h3><i class="fa fa-train"></i> METZ VILLE (13:56)  <span class="glyphicon glyphicon-arrow-right"></span> PARIS EST (15:20)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> PARIS LAZARE (17:08)  <span class="glyphicon glyphicon-arrow-right"></span> BAYEUX (19:19)</h3><p class="notes"></li></ol></div><div class="trip"><h2>Bayeux, France - Metz, France {19/11}</h2><ol><li><h3><i class="fa fa-car"></i> BAYEUX (09:00)  <span class="glyphicon glyphicon-arrow-right"></span> ROUEN (11:15)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> ROUEN (14:59)  <span class="glyphicon glyphicon-arrow-right"></span> PARIS LAZARE (16:10)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> PARIS EST (17:40)  <span class="glyphicon glyphicon-arrow-right"></span> METZ VILLE (19:04)*</h3><p class="notes"></li></ol></div></div>
+    <h1>Lodging</h1>
+    <div id="lodging">
+
+    <div class="lodging"><h2>Bayeux, France</h2><h3><i class="fa fa-hotel"></i> Hotel Reine Mathilde (16/11/2017 <span class="glyphicon glyphicon-arrow-right"></span> 19/11/2017)</h3><p>Hotel Reine Mathilde<br>23 rue Larcher, Bayeux 14400 France<br>Phone: (+33) 02 31 92 08 13<br>Price: €0.00<br>Room: Prestige Room &amp; Double Room<br><em>Cost: 0.00 € (Total: 0.00 €)</em></p></div></div>
+
+    <footer>
+        <p><strong>*</strong> denotes the transportation requires reservation</p>
+    </footer>
+</body>
 </html>

@@ -1,51 +1,701 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Scandinavia</title>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Get Bootstrap: -->
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Trip Summary</title>
-    <style>
-        body {
-            padding-left: 10px;
-            font-family: 'Segoe UI', sans-serif;
-        }
-        #transportation,
-        #lodging {
-            padding-left: 15px;
-        }
-        li {
-            font-size: 20px;
-        }
-        #lodging h3 {
-            padding-left: 20px;
-        }
-        #lodging p {
-            padding-left: 25px;
-        }
+        <script src="../../assets/scripts/header.js"></script>
+        <link type="text/css" rel="stylesheet" href="../../assets/css/template.css" />
+        <link rel="shortcut icon" type="image/png" href="../../assets/images/branding/favicon.ico" />
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://alexhrao.github.io/TravelPlans">
+                        <img id="logo" src="../../favicon.ico" class="img-circle no-web" />
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../01/Summary.html">Metz</a></li>
+                        <li><a href="../02/Summary.html">Luxembourg</a></li>
+                        <li><a href="../03/Summary.html">Belgium</a></li>
+                        <li><a href="../04/Summary.html">Switzerland</a></li>
+                        <li><a href="../05/Summary.html">The UK</a></li>
+                        <li><a href="../06/Summary.html">Netherlands</a></li>
+                        <li><a href="../07/Summary.html">Austria &amp; Hungary</a></li>
+                        <li><a href="../08/Summary.html">Germany</a></li>
+                        <li><a href="../09/Summary.html">Monaco &amp; Champagne</a></li>
+                        <li class="active"><a href="../10/Summary.html">Scandinavia</a></li>
+                        <li><a href="../11/Summary.html">Spain</a></li>
+                        <li><a href="../12/Summary.html">Normandy</a></li>
+                        <li><a href="../13/Summary.html">Poland &amp; Czech</a></li>
+                        <li><a href="../14/Summary.html">Italy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div id="header">
+                <div class="title-block">
+                    <h1 class="text-center">Scandinavia</h1>
+                    <img src="imgMain.jpg" class="img-responsive img-rounded img-main" />
+                </div>
+                <div class="row">
+                    <div id="headerCarousel" class="carousel slide text-center" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#headerCarousel" data-slide-to="1"></li>
+                            <li data-target="#headerCarousel" data-slide-to="2"></li>
+                            <li data-target="#headerCarousel" data-slide-to="3"></li>
+                            <li data-target="#headerCarousel" data-slide-to="4"></li>
+                            <li data-target="#headerCarousel" data-slide-to="5"></li>
+                            <li data-target="#headerCarousel" data-slide-to="6"></li>
+                            <li data-target="#headerCarousel" data-slide-to="7"></li>
+                            <li data-target="#headerCarousel" data-slide-to="8"></li>
+                            <li data-target="#headerCarousel" data-slide-to="9"></li>
+                        </ol>
 
-    </style>
-</head>
-<body>
-    <h1>Transportation</h1>
-    <div id="transportation">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img000.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="img001.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="img002.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="img003.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="img004.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="img005.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="img006.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="img007.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="img008.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="img009.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                        </div>
+                        <a id="moveLeft" class="left carousel-control" href="#headerCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a id="moveRight" class="right carousel-control" href="#headerCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4 text-center">
+                        <button id="togglePlay" class="btn btn-block btn-success btn-lg">
+                            <span id="playStatus" class="glyphicon glyphicon-pause"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div id="denmark">
+                <div class="title-block">
+                    <h1 class="text-center">Copenhagen, Denmark</h1>
+                    <img src="imgMain_Denmark.jpg" class="img-responsive img-rounded img-main" />
+                </div>
+                <div class="row">
+                    <div id="denmarkCarousel" class="carousel slide text-center" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#denmarkCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#denmarkCarousel" data-slide-to="1"></li>
+                            <li data-target="#denmarkCarousel" data-slide-to="2"></li>
+                            <li data-target="#denmarkCarousel" data-slide-to="3"></li>
+                            <li data-target="#denmarkCarousel" data-slide-to="4"></li>
+                            <li data-target="#denmarkCarousel" data-slide-to="5"></li>
+                            <li data-target="#denmarkCarousel" data-slide-to="6"></li>
+                            <li data-target="#denmarkCarousel" data-slide-to="7"></li>
+                            <li data-target="#denmarkCarousel" data-slide-to="8"></li>
+                            <li data-target="#denmarkCarousel" data-slide-to="9"></li>
+                        </ol>
 
-    <div class="trip"><h2>Metz, France - Copenhagen, Denmark {26/10-27/10}</h2><ol><li><h3><i class="fa fa-train"></i> METZ VILLE (18:13)  <span class="glyphicon glyphicon-arrow-right"></span> FORBACH (19:05)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> FORBACH (20:49)  <span class="glyphicon glyphicon-arrow-right"></span> MANNHEIM HBF (22:17)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> MANNHEIM HBF (23:59)  <span class="glyphicon glyphicon-arrow-right"></span> HAMBURG HBF (09:06)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> HAMBURG HBF (09:28)  <span class="glyphicon glyphicon-arrow-right"></span> COPENHAGEN (14:22)*</h3><p class="notes"></li></ol></div><div class="trip"><h2>Copenhagen, Denmark - Stockholm, Sweden {29/10}</h2><ol><li><h3><i class="fa fa-train"></i> COPENHAGEN (08:20)  <span class="glyphicon glyphicon-arrow-right"></span> STOCKHOLM CENTRAL (13:39)*</h3><p class="notes"></li></ol></div><div class="trip"><h2>Stockholm, Sweden - Haugesund, Norway {31/10}</h2><ol><li><h3><i class="fa fa-train"></i> STOCKHOLM CENTRAL (07:14)  <span class="glyphicon glyphicon-arrow-right"></span> OSLO S (12:29)*</h3><p class="notes"></li><li><h3><i class="fa fa-bus"></i> OSLO S (13:40)  <span class="glyphicon glyphicon-arrow-right"></span> HAUGESUND (22:20)*</h3><p class="notes"><a href="https://www.rome2rio.com/s/Oslo/Haugesund">https://www.rome2rio.com/s/Oslo/Haugesund</a></p></li></ol></div><div class="trip"><h2>Haugesund, Norway - Oslo, Norway {03/11-04/11}</h2><ol><li><h3><i class="fa fa-bus"></i> HAUGESUND (23:00)  <span class="glyphicon glyphicon-arrow-right"></span> OSLO S (07:15)*</h3><p class="notes"><a href="https://www.rome2rio.com/s/Oslo/Haugesund">https://www.rome2rio.com/s/Oslo/Haugesund</a></p></li></ol></div><div class="trip"><h2>Oslo, Norway - Metz, France {05/11}</h2><ol><li><h3><i class="fa fa-plane"></i> OSLO GAUREMOEND (06:10)  <span class="glyphicon glyphicon-arrow-right"></span> PARIS CDG (08:45)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> PARIS EST (10:29)  <span class="glyphicon glyphicon-arrow-right"></span> METZ VILLE (12:04)*</h3><p class="notes"></li></ol></div></div>
-    <h1>Lodging</h1>
-    <div id="lodging">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="denmark/img100.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="denmark/img101.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="denmark/img102.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="denmark/img103.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="denmark/img104.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="denmark/img105.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="denmark/img106.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="denmark/img107.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="denmark/img108.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="denmark/img109.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                        </div>
+                        <a id="moveLeft_denmarkCarousel" class="left carousel-control" href="#denmarkCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a id="moveRight_denmarkCarousel" class="right carousel-control" href="#denmarkCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4 text-center">
+                        <button id="togglePlay_denmarkCarousel" class="btn btn-block btn-success btn-lg toggle-play">
+                            <span id="playStatus_denmarkCarousel" class="glyphicon glyphicon-pause"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="detail-block">
+                        <div class="day-block text-center container-fluid">
+                            <h2 class="day-header">Day 1: Copenhagen</h2>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 event-block">
+                                    <h3 class="event-header">Approaching Denmark</h3>
+                                    <img src="denmark/approach.jpg" class="img-thumbnail text-center" />
+                                    <p>You can see the windmills as we approach the Danish coast</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Tivoli Gardens</h3>
+                                    <img src="denmark/tivoli.jpg" class="img-thumbnail text-center" />
+                                    <p>The Gardens were transformed into a Halloween masterpiece!</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Roasting Marshmallows</h3>
+                                    <img src="denmark/img109.jpg" class="img-thumbnail text-center" />
+                                    <p>Settling down near a campfire for a nice roasted marshmallow</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-block text-center container-fluid">
+                            <h2 class="day-header">Day 2: Copenhagen</h2>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Rosenborg Castle</h3>
+                                    <img src="denmark/castle.jpg" class="img-thumbnail text-center" />
+                                    <p>The former Royal palace</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">The King's Gardens</h3>
+                                    <img src="denmark/gardens.jpg" class="img-thumbnail text-center" />
+                                    <p>A perfectly-manicured garden to complement the castle</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 event-block">
+                                    <h3 class="event-header">The Opera House</h3>
+                                    <img src="denmark/opera.jpg" class="img-thumbnail text-center" />
+                                    <p>A modern Opera House</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Christiansborg Palace</h3>
+                                    <img src="denmark/christiansborg.jpg" class="img-thumbnail text-center" />
+                                    <p>The Royal Palace</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Paper Island</h3>
+                                    <img src="denmark/food.jpg" class="img-thumbnail text-center" />
+                                    <p>While the island is just an ordinary island, the food is another story...</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Kastellet</h3>
+                                    <img src="denmark/kastellet.jpg" class="img-thumbnail text-center" />
+                                    <p>An old military embankment that is still active</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">The Mermaid Statue</h3>
+                                    <img src="denmark/mermaid.jpg" class="img-thumbnail text-center" />
+                                    <p>The famous statue was... smaller than I expected</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            
+            <div id="sweden">
+                <div class="title-block">
+                    <h1 class="text-center">Stockholm, Sweden</h1>
+                    <img src="imgMain_Sweden.jpg" class="img-responsive img-rounded img-main" />
+                </div>
+                <div class="row">
+                    <div id="swedenCarousel" class="carousel slide text-center" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#swedenCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#swedenCarousel" data-slide-to="1"></li>
+                            <li data-target="#swedenCarousel" data-slide-to="2"></li>
+                            <li data-target="#swedenCarousel" data-slide-to="3"></li>
+                            <li data-target="#swedenCarousel" data-slide-to="4"></li>
+                            <li data-target="#swedenCarousel" data-slide-to="5"></li>
+                            <li data-target="#swedenCarousel" data-slide-to="6"></li>
+                            <li data-target="#swedenCarousel" data-slide-to="7"></li>
+                            <li data-target="#swedenCarousel" data-slide-to="8"></li>
+                            <li data-target="#swedenCarousel" data-slide-to="9"></li>
+                        </ol>
 
-    <div class="lodging"><h2>Copenhagen, Denmark</h2><h3><i class="fa fa-home"></i> AirBnB (27/10/2017 <span class="glyphicon glyphicon-arrow-right"></span> 29/10/2017)</h3><p>Cosy, Little Garden House<br>Hf. Bronsojholm 31, Kobenhavn, 2700, Denmark<br>Reservation Code: HMYQAQH5HY<br>Room: Whole Apartment ($182.34)<br><em>Cost: 86.61 € (Total: 173.22 €)</em></p></div><div class="lodging"><h2>Stockholm, Sweden</h2><h3><i class="fa fa-hotel"></i> Generator Stockholm (29/10/2017 <span class="glyphicon glyphicon-arrow-right"></span> 31/10/2017)</h3><p>Generator Stockholm<br>Phone: 0046850532370<br>Room: Private 6-Bed Ensuite (€130.49)<br><em>Cost: 130.49 € (Total: 260.98 €)</em></p></div><div class="lodging"><h2>Haugesund, Norway</h2><h3><i class="fa fa-home"></i> AirBnB (31/10/2017 <span class="glyphicon glyphicon-arrow-right"></span> 03/11/2017)</h3><p>StrandGata One<br>Strandgata 1 Bgn., Haugesund Rogaland 5528, Norway<br>Reservation Code: HM9NEWJTQW<br>Room: Whole Home ($680.27)<br><em>Cost: 215.42 € (Total: 646.26 €)</em></p></div><div class="lodging"><h2>Oslo, Norway</h2><h3><i class="fa fa-hotel"></i> Airport Gauremoend (04/11/2017 <span class="glyphicon glyphicon-arrow-right"></span> 05/11/2017)</h3><p>Airport Gauremoend<br><em>Cost: 0.00 € (Total: 0.00 €)</em></p></div></div>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="sweden/img200.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="sweden/img201.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="sweden/img202.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="sweden/img203.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="sweden/img204.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="sweden/img205.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="sweden/img206.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="sweden/img207.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="sweden/img208.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="sweden/img209.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                        </div>
+                        <a id="moveLeft_swedenCarousel" class="left carousel-control" href="#swedenCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a id="moveRight_swedenCarousel" class="right carousel-control" href="#swedenCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4 text-center">
+                        <button id="togglePlay_swedenCarousel" class="btn btn-block btn-success btn-lg toggle-play">
+                            <span id="playStatus_swedenCarousel" class="glyphicon glyphicon-pause"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="detail-block">
+                        <div class="day-block text-center container-fluid">
+                            <h2 class="day-header">Day 3: Stockholm</h2>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">The Nobel Museum</h3>
+                                    <img src="sweden/nobel.jpg" class="img-thumbnail text-center" />
+                                    <p>Caption</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Stortorget Square</h3>
+                                    <img src="sweden/square.jpg" class="img-thumbnail text-center" />
+                                    <p>The Central Square of Stockholm</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 event-block">
+                                    <h3 class="event-header">Sunset in Stockholm</h3>
+                                    <img src="sweden/sunset.jpg" class="img-thumbnail text-center" />
+                                    <p>A Beautiful Sunset in Sweden</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-block text-center container-fluid">
+                            <h2 class="day-header">Day 4: Stockholm</h2>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">IKEA</h3>
+                                    <img src="sweden/ikea.jpg" class="img-thumbnail text-center" />
+                                    <p>IKEA in it's natural home</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Parliament</h3>
+                                    <img src="sweden/parliament.jpg" class="img-thumbnail text-center" />
+                                    <p>A view of Parliament</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">The Royal Palace</h3>
+                                    <img src="sweden/royalPalace.jpg" class="img-thumbnail text-center" />
+                                    <p>Inside an Opulent Royal Palace</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Riddarholmen Church</h3>
+                                    <img src="sweden/church.jpg" class="img-thumbnail text-center" />
+                                    <p>A beautiful church</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 event-block">
+                                    <h3 class="event-header">View from the City Hall</h3>
+                                    <img src="sweden/cityHall.jpg" class="img-thumbnail text-center" />
+                                    <p>The View from City Hall</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--
+                Day 4
+                    Parliament
+                    Opera House
+            -->
+            
+            <div id="norway">
+                <div class="title-block">
+                    <h1 class="text-center">Norway</h1>
+                    <img src="imgMain_Norway.jpg" class="img-responsive img-rounded img-main" />
+                </div>
+                <div class="row">
+                    <div id="norwayCarousel" class="carousel slide text-center" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#norwayCarousel" data-slide-to="00" class="active"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="01"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="02"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="03"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="04"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="05"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="06"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="07"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="08"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="09"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="10"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="11"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="12"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="13"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="14"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="15"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="16"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="17"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="18"></li>
+                            <li data-target="#norwayCarousel" data-slide-to="19"></li>
+                        </ol>
 
-    <footer>
-        <p><strong>*</strong> denotes the transportation requires reservation</p>
-    </footer>
-</body>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="norway/img300.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img301.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img302.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img303.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img304.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img305.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img306.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img307.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img308.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img309.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img310.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img311.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img312.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img313.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img314.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img315.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img316.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img317.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img318.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="norway/img319.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                        </div>
+                        <a id="moveLeft_norwayCarousel" class="left carousel-control" href="#norwayCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a id="moveRight_norwayCarousel" class="right carousel-control" href="#norwayCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4 text-center">
+                        <button id="togglePlay_norwayCarousel" class="btn btn-block btn-success btn-lg toggle-play">
+                            <span id="playStatus_norwayCarousel" class="glyphicon glyphicon-pause"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="detail-block">
+                        <div class="day-block text-center container-fluid">
+                            <h2 class="day-header">Day 6: Haugesund</h2>
+                            <div class="row">
+                                <div class="col-md-12 event-block">
+                                    <h3 class="event-header">The View from the First Hike</h3>
+                                    <img src="norway/lighthouseView.jpg" class="img-thumbnail text-center" />
+                                    <p>The View from our first hike!</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Sheep</h3>
+                                    <img src="norway/sheep.jpg" class="img-thumbnail text-center" />
+                                    <p>Some sheep along the path!</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Our AirBnB</h3>
+                                    <img src="norway/airBnb.jpg" class="img-thumbnail text-center" />
+                                    <p>Our AirBnB was beautiful! Pictured above is our homemade dinner</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 event-block">
+                                <h3 class="event-header">Time Lapse</h3>
+                                <video width="100%" height="100%" controls>
+                                    <source src="norway/timeLapse.mp4" type="video/mp4" /> Your browser does not support the video tag.
+                                </video>
+                                <p>A Time Lapse of the view on our hike</p>
+                            </div>
+                        </div>
+                        <div class="day-block text-center container-fluid">
+                            <h2 class="day-header">Day 7: Haugesund</h2>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">The Fjord</h3>
+                                    <img src="norway/fjord.jpg" class="img-thumbnail text-center" />
+                                    <p>A Beautiful Fjord - pictures can't do it justice!</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">A Waterfall</h3>
+                                    <img src="norway/waterfall.jpg" class="img-thumbnail text-center" />
+                                    <p>A waterfall along the hike</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 event-block">
+                                    <h3 class="event-header">Sandeid</h3>
+                                    <img src="norway/sandeid.jpg" class="img-thumbnail text-center" />
+                                    <p>The location of the nearest Fjord</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-block text-center container-fluid">
+                            <h2 class="day-header">Day 8: Haugesund</h2>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 event-block">
+                                    <h3 class="event-header">Statue</h3>
+                                    <img src="norway/statue.jpg" class="img-thumbnail text-center" />
+                                    <p>A statue in our relaxing day in Haugesund</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-block text-center container-fluid">
+                            <h2 class="day-header">Day 9: Oslo</h2>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">The Fram Museum</h3>
+                                    <img src="norway/fram.jpg" class="img-thumbnail text-center" />
+                                    <p>Voted the best museum of Norway in 2016 by TripAdvisor - It did not disappoint!</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">The Nautical Museum</h3>
+                                    <img src="norway/nautical.jpg" class="img-thumbnail text-center" />
+                                    <p>A scale model of an impressive wartime vessel</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 event-block">
+                                    <h3 class="event-header">Lunch</h3>
+                                    <img src="norway/lunch.jpg" class="img-thumbnail text-center" />
+                                    <p>A delicious lunch with a bonus waitress photo-bomb!</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Vigesland Park</h3>
+                                    <img src="norway/sculpturePark.jpg" class="img-thumbnail text-center" />
+                                    <p>An... Interesting park of sculptures in Oslo</p>
+                                </div>
+                                <div class="col-md-6 event-block">
+                                    <h3 class="event-header">Opera House</h3>
+                                    <img src="norway/opera.jpg" class="img-thumbnail text-center" />
+                                    <p>The Beautiful Opera House - we even climbed on top of the roof!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="cats">
+                <div class="title-block">
+                    <h1 class="text-center">Scandinavian Animals</h1>
+                </div>
+                <div class="row">
+                    <div id="kittyCarousel" class="carousel slide text-center" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#kittyCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#kittyCarousel" data-slide-to="1"></li>
+                            <li data-target="#kittyCarousel" data-slide-to="2"></li>
+                            <li data-target="#kittyCarousel" data-slide-to="3"></li>
+                            <li data-target="#kittyCarousel" data-slide-to="4"></li>
+                            <li data-target="#kittyCarousel" data-slide-to="5"></li>
+                            <li data-target="#kittyCarousel" data-slide-to="6"></li>
+                            <li data-target="#kittyCarousel" data-slide-to="7"></li>
+                            <li data-target="#kittyCarousel" data-slide-to="8"></li>
+                            <li data-target="#kittyCarousel" data-slide-to="9"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="animals/img400.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="animals/img401.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="animals/img402.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="animals/img403.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="animals/img404.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="animals/img405.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="animals/img406.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="animals/img407.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="animals/img408.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                            <div class="item">
+                                <img src="animals/img409.jpg" alt="" class="img-thumbnail" />
+                            </div>
+                        </div>
+                        <a id="moveLeft_kittyCarousel" class="left carousel-control" href="#kittyCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a id="moveRight_kittyCarousel" class="right carousel-control" href="#kittyCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4 text-center">
+                        <button id="togglePlay_kittyCarousel" class="btn btn-block btn-success btn-lg toggle-play">
+                            <span id="playStatus_kittyCarousel" class="glyphicon glyphicon-pause"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="detail-block">
+                        <div class="day-block text-center container-fluid">
+                            <h2 class="day-header">Danish Kitten</h2>
+                            <div class="row">
+                                <div class="col-md-12 event-block">
+                                    <h3 class="event-header">Toffee</h3>
+                                    <img src="animals/img400.jpg" class="img-thumbnail text-center" />
+                                    <p>Our kitten in Copenhagen - Her name is Toffee!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
 </html>

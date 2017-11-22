@@ -1,182 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>CountryName</title>
 
-        <!-- Get Bootstrap: -->
-        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script src="../../assets/scripts/header.js"></script>
-        <link type="text/css" rel="stylesheet" href="../../assets/css/template.css" />
-        <link rel="shortcut icon" type="image/png" href="../../assets/images/branding/favicon.ico" />
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="https://alexhrao.github.io/TravelPlans">
-                        <img id="logo" src="../../favicon.ico" class="img-circle no-web" />
-                    </a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> 
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="../01/Details.html">Metz</a></li>
-                        <li><a href="../02/Details.html">Luxembourg</a></li>
-                        <li><a href="../03/Details.html">Belgium</a></li>
-                        <li><a href="../04/Details.html">Switzerland</a></li>
-                        <li><a href="../05/Details.html">The UK</a></li>
-                        <li><a href="../06/Details.html">Netherlands</a></li>
-                        <li><a href="../07/Details.html">Austria &amp; Hungary</a></li>
-                        <li><a href="../08/Details.html">Germany</a></li>
-                        <li><a href="../09/Details.html">Monaco &amp; Champagne</a></li>
-                        <li><a href="../10/Details.html">Scandinavia</a></li>
-                        <li><a href="../11/Details.html">Spain</a></li>
-                        <li><a href="../12/Details.html">Normandy</a></li>
-                        <li><a href="../13/Details.html">Poland &amp; Czech</a></li>
-                        <li><a href="../14/Details.html">Italy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="title-block">
-                <h1 class="text-center">LocationName</h1>
-                <img id="mainImage" src="imgMain.jpg" class="img-responsive img-rounded img-main" />
-            </div>
-            <div class="row">
-                <div id="headerCarousel" class="carousel slide text-center" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#headerCarousel" data-slide-to="1"></li>
-                        <li data-target="#headerCarousel" data-slide-to="2"></li>
-                        <li data-target="#headerCarousel" data-slide-to="3"></li>
-                        <li data-target="#headerCarousel" data-slide-to="4"></li>
-                        <li data-target="#headerCarousel" data-slide-to="5"></li>
-                        <li data-target="#headerCarousel" data-slide-to="6"></li>
-                        <li data-target="#headerCarousel" data-slide-to="7"></li>
-                        <li data-target="#headerCarousel" data-slide-to="8"></li>
-                        <li data-target="#headerCarousel" data-slide-to="9"></li>
-                    </ol>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Trip Summary</title>
+    <style>
+        body {
+            padding-left: 10px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        #transportation,
+        #lodging {
+            padding-left: 15px;
+        }
+        li {
+            font-size: 20px;
+        }
+        #lodging h3 {
+            padding-left: 20px;
+        }
+        #lodging p {
+            padding-left: 25px;
+        }
 
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="img00.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img01.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img02.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img03.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img04.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img05.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img06.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img07.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img08.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                        <div class="item">
-                            <img src="img09.jpg" alt="" class="img-thumbnail" />
-                        </div>
-                    </div>
-                    <a id="moveLeft" class="left carousel-control" href="#headerCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a id="moveRight" class="right carousel-control" href="#headerCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 col-xs-offset-4 text-center">
-                    <button id="togglePlay" class="btn btn-block btn-success btn-lg">
-                        <span id="playStatus" class="glyphicon glyphicon-pause"></span>
-                    </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="detail-block">
-                    <div class="day-block text-center container-fluid">
-                        <h2 class="day-header">DayTitle</h2>
-                        <div class="row">
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">EventTitle</h3>
-                                <img src="" class="img-thumbnail text-center" />
-                                <p>Caption</p>
-                            </div>
-                            <div class="col-md-6 event-block">
-                                <h3 class="event-header">EventTitle</h3>
-                                <img src="" class="img-thumbnail text-center" />
-                                <p>Caption</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 event-block">
-                                <h3 class="event-header">Wide</h3>
-                                <img src="" class="img-thumbnail text-center" />
-                                <p>Wide image</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 event-block">
-                                <h3 class="event-header">VR Shot</h3>
-                                <img src="img02.jpg" class="img-thumbnail text-center vr no-web" id="DA4Xn8" />
-                                <!--
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="col-md-12" src="https://360player.io/p/DA4Xn8/" width=560 height=315 frameborder="0" allowfullscreen data-token="DA4Xn8"></iframe>
-                                </div>
-                                -->
-                                <p>Wide VR</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="day-block text-center container-fluid">
-                        <h2 class="day-header">DayTitle</h2>
-                        <div class="row">
-                            <div class="col-md-12 event-block">
-                                <h3 class="event-header">EventTitle</h3>
-                                <img src="" class="img-thumbnail text-center" />
-                                <p>Caption</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="day-block text-center container-fluid">
-                        <h2 class="day-header">DayTitle</h2>
-                        <div class="row">
-                            <div class="col-md-12 event-block">
-                                <h3 class="event-header">Video</h3>
-                                <video width="100%" height="100%" controls>
-                                    <source src="" type="video/mp4" /> Your browser does not support the video tag.
-                                </video>
-                                <p>Video</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+    </style>
+</head>
+<body>
+    <h1>Transportation</h1>
+    <div id="transportation">
+
+    <div class="trip"><h2>Metz, France - Prague, Czech Republic {R-F}</h2><ol><li><h3><i class="fa fa-train"></i> METZ VILLE (19:38)  <span class="glyphicon glyphicon-arrow-right"></span> FORBACH (20:26)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> FORBACH (20:49)  <span class="glyphicon glyphicon-arrow-right"></span> MANNHEIM HBF (22:17)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> MANNHEIM HBF (23:59)  <span class="glyphicon glyphicon-arrow-right"></span> NAUMBURG HBF (04:14)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> NAUMBURG HBF (04:44)  <span class="glyphicon glyphicon-arrow-right"></span> LEIPZIG HBF (05:39)</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> LEIPZIG HBF (05:55)  <span class="glyphicon glyphicon-arrow-right"></span> PRAGUE HLAVNI NADRAZI (09:27)</h3><p class="notes"></li></ol></div><div class="trip"><h2>Prague, Czech Republic - Auschwitz, Poland {F-S}</h2><ol><li><h3><i class="fa fa-train"></i> PRAGUE HLAVNI NADRAZI (23:09)  <span class="glyphicon glyphicon-arrow-right"></span> KRAKOW PLASZOW (06:50)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> KRAKOW PLASZOW (06:55)  <span class="glyphicon glyphicon-arrow-right"></span> KRAKOW LOTNISKO (07:01)</h3><p class="notes"></li></ol></div><div class="trip"><h2>Krakow, Poland - Metz, France {N}</h2><ol><li><h3><i class="fa fa-plane"></i> KRAKOW (06:50)  <span class="glyphicon glyphicon-arrow-right"></span> PARIS BVA (08:45)*</h3><p class="notes"></li><li><h3><i class="fa fa-train"></i> PARIS EST (13:40)  <span class="glyphicon glyphicon-arrow-right"></span> METZ VILLE (15:04)*</h3><p class="notes"></li></ol></div></div>
+    <h1>Lodging</h1>
+    <div id="lodging">
+
+    <div class="lodging"><h2>Krakow, Poland</h2><h3><i class="fa fa-hotel"></i> 4 Friends Hostel (25/11/2017 <span class="glyphicon glyphicon-arrow-right"></span> 26/11/2017)</h3><p>4 Friends Hostel<br>28 Lipca 1943 r. 8A, Krakow, Poland<br>Room: Deluxe 4 Bed Private Ensuite (zł192.00)<br><em>Cost: 44.82 € (Total: 44.82 €)</em></p></div></div>
+
+    <footer>
+        <p><strong>*</strong> denotes the transportation requires reservation</p>
+    </footer>
+</body>
 </html>
