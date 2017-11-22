@@ -86,6 +86,7 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
     
 ### [Poland & Czech Republic - 23/11-26/11](https://alexhrao.github.io/TravelPlans/trips/13/Summary.html "Poland & Czech Republic")
 - Prague, Czech Republic
+- Krakow, Poland
 - Auschwitz, Poland
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/13/Summary.html "Summary")_
