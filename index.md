@@ -73,6 +73,8 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
   
 ### [Spain - 09/11-12/11](https://alexhrao.github.io/TravelPlans/trips/11/Details.html "Spain")
 - Madrid, Spain
+- Toledo, Spain
+- Segovia, Spain
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/11/Summary.html "Summary")_
   
