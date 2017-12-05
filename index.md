@@ -114,8 +114,6 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/14/Details.html "Details")_
 
-### [Triere](https://alexhrao.github.io/TravelPlans/trips/15/Details.html "Triere")
+### [Cologne - 06/12](https://alexhrao.github.io/TravelPlans/trips/15/Summary.html "Cologne")
 
-- Triere, Germany
-
-_Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/15/Details.html "Details")_
+- Cologne, Germany
