@@ -82,7 +82,7 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
 - Oslo, Norway
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/10/Details.html "Details")_
-  
+
 ### [Spain - 09/11-12/11](https://alexhrao.github.io/TravelPlans/trips/11/Summary.html "Spain")
 
 - Madrid, Spain
@@ -90,14 +90,14 @@ _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trip
 - Segovia, Spain
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/11/Details.html "Details")_
-  
+
 ### [Normandy - 16/11-19/11](https://alexhrao.github.io/TravelPlans/trips/12/Summary.html "Normandy")
 
 - Bayeux, France
 - Rouen, France
 
 _Looking for the plans? Click [here](https://alexhrao.github.io/TravelPlans/trips/12/Details.html "Details")_
-    
+
 ### [Poland & Czech Republic - 23/11-26/11](https://alexhrao.github.io/TravelPlans/trips/13/Summary.html "Poland & Czech Republic")
 
 - Prague, Czech Republic
