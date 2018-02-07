@@ -33,19 +33,22 @@ $(document).ready(function() {
     $('img.vr').wrap(function () {
         return "<a href='https://360player.io/p/" + $(this).attr("id") + "/'></a>";
     });
-
-    var days = document.getElementsByClassName('day-block');
-    var j;
-    for (j = 0; j < days.length; j++) {
-        var ind = j % 3;
+    $('.day-block').each(function (index) {
+        var ind = index % 3;
         if (ind == 0) {
-            days[j].style.backgroundColor = "#E8A45F";
+            $(this).css({
+                background: "linear-gradient(90deg, #283c86, #45a247)" 
+            });
         } else if (ind == 1) {
-            days[j].style.backgroundColor = "#59BE4E";
+            $(this).css({
+                background: "linear-gradient(90deg, #40e0d0, #ff8c00, #ff0080)"
+            });
         } else {
-            days[j].style.backgroundColor = "#A5291C";
+            $(this).css({
+                background: "linear-gradient(90deg, #333333, #dd1818)"
+            });
         }
-    }
+    });
 });
 
 function attachHammer(swiper, id) {
